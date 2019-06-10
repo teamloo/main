@@ -10,4 +10,21 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>web-service</artifactId>
+<dependencies>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>4.3.18.RELEASE</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-jpa</artifactId>
+        <version>1.11.12.RELEASE</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-orm</artifactId>
+        <version>4.3.17.RELEASE</version>
+    </dependency>
+</dependencies>
 </project>
