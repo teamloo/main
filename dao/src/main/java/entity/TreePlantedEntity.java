@@ -22,34 +22,11 @@ public class TreePlantedEntity implements Serializable {
 
     private double area;
     @OneToOne(mappedBy = "unit")
-    private Unit unitID;
+    private UnitEntity unit;
     @OneToOne(mappedBy = "department")
-    private int departmentID;
-
-    public TreePlantedEntity(String treePlantedID, String forestID, Date date, int treeIncrease, double area, int unitID, int departmentID) {
-        this.treePlantedID = treePlantedID;
-        this.forestID = forestID;
-        this.date = date;
-        this.treeIncrease = treeIncrease;
-        this.area = area;
-        this.unitID = unitID;
-        this.departmentID = departmentID;
-    }
+    private DepartmentEntity department;
 
     public TreePlantedEntity() {
-    }
-
-    @Override
-    public String toString() {
-        return "TreePlantedEntity{" +
-                "treePlantedID='" + treePlantedID + '\'' +
-                ", forestID='" + forestID + '\'' +
-                ", date=" + date +
-                ", treeIncrease=" + treeIncrease +
-                ", area=" + area +
-                ", unitID=" + unitID +
-                ", departmentID=" + departmentID +
-                '}';
     }
 
     public static long getSerialVersionUID() {
@@ -96,19 +73,42 @@ public class TreePlantedEntity implements Serializable {
         this.area = area;
     }
 
-    public int getUnitID() {
-        return unitID;
+    public UnitEntity getUnit() {
+        return unit;
     }
 
-    public void setUnitID(int unitID) {
-        this.unitID = unitID;
+    public void setUnit(UnitEntity unit) {
+        this.unit = unit;
     }
 
-    public int getDepartmentID() {
-        return departmentID;
+    public DepartmentEntity getDepartment() {
+        return department;
     }
 
-    public void setDepartmentID(int departmentID) {
-        this.departmentID = departmentID;
+    public void setDepartment(DepartmentEntity department) {
+        this.department = department;
+    }
+
+    @Override
+    public String toString() {
+        return "TreePlantedEntity{" +
+                "treePlantedID='" + treePlantedID + '\'' +
+                ", forestID='" + forestID + '\'' +
+                ", date=" + date +
+                ", treeIncrease=" + treeIncrease +
+                ", area=" + area +
+                ", unit=" + unit +
+                ", department=" + department +
+                '}';
+    }
+
+    public TreePlantedEntity(String treePlantedID, String forestID, Date date, int treeIncrease, double area, UnitEntity unit, DepartmentEntity department) {
+        this.treePlantedID = treePlantedID;
+        this.forestID = forestID;
+        this.date = date;
+        this.treeIncrease = treeIncrease;
+        this.area = area;
+        this.unit = unit;
+        this.department = department;
     }
 }
