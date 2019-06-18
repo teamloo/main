@@ -1,7 +1,5 @@
 package entity;
 
-import model.Department;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Date;
@@ -26,7 +24,20 @@ public class TreePlantedEntity implements Serializable {
     @OneToOne(mappedBy = "unit")
     private Unit unitID;
     @OneToOne(mappedBy = "department")
-    private Department department;
+    private int departmentID;
+
+    public TreePlantedEntity(String treePlantedID, String forestID, Date date, int treeIncrease, double area, int unitID, int departmentID) {
+        this.treePlantedID = treePlantedID;
+        this.forestID = forestID;
+        this.date = date;
+        this.treeIncrease = treeIncrease;
+        this.area = area;
+        this.unitID = unitID;
+        this.departmentID = departmentID;
+    }
+
+    public TreePlantedEntity() {
+    }
 
     @Override
     public String toString() {
@@ -37,7 +48,7 @@ public class TreePlantedEntity implements Serializable {
                 ", treeIncrease=" + treeIncrease +
                 ", area=" + area +
                 ", unitID=" + unitID +
-                ", department=" + department +
+                ", departmentID=" + departmentID +
                 '}';
     }
 
@@ -85,32 +96,19 @@ public class TreePlantedEntity implements Serializable {
         this.area = area;
     }
 
-    public Unit getUnitID() {
+    public int getUnitID() {
         return unitID;
     }
 
-    public void setUnitID(Unit unitID) {
+    public void setUnitID(int unitID) {
         this.unitID = unitID;
     }
 
-    public Department getDepartment() {
-        return department;
+    public int getDepartmentID() {
+        return departmentID;
     }
 
-    public void setDepartment(Department department) {
-        this.department = department;
-    }
-
-    public TreePlantedEntity() {
-    }
-
-    public TreePlantedEntity(String treePlantedID, String forestID, Date date, int treeIncrease, double area, Unit unitID, Department department) {
-        this.treePlantedID = treePlantedID;
-        this.forestID = forestID;
-        this.date = date;
-        this.treeIncrease = treeIncrease;
-        this.area = area;
-        this.unitID = unitID;
-        this.department = department;
+    public void setDepartmentID(int departmentID) {
+        this.departmentID = departmentID;
     }
 }
