@@ -4,37 +4,24 @@ import java.sql.Date;
 
 public class TreePlanted {
     private String treePlantedID;
-    private String forestID;
+    private Forest forest;
     private Date date;
     private int treeIncrease;
     private double area;
-    private int unitID;
-    private int departmentID;
+    private Unit unit;
+    private Department department;
 
     @Override
     public String toString() {
         return "TreePlanted{" +
-                "treePlantedID=" + treePlantedID +
-                ", forestID=" + forestID +
+                "treePlantedID='" + treePlantedID + '\'' +
+                ", forest=" + forest +
                 ", date=" + date +
                 ", treeIncrease=" + treeIncrease +
                 ", area=" + area +
-                ", unitID=" + unitID +
-                ", departmentID=" + departmentID +
+                ", unit=" + unit +
+                ", department=" + department +
                 '}';
-    }
-
-    public TreePlanted() {
-    }
-
-    public TreePlanted(String treePlantedID, String forestID, Date date, int treeIncrease, double area, int unitID, int departmentID) {
-        this.treePlantedID = treePlantedID;
-        this.forestID = forestID;
-        this.date = date;
-        this.treeIncrease = treeIncrease;
-        this.area = area;
-        this.unitID = unitID;
-        this.departmentID = departmentID;
     }
 
     public String getTreePlantedID() {
@@ -45,12 +32,12 @@ public class TreePlanted {
         this.treePlantedID = treePlantedID;
     }
 
-    public String getForestID() {
-        return forestID;
+    public Forest getForest() {
+        return forest;
     }
 
-    public void setForestID(String forestID) {
-        this.forestID = forestID;
+    public void setForest(Forest forest) {
+        this.forest = forest;
     }
 
     public Date getDate() {
@@ -77,20 +64,32 @@ public class TreePlanted {
         this.area = area;
     }
 
-    public int getUnitID() {
-        return unitID;
+    public Unit getUnit() {
+        return unit;
     }
 
-    public void setUnitID(int unitID) {
-        this.unitID = unitID;
+    public void setUnit(Unit unit) {
+        this.unit = unit;
     }
 
-    public int getDepartmentID() {
-        return departmentID;
+    public Department getDepartment() {
+        return department;
     }
 
-    public void setDepartmentID(int departmentID) {
-        this.departmentID = departmentID;
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 
+    public TreePlanted() {
+    }
+
+    public TreePlanted(String treePlantedID, Forest forest, Date date, int treeIncrease, double area, Unit unit, Department department) {
+        this.treePlantedID = treePlantedID;
+        this.forest = forest;
+        this.date = date;
+        this.treeIncrease = treeIncrease;
+        this.area = area;
+        this.unit = unit;
+        this.department = department;
+    }
 }
