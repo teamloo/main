@@ -24,17 +24,7 @@ public class TreePlantedEntity implements Serializable {
     @OneToOne(mappedBy = "unit")
     private Unit unitID;
     @OneToOne(mappedBy = "department")
-    private int departmentID;
-
-    public TreePlantedEntity(String treePlantedID, String forestID, Date date, int treeIncrease, double area, int unitID, int departmentID) {
-        this.treePlantedID = treePlantedID;
-        this.forestID = forestID;
-        this.date = date;
-        this.treeIncrease = treeIncrease;
-        this.area = area;
-        this.unitID = unitID;
-        this.departmentID = departmentID;
-    }
+    private Department department;
 
     public TreePlantedEntity() {
     }
@@ -48,7 +38,7 @@ public class TreePlantedEntity implements Serializable {
                 ", treeIncrease=" + treeIncrease +
                 ", area=" + area +
                 ", unitID=" + unitID +
-                ", departmentID=" + departmentID +
+                ", department=" + department +
                 '}';
     }
 
@@ -96,19 +86,29 @@ public class TreePlantedEntity implements Serializable {
         this.area = area;
     }
 
-    public int getUnitID() {
+    public Unit getUnitID() {
         return unitID;
     }
 
-    public void setUnitID(int unitID) {
+    public void setUnitID(Unit unitID) {
         this.unitID = unitID;
     }
 
-    public int getDepartmentID() {
-        return departmentID;
+    public Department getDepartment() {
+        return department;
     }
 
-    public void setDepartmentID(int departmentID) {
-        this.departmentID = departmentID;
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
+
+    public TreePlantedEntity(String treePlantedID, String forestID, Date date, int treeIncrease, double area, Unit unitID, Department department) {
+        this.treePlantedID = treePlantedID;
+        this.forestID = forestID;
+        this.date = date;
+        this.treeIncrease = treeIncrease;
+        this.area = area;
+        this.unitID = unitID;
+        this.department = department;
     }
 }
