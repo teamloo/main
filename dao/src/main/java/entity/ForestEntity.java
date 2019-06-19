@@ -9,9 +9,12 @@ import java.util.List;
 @Table(name = "Forest")
 @NamedQuery(name = "Forest.findAll", query = "SELECT t FROM Forest t")
 public class ForestEntity {
+
     @Id
     @Column(name = "forest_id")
     private String id;
+
+
     private String name;
     private Double areenErea;
     private String address;
@@ -19,17 +22,17 @@ public class ForestEntity {
     private Integer totalNumberOfTree;
     private String functionForest;
     private String lifeTime;
+
     @Temporal(TemporalType.TIMESTAMP)
     private Date timeadded;
 
-    @ManyToOne
-    @JoinColumn(name = "unit_id")
+    @ManyToOne(targetEntity = UnitEntity.class)
     private List<UnitEntity> unit;
-    @ManyToOne
-    @JoinColumn(name = "exploition_id")
+
+    @ManyToOne(targetEntity = ExploitionEntity.class)
     private List<ExploitionEntity> exploition;
-    @ManyToOne
-    @JoinColumn(name = "unit_id")
+
+    @ManyToOne(targetEntity = TreePlantedEntity.class )
     private List<TreePlantedEntity> treePlanted;
 
     public String getId() {
