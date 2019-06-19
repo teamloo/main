@@ -11,6 +11,16 @@ public class Offence {
     private Date date;
     private double areaOfDamage;
 
+    public Offence(String offenceId, String offender, long numberOfTreeLost, String sanctionForm, double compensationMoney, Date date, double areaOfDamage) {
+        this.offenceId = offenceId;
+        this.offender = offender;
+        this.numberOfTreeLost = numberOfTreeLost;
+        this.sanctionForm = sanctionForm;
+        this.compensationMoney = compensationMoney;
+        this.date = date;
+        this.areaOfDamage = areaOfDamage;
+    }
+
     public double getCompensationMoney() {
         return compensationMoney;
     }

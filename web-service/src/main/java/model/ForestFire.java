@@ -9,6 +9,14 @@ public class ForestFire {
     private double numberOfTreeLost;
     private Date date;
 
+    public ForestFire(String fireId, double area, String cause, double numberOfTreeLost, Date date) {
+        this.fireId = fireId;
+        this.area = area;
+        this.cause = cause;
+        this.numberOfTreeLost = numberOfTreeLost;
+        this.date = date;
+    }
+
     public Date getDate() {
         return date;
     }
