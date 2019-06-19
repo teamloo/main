@@ -22,24 +22,11 @@ public class TreePlantedEntity implements Serializable {
 
     private double area;
     @OneToOne(mappedBy = "unit")
-    private Unit unitID;
+    private UnitEntity unit;
     @OneToOne(mappedBy = "department")
-    private Department department;
+    private DepartmentEntity department;
 
     public TreePlantedEntity() {
-    }
-
-    @Override
-    public String toString() {
-        return "TreePlantedEntity{" +
-                "treePlantedID='" + treePlantedID + '\'' +
-                ", forestID='" + forestID + '\'' +
-                ", date=" + date +
-                ", treeIncrease=" + treeIncrease +
-                ", area=" + area +
-                ", unitID=" + unitID +
-                ", department=" + department +
-                '}';
     }
 
     public static long getSerialVersionUID() {
@@ -86,29 +73,42 @@ public class TreePlantedEntity implements Serializable {
         this.area = area;
     }
 
-    public Unit getUnitID() {
-        return unitID;
+    public UnitEntity getUnit() {
+        return unit;
     }
 
-    public void setUnitID(Unit unitID) {
-        this.unitID = unitID;
+    public void setUnit(UnitEntity unit) {
+        this.unit = unit;
     }
 
-    public Department getDepartment() {
+    public DepartmentEntity getDepartment() {
         return department;
     }
 
-    public void setDepartment(Department department) {
+    public void setDepartment(DepartmentEntity department) {
         this.department = department;
     }
 
-    public TreePlantedEntity(String treePlantedID, String forestID, Date date, int treeIncrease, double area, Unit unitID, Department department) {
+    @Override
+    public String toString() {
+        return "TreePlantedEntity{" +
+                "treePlantedID='" + treePlantedID + '\'' +
+                ", forestID='" + forestID + '\'' +
+                ", date=" + date +
+                ", treeIncrease=" + treeIncrease +
+                ", area=" + area +
+                ", unit=" + unit +
+                ", department=" + department +
+                '}';
+    }
+
+    public TreePlantedEntity(String treePlantedID, String forestID, Date date, int treeIncrease, double area, UnitEntity unit, DepartmentEntity department) {
         this.treePlantedID = treePlantedID;
         this.forestID = forestID;
         this.date = date;
         this.treeIncrease = treeIncrease;
         this.area = area;
-        this.unitID = unitID;
+        this.unit = unit;
         this.department = department;
     }
 }
