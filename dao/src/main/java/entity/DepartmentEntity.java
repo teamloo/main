@@ -5,6 +5,7 @@ import javax.persistence.*;
 // cán bộ
 @Entity
 @Table(name = "department")
+@NamedQuery(name = "Department.findAll", query = "SELECT e FROM Department e")
 public class DepartmentEntity {
     @Id
     @Column(name = "department_id")
@@ -78,4 +79,5 @@ public class DepartmentEntity {
     public void setEntity(UnitEntity entity) {
         this.entity = entity;
     }
+
 }
