@@ -13,7 +13,7 @@ public class DepartmentEntity {
 
 
     private String name;
-    private String Position;
+    private String position;
     private String salary;
     private String phoneNumber;
     private UnitEntity unit; // cán bộ thuộc đơn vị nào đó
