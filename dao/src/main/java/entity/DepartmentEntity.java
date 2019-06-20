@@ -17,11 +17,8 @@ public class DepartmentEntity {
     private String salary;
     private String phoneNumber;
 
-
-    private UnitEntity unit; // cán bộ thuộc đơn vị nào đó
     @ManyToOne
-    @JoinColumn(name = "unit_id")
-    private UnitEntity entity;
+    private UnitEntity unit;
 
     public DepartmentEntity() {
     }
@@ -74,12 +71,5 @@ public class DepartmentEntity {
         this.unit = unit;
     }
 
-    public UnitEntity getEntity() {
-        return entity;
-    }
-
-    public void setEntity(UnitEntity entity) {
-        this.entity = entity;
-    }
 
 }
