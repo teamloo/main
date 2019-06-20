@@ -7,15 +7,17 @@ import javax.persistence.*;
 @Table(name = "department")
 @NamedQuery(name = "Department.findAll", query = "SELECT e FROM Department e")
 public class DepartmentEntity {
+
     @Id
     @Column(name = "department_id")
     private String id;
-
 
     private String name;
     private String Position;
     private String salary;
     private String phoneNumber;
+
+
     private UnitEntity unit; // cán bộ thuộc đơn vị nào đó
     @ManyToOne
     @JoinColumn(name = "unit_id")

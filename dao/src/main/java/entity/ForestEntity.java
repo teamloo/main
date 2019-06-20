@@ -4,7 +4,6 @@ import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
-
 @Entity
 @Table(name = "Forest")
 @NamedQuery(name = "Forest.findAll", query = "SELECT t FROM Forest t")
@@ -13,7 +12,6 @@ public class ForestEntity {
     @Id
     @Column(name = "forest_id")
     private String id;
-
 
     private String name;
     private Double areenErea;
@@ -26,14 +24,24 @@ public class ForestEntity {
     @Temporal(TemporalType.TIMESTAMP)
     private Date timeadded;
 
-    @ManyToOne(targetEntity = UnitEntity.class)
+    @OneToMany(mappedBy = "forest")
     private List<UnitEntity> unit;
 
-    @ManyToOne(targetEntity = ExploitionEntity.class)
+    @OneToMany(mappedBy = "forest")
     private List<ExploitionEntity> exploition;
 
-    @ManyToOne(targetEntity = TreePlantedEntity.class )
+    @OneToMany(mappedBy = "forest")
     private List<TreePlantedEntity> treePlanted;
+
+
+    @OneToMany(mappedBy = "forest")
+    private List<FireForestEntity> fireForest;
+
+
+    public void setFireForest(List<FireForestEntity> fireForest) {
+        this.fireForest = fireForest;
+    }
+
 
     public String getId() {
         return id;
@@ -115,6 +123,10 @@ public class ForestEntity {
         return timeadded;
     }
 
+    public List<FireForestEntity> getFireForest() {
+        return fireForest;
+    }
+
     public List<UnitEntity> getUnit() {
         return unit;
     }
@@ -157,21 +169,37 @@ public class ForestEntity {
         return exploition;
     }
 
-    public ExploitionEntity removeDepartment(ExploitionEntity exploition) {
+    public ExploitionEntity removeExploition(ExploitionEntity exploition) {
         getExploition().remove(exploition);
         exploition.setForest(null);
         return exploition;
     }
 
-    public TreePlantedEntity addExploition(TreePlantedEntity treePlanted) {
+
+    public TreePlantedEntity addTreePlanted(TreePlantedEntity treePlanted) {
         getTreePlanted().add(treePlanted);
         treePlanted.setForest(this);
         return treePlanted;
     }
 
-    public TreePlantedEntity removeDepartment(TreePlantedEntity treePlanted) {
-        getExploition().remove(treePlanted);
+
+    public TreePlantedEntity removeTreePlanted(TreePlantedEntity treePlanted) {
+        getTreePlanted().remove(treePlanted);
         treePlanted.setForest(null);
         return treePlanted;
     }
+
+    public FireForestEntity addFireForest(FireForestEntity fireForest) {
+        getFireForest().add(fireForest);
+        fireForest.setForest(this);
+        return fireForest;
+    }
+
+    public FireForestEntity removeFireForest(FireForestEntity fireForest) {
+        getFireForest().add(fireForest);
+        fireForest.setForest(null);
+        return fireForest;
+    }
+
+
 }

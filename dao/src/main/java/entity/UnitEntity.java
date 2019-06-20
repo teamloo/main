@@ -14,13 +14,18 @@ public class UnitEntity {
     private String name;
     private String organizationForm; // hình thức tổ chức: chí cho phép 3 loại: hộ gia đình, ban quản lý rừng, Công ty theo hợp đồng
     private String contract; // hợp đồng - chí áp dụng cho công ty, nếu không ghi không có;
+
     @OneToMany(mappedBy = "unit")
     private List<DepartmentEntity> departments;
+
+
     @ManyToOne
     @JoinColumn(name = "forest_id")
     private ForestEntity forest;
+
     @OneToOne(mappedBy = "treeplanted")
     private TreePlantedEntity treePlanted;
+
     @OneToOne(mappedBy = "exploition")
     private ExploitionEntity exploition;
 
