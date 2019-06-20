@@ -2,14 +2,16 @@ package entity;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 
 @Entity
 @Table(name = "Forest")
+@NamedQuery(name = "Forest.findAll", query = "SELECT t FROM Forest t")
 public class ForestEntity {
     @Id
-    @Column(name = "forestId")
-    private Long forestId;
+    @Column(name = "forest_id")
+    private String id;
     private String name;
     private Double areenErea;
     private String address;
@@ -17,22 +19,25 @@ public class ForestEntity {
     private Integer totalNumberOfTree;
     private String functionForest;
     private String lifeTime;
-
-    public String getUnitID() {
-        return unitID;
-    }
-
-    public Long getForestId() {
-        return forestId;
-    }
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date timeadded;
 
     @ManyToOne
-    @JoinColumn(name = "unitID")
-    private String unitID;
+    @JoinColumn(name = "unit_id")
+    private List<UnitEntity> unit;
+    @ManyToOne
+    @JoinColumn(name = "exploition_id")
+    private List<ExploitionEntity> exploition;
+    @ManyToOne
+    @JoinColumn(name = "unit_id")
+    private List<TreePlantedEntity> treePlanted;
 
+    public String getId() {
+        return id;
+    }
 
-    public void setForestId(Long forestId) {
-        this.forestId = forestId;
+    public void setId(String forestId) {
+        this.id = forestId;
     }
 
     public void setAreenErea(Double areenErea) {
@@ -41,28 +46,6 @@ public class ForestEntity {
 
     public void setTotalNumberOfTree(Integer totalNumberOfTree) {
         this.totalNumberOfTree = totalNumberOfTree;
-    }
-
-    public void setUnitID(String unitID) {
-        this.unitID = unitID;
-    }
-
-    public ForestEntity(Long id, String name, double areenErea, String address, String typeOfTrees, int totalNumberOfTree, String functionForest, String lifeTime, Date timeadded) {
-        this.forestId = id;
-        this.name = name;
-        this.areenErea = areenErea;
-        this.address = address;
-        this.typeOfTrees = typeOfTrees;
-        this.totalNumberOfTree = totalNumberOfTree;
-        this.functionForest = functionForest;
-        this.lifeTime = lifeTime;
-        this.timeadded = timeadded;
-    }
-
-    private Date timeadded;
-
-    public void setId(Long id) {
-        this.forestId = id;
     }
 
     public void setName(String name) {
@@ -97,10 +80,6 @@ public class ForestEntity {
         this.timeadded = timeadded;
     }
 
-    public Long getId() {
-        return forestId;
-    }
-
     public String getName() {
         return name;
     }
@@ -131,5 +110,65 @@ public class ForestEntity {
 
     public Date getTimeadded() {
         return timeadded;
+    }
+
+    public List<UnitEntity> getUnit() {
+        return unit;
+    }
+
+    public void setUnit(List<UnitEntity> unit) {
+        this.unit = unit;
+    }
+
+    public List<ExploitionEntity> getExploition() {
+        return exploition;
+    }
+
+    public void setExploition(List<ExploitionEntity> exploition) {
+        this.exploition = exploition;
+    }
+
+    public List<TreePlantedEntity> getTreePlanted() {
+        return treePlanted;
+    }
+
+    public void setTreePlanted(List<TreePlantedEntity> treePlanted) {
+        this.treePlanted = treePlanted;
+    }
+
+    public UnitEntity addUnit(UnitEntity unit) {
+        getUnit().add(unit);
+        unit.setForest(this);
+        return unit;
+    }
+
+    public UnitEntity removeUnit(UnitEntity unit) {
+        getUnit().remove(unit);
+        unit.setForest(null);
+        return unit;
+    }
+
+    public ExploitionEntity addExploition(ExploitionEntity exploition) {
+        getExploition().add(exploition);
+        exploition.setForest(this);
+        return exploition;
+    }
+
+    public ExploitionEntity removeDepartment(ExploitionEntity exploition) {
+        getExploition().remove(exploition);
+        exploition.setForest(null);
+        return exploition;
+    }
+
+    public TreePlantedEntity addExploition(TreePlantedEntity treePlanted) {
+        getTreePlanted().add(treePlanted);
+        treePlanted.setForest(this);
+        return treePlanted;
+    }
+
+    public TreePlantedEntity removeDepartment(TreePlantedEntity treePlanted) {
+        getExploition().remove(treePlanted);
+        treePlanted.setForest(null);
+        return treePlanted;
     }
 }
