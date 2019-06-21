@@ -14,6 +14,7 @@ public class FireForestEntity {
     private String cause;
     private double numberOfTreeLost;
     private Date date;
+
     @ManyToOne
     @JoinColumn(name = "forest_ID")
     private ForestEntity forest;

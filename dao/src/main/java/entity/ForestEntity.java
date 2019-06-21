@@ -37,6 +37,16 @@ public class ForestEntity {
     @OneToMany(mappedBy = "forest")
     private List<FireForestEntity> fireForest;
 
+    @OneToMany(mappedBy = "forest")
+    private List<UnlawfulEntity> unlawful;
+
+    public void setUnlawful(List<UnlawfulEntity> unlawful) {
+        this.unlawful = unlawful;
+    }
+
+    public List<UnlawfulEntity> getUnlawful() {
+        return unlawful;
+    }
 
     public void setFireForest(List<FireForestEntity> fireForest) {
         this.fireForest = fireForest;
@@ -182,12 +192,12 @@ public class ForestEntity {
         return treePlanted;
     }
 
-
     public TreePlantedEntity removeTreePlanted(TreePlantedEntity treePlanted) {
         getTreePlanted().remove(treePlanted);
         treePlanted.setForest(null);
         return treePlanted;
     }
+
 
     public FireForestEntity addFireForest(FireForestEntity fireForest) {
         getFireForest().add(fireForest);
@@ -196,9 +206,22 @@ public class ForestEntity {
     }
 
     public FireForestEntity removeFireForest(FireForestEntity fireForest) {
-        getFireForest().add(fireForest);
+        getFireForest().remove(fireForest);
         fireForest.setForest(null);
         return fireForest;
+    }
+
+
+    public UnlawfulEntity addUnlawful(UnlawfulEntity unlawfulEntity) {
+        getUnlawful().add(unlawfulEntity);
+        unlawfulEntity.setForest(this);
+        return unlawfulEntity;
+    }
+
+    public UnlawfulEntity removeUnlawful(UnlawfulEntity unlawfulEntity) {
+        getUnlawful().remove(unlawfulEntity);
+        unlawfulEntity.setForest(null);
+        return unlawfulEntity;
     }
 
 
