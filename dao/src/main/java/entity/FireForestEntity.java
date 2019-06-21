@@ -5,6 +5,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import java.util.Date;
+
 @Entity
 @Table(name = "fire")
 public class FireForestEntity {
@@ -13,10 +14,13 @@ public class FireForestEntity {
     private String cause;
     private double numberOfTreeLost;
     private Date date;
+
     @ManyToOne
     @JoinColumn(name = "forest_ID")
     private ForestEntity forest;
-    public FireForestEntity(){}
+
+    public FireForestEntity() {
+    }
 
     public String getId() {
         return id;

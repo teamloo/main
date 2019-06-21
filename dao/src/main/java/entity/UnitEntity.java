@@ -14,17 +14,37 @@ public class UnitEntity {
     private String name;
     private String organizationForm; // hình thức tổ chức: chí cho phép 3 loại: hộ gia đình, ban quản lý rừng, Công ty theo hợp đồng
     private String contract; // hợp đồng - chí áp dụng cho công ty, nếu không ghi không có;
+
     @OneToMany(mappedBy = "unit")
     private List<DepartmentEntity> departments;
+
+    @OneToMany(mappedBy = "unit")
+    private List<TreePlantedEntity> treePlanted;
+
+    @OneToMany(mappedBy = "unit")
+    private List<ExploitionEntity> exploition;
+
     @ManyToOne
     @JoinColumn(name = "forest_id")
     private ForestEntity forest;
-    @OneToOne(mappedBy = "treeplanted")
-    private TreePlantedEntity treePlanted;
-    @OneToOne(mappedBy = "exploition")
-    private ExploitionEntity exploition;
 
     public UnitEntity() {
+    }
+
+    public List<TreePlantedEntity> getTreePlanted() {
+        return treePlanted;
+    }
+
+    public List<ExploitionEntity> getExploition() {
+        return exploition;
+    }
+
+    public void setTreePlanted(List<TreePlantedEntity> treePlanted) {
+        this.treePlanted = treePlanted;
+    }
+
+    public void setExploition(List<ExploitionEntity> exploition) {
+        this.exploition = exploition;
     }
 
     public String getId() {
@@ -71,21 +91,6 @@ public class UnitEntity {
         this.forest = forest;
     }
 
-    public TreePlantedEntity getTreePlanted() {
-        return treePlanted;
-    }
-
-    public void setTreePlanted(TreePlantedEntity treePlanted) {
-        this.treePlanted = treePlanted;
-    }
-
-    public ExploitionEntity getExploition() {
-        return exploition;
-    }
-
-    public void setExploition(ExploitionEntity exploition) {
-        this.exploition = exploition;
-    }
 
     public void setDepartments(List<DepartmentEntity> departments) {
         this.departments = departments;
@@ -110,5 +115,31 @@ public class UnitEntity {
         department.setUnit(null);
         return department;
     }
+
+
+    public TreePlantedEntity addTreePlanted(TreePlantedEntity treePlantedEntity) {
+        getTreePlanted().add(treePlantedEntity);
+        treePlantedEntity.setUnit(this);
+        return treePlantedEntity;
+    }
+
+    public TreePlantedEntity removeTreePlanted(TreePlantedEntity treePlantedEntity) {
+        getTreePlanted().remove(treePlantedEntity);
+        treePlantedEntity.setUnit(null);
+        return treePlantedEntity;
+    }
+
+
+    public ExploitionEntity addExplotion(ExploitionEntity exploitionEntity) {
+        getExploition().add(exploitionEntity);
+        exploitionEntity.setUnit(this);
+        return exploitionEntity;
+    }
+    public ExploitionEntity remove(ExploitionEntity exploitionEntity){
+        getExploition().remove(exploitionEntity);
+        exploitionEntity.setUnit(null);
+        return exploitionEntity;
+    }
+
 
 }

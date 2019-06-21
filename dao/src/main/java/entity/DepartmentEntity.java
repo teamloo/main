@@ -7,19 +7,18 @@ import javax.persistence.*;
 @Table(name = "department")
 @NamedQuery(name = "Department.findAll", query = "SELECT e FROM Department e")
 public class DepartmentEntity {
+
     @Id
     @Column(name = "department_id")
     private String id;
-
 
     private String name;
     private String position;
     private String salary;
     private String phoneNumber;
-    private UnitEntity unit; // cán bộ thuộc đơn vị nào đó
+
     @ManyToOne
-    @JoinColumn(name = "unit_id")
-    private UnitEntity entity;
+    private UnitEntity unit;
 
     public DepartmentEntity() {
     }
@@ -72,12 +71,5 @@ public class DepartmentEntity {
         this.unit = unit;
     }
 
-    public UnitEntity getEntity() {
-        return entity;
-    }
-
-    public void setEntity(UnitEntity entity) {
-        this.entity = entity;
-    }
 
 }

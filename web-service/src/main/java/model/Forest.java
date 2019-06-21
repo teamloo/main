@@ -3,7 +3,7 @@ package model;
 import java.util.Date;
 
 public class Forest {
-    private Long id;
+    private String id;
     private String name;
     private Double areenErea;
     private String address;
@@ -12,7 +12,7 @@ public class Forest {
     private String functionForest;
     private String lifeTime;
 
-    public Forest(Long id, String name, double areenErea, String address, String typeOfTrees, int totalNumberOfTree, String functionForest, String lifeTime, Date timeadded) {
+    public Forest(String id, String name, double areenErea, String address, String typeOfTrees, int totalNumberOfTree, String functionForest, String lifeTime, Date timeadded) {
         this.id = id;
         this.name = name;
         this.areenErea = areenErea;
@@ -62,7 +62,7 @@ public class Forest {
         this.timeadded = timeadded;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 

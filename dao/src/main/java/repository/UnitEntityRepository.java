@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface UnitEntityRepository extends JpaRepository<DepartmentEntity, Long> {
+public interface UnitEntityRepository extends JpaRepository<UnitEntity, Long> {
     public List<DepartmentEntity> findAllByNameContaining(String unitName);
 }

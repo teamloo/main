@@ -4,14 +4,15 @@ import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
-
 @Entity
 @Table(name = "Forest")
 @NamedQuery(name = "Forest.findAll", query = "SELECT t FROM Forest t")
 public class ForestEntity {
+
     @Id
     @Column(name = "forest_id")
     private String id;
+
     private String name;
     private Double areenErea;
     private String address;
@@ -19,18 +20,38 @@ public class ForestEntity {
     private Integer totalNumberOfTree;
     private String functionForest;
     private String lifeTime;
+
     @Temporal(TemporalType.TIMESTAMP)
     private Date timeadded;
 
-    @ManyToOne
-    @JoinColumn(name = "unit_id")
+    @OneToMany(mappedBy = "forest")
     private List<UnitEntity> unit;
-    @ManyToOne
-    @JoinColumn(name = "exploition_id")
+
+    @OneToMany(mappedBy = "forest")
     private List<ExploitionEntity> exploition;
-    @ManyToOne
-    @JoinColumn(name = "unit_id")
+
+    @OneToMany(mappedBy = "forest")
     private List<TreePlantedEntity> treePlanted;
+
+
+    @OneToMany(mappedBy = "forest")
+    private List<FireForestEntity> fireForest;
+
+    @OneToMany(mappedBy = "forest")
+    private List<UnlawfulEntity> unlawful;
+
+    public void setUnlawful(List<UnlawfulEntity> unlawful) {
+        this.unlawful = unlawful;
+    }
+
+    public List<UnlawfulEntity> getUnlawful() {
+        return unlawful;
+    }
+
+    public void setFireForest(List<FireForestEntity> fireForest) {
+        this.fireForest = fireForest;
+    }
+
 
     public String getId() {
         return id;
@@ -112,6 +133,10 @@ public class ForestEntity {
         return timeadded;
     }
 
+    public List<FireForestEntity> getFireForest() {
+        return fireForest;
+    }
+
     public List<UnitEntity> getUnit() {
         return unit;
     }
@@ -154,21 +179,50 @@ public class ForestEntity {
         return exploition;
     }
 
-    public ExploitionEntity removeDepartment(ExploitionEntity exploition) {
+    public ExploitionEntity removeExploition(ExploitionEntity exploition) {
         getExploition().remove(exploition);
         exploition.setForest(null);
         return exploition;
     }
 
-    public TreePlantedEntity addExploition(TreePlantedEntity treePlanted) {
+
+    public TreePlantedEntity addTreePlanted(TreePlantedEntity treePlanted) {
         getTreePlanted().add(treePlanted);
         treePlanted.setForest(this);
         return treePlanted;
     }
 
-    public TreePlantedEntity removeDepartment(TreePlantedEntity treePlanted) {
-        getExploition().remove(treePlanted);
+    public TreePlantedEntity removeTreePlanted(TreePlantedEntity treePlanted) {
+        getTreePlanted().remove(treePlanted);
         treePlanted.setForest(null);
         return treePlanted;
     }
+
+
+    public FireForestEntity addFireForest(FireForestEntity fireForest) {
+        getFireForest().add(fireForest);
+        fireForest.setForest(this);
+        return fireForest;
+    }
+
+    public FireForestEntity removeFireForest(FireForestEntity fireForest) {
+        getFireForest().remove(fireForest);
+        fireForest.setForest(null);
+        return fireForest;
+    }
+
+
+    public UnlawfulEntity addUnlawful(UnlawfulEntity unlawfulEntity) {
+        getUnlawful().add(unlawfulEntity);
+        unlawfulEntity.setForest(this);
+        return unlawfulEntity;
+    }
+
+    public UnlawfulEntity removeUnlawful(UnlawfulEntity unlawfulEntity) {
+        getUnlawful().remove(unlawfulEntity);
+        unlawfulEntity.setForest(null);
+        return unlawfulEntity;
+    }
+
+
 }
