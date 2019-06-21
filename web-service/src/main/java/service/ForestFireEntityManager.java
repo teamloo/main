@@ -7,5 +7,7 @@ public interface ForestFireEntityManager {
 
     void saveForestFire(ForestFireEntity forestFire);
 
-    void removeForestFire(ForestFireEntity forestFire);
+    void removeForestFire(String id);
+
+    ForestFireEntity findByid(String id);
 }

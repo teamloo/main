@@ -17,10 +17,14 @@ public class ForestFireEntityManagerImpl  implements ForestFireEntityManager{
         forestFireEntityRepository.save(forestFireEntity);
     }
 
-
+    @Override
+    public void removeForestFire(String id) {
+        forestFireEntityRepository.delete(id);
+    }
 
     @Override
-    public void removeForestFire(ForestFireEntity forestFireEntity) {
-        forestFireEntityRepository.delete(forestFireEntity);
+    public ForestFireEntity findByid(String id) {
+        return forestFireEntityRepository.findById(id);
     }
+
 }

@@ -17,10 +17,15 @@ public class ForestEntityManagerImpl implements ForestEntityManager {
         forestEntityRepository.save(forest);
     }
 
-
+    @Override
+    public void removeForest(String id) {
+        forestEntityRepository.delete(id);
+    }
 
     @Override
-    public void removeForest(ForestEntity forest) {
-        forestEntityRepository.delete(forest);
+    public ForestEntity findById(String id) {
+        return forestEntityRepository.findById(id);
     }
+
+
 }

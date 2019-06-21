@@ -8,5 +8,5 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import java.util.List;
 
 public interface TreePlantedEntityRepository extends PagingAndSortingRepository<TreePlantedEntity, String> {
-
+        TreePlantedEntity findById(String id);
 }

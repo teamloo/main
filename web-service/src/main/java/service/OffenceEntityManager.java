@@ -7,5 +7,7 @@ public interface OffenceEntityManager {
 
     void saveOffence(OffenceEntity offenceEntity);
 
-    void removeOffence(OffenceEntity offenceEntity);
+    void removeOffence(String id);
+
+    OffenceEntity findById(String id);
 }

@@ -7,5 +7,7 @@ public interface ForestEntityManager {
 
     void saveForest(ForestEntity forest);
 
-    void removeForest(ForestEntity forest);
+    void removeForest(String id);
+
+    ForestEntity findById(String id);
 }

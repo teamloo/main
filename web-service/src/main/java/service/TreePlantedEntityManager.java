@@ -10,5 +10,7 @@ public interface TreePlantedEntityManager {
 
     void saveTreePlanted(TreePlantedEntity treePlantedEntity);
 
-    void deleteTreePlanted(TreePlantedEntity treePlantedEntity);
+    void deleteTreePlanted(String id);
+
+    TreePlantedEntity findById(String id);
 }

@@ -17,10 +17,14 @@ public class OffenceEntityManagerImpl implements OffenceEntityManager {
         offenceEntityRepository.save(offence);
     }
 
-
+    @Override
+    public void removeOffence(String id) {
+        offenceEntityRepository.delete(id);
+    }
 
     @Override
-    public void removeOffence(OffenceEntity offence) {
-        offenceEntityRepository.delete(offence);
+    public OffenceEntity findById(String id) {
+        return offenceEntityRepository.findById(id);
     }
+
 }

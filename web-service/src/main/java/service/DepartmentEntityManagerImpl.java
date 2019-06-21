@@ -20,9 +20,9 @@ public class DepartmentEntityManagerImpl implements DepartmentEntityManager {
 
 
     @Override
-    public void removeDepartment(DepartmentEntity department) {
-        departmentEntityRepository.delete(department);
-    }
+    public void removeDepartment(String id) {
+        departmentEntityRepository.delete(id);
+
 
     @Override
     public DepartmentEntity findById(String id) {

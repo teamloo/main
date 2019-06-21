@@ -18,11 +18,14 @@ public class TreePlantedManagerImpl implements TreePlantedEntityManager{
     }
 
     @Override
-    public void deleteTreePlanted(TreePlantedEntity treePlantedEntity) {
-        plantedEntityRepository.delete(treePlantedEntity);
+    public void deleteTreePlanted(String id) {
+        plantedEntityRepository.delete(id);
     }
 
-
+    @Override
+    public TreePlantedEntity findById(String id) {
+        return plantedEntityRepository.findById(id);
+    }
 
 
 }
