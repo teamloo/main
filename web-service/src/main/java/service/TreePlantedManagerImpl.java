@@ -8,7 +8,7 @@ import java.util.List;
 
 public class TreePlantedManagerImpl implements TreePlantedEntityManager{
     @Override
-    public List<TreePlantedEntity> getAllTreePlanted() {
+    public Iterable<TreePlantedEntity> getAllTreePlanted() {
         return addEntity.findAll();
     }
 

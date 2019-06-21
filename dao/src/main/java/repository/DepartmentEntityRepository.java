@@ -3,11 +3,12 @@ package repository;
 import entity.DepartmentEntity;
 import entity.UnitEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
 import java.util.List;
 
-public interface DepartmentEntityRepository extends JpaRepository<DepartmentEntity, Long> {
-    public DepartmentEntity findById(String departmentId);
+public interface DepartmentEntityRepository extends PagingAndSortingRepository<DepartmentEntity, Long> {
+    DepartmentEntity findById(String departmentId);
 
-    public List<DepartmentEntity> findAllByUnit(UnitEntity unitEntity);
+     List<DepartmentEntity> findAllByUnit(UnitEntity unitEntity);
 }
