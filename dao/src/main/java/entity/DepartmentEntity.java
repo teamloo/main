@@ -40,11 +40,11 @@ public class DepartmentEntity {
     }
 
     public String getPosition() {
-        return Position;
+        return position;
     }
 
     public void setPosition(String position) {
-        Position = position;
+        this.position = position;
     }
 
     public String getSalary() {
