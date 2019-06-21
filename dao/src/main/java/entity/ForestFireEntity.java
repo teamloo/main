@@ -8,7 +8,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "fire")
-public class FireForestEntity {
+public class ForestFireEntity {
     private String id;
     private double area;
     private String cause;
@@ -19,7 +19,7 @@ public class FireForestEntity {
     @JoinColumn(name = "forest_ID")
     private ForestEntity forest;
 
-    public FireForestEntity() {
+    public ForestFireEntity() {
     }
 
     public String getId() {

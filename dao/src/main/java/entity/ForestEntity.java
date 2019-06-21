@@ -35,7 +35,7 @@ public class ForestEntity {
 
 
     @OneToMany(mappedBy = "forest")
-    private List<FireForestEntity> fireForest;
+    private List<ForestFireEntity> fireForest;
 
     @OneToMany(mappedBy = "forest")
     private List<UnlawfulEntity> unlawful;
@@ -48,7 +48,7 @@ public class ForestEntity {
         return unlawful;
     }
 
-    public void setFireForest(List<FireForestEntity> fireForest) {
+    public void setFireForest(List<ForestFireEntity> fireForest) {
         this.fireForest = fireForest;
     }
 
@@ -133,7 +133,7 @@ public class ForestEntity {
         return timeadded;
     }
 
-    public List<FireForestEntity> getFireForest() {
+    public List<ForestFireEntity> getFireForest() {
         return fireForest;
     }
 
@@ -199,13 +199,13 @@ public class ForestEntity {
     }
 
 
-    public FireForestEntity addFireForest(FireForestEntity fireForest) {
+    public ForestFireEntity addFireForest(ForestFireEntity fireForest) {
         getFireForest().add(fireForest);
         fireForest.setForest(this);
         return fireForest;
     }
 
-    public FireForestEntity removeFireForest(FireForestEntity fireForest) {
+    public ForestFireEntity removeFireForest(ForestFireEntity fireForest) {
         getFireForest().remove(fireForest);
         fireForest.setForest(null);
         return fireForest;

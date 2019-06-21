@@ -4,16 +4,25 @@ import entity.TreePlantedEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import repository.TreePlantedEntityRepository;
 
-import java.util.List;
-
 public class TreePlantedManagerImpl implements TreePlantedEntityManager{
+    @Autowired
+    TreePlantedEntityRepository plantedEntityRepository;
     @Override
     public Iterable<TreePlantedEntity> getAllTreePlanted() {
-        return addEntity.findAll();
+        return plantedEntityRepository.findAll();
     }
 
-    @Autowired
-    TreePlantedEntityRepository addEntity;
+    @Override
+    public void saveTreePlanted(TreePlantedEntity treePlantedEntity) {
+        plantedEntityRepository.save(treePlantedEntity);
+    }
+
+    @Override
+    public void deleteTreePlanted(TreePlantedEntity treePlantedEntity) {
+        plantedEntityRepository.delete(treePlantedEntity);
+    }
+
+
 
 
 }

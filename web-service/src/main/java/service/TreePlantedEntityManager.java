@@ -6,5 +6,9 @@ import model.TreePlanted;
 import java.util.List;
 
 public interface TreePlantedEntityManager {
-    public Iterable<TreePlantedEntity> getAllTreePlanted();
+    Iterable<TreePlantedEntity> getAllTreePlanted();
+
+    void saveTreePlanted(TreePlantedEntity treePlantedEntity);
+
+    void deleteTreePlanted(TreePlantedEntity treePlantedEntity);
 }
