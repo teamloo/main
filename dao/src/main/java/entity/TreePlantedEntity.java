@@ -20,8 +20,8 @@ public class TreePlantedEntity implements Serializable {
     private Date date;
     private int treeIncrease;
     private double area;
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "unit_id", referencedColumnName = "id")
+
+    @ManyToOne
     private UnitEntity unit;
 
     public TreePlantedEntity() {

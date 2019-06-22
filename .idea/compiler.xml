@@ -6,17 +6,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="web" />
-        <module name="configure" />
         <module name="common" />
-        <module name="forest-service" />
-        <module name="webservice" />
-        <module name="dao" />
+        <module name="configure" />
         <module name="cpnfigure" />
+        <module name="dao" />
+        <module name="forest-service" />
         <module name="forestservice" />
+        <module name="web" />
         <module name="web-service" />
+        <module name="webservice" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
+      <module name="configure" target="1.8" />
+      <module name="dao" target="1.8" />
+      <module name="forest-service" target="1.8" />
+      <module name="projectTeamLo" target="1.8" />
+      <module name="web" target="1.8" />
+      <module name="web-service" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
