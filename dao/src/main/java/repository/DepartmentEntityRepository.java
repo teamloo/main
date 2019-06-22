@@ -8,7 +8,8 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import java.util.List;
 
 public interface DepartmentEntityRepository extends PagingAndSortingRepository<DepartmentEntity, String> {
-    DepartmentEntity findById(String departmentId);
 
-     List<DepartmentEntity> findAllByUnit(UnitEntity unitEntity);
+//    DepartmentEntity findById(String id);
+
+    List<DepartmentEntity> findAllByUnit(UnitEntity unitEntity);
 }

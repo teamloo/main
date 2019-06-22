@@ -2,14 +2,18 @@ package service;
 
 import entity.ForestFireEntity;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import repository.ForestFireEntityRepository;
+
+import java.util.Optional;
 
 public class ForestFireEntityManagerImpl  implements ForestFireEntityManager{
     @Autowired
     ForestFireEntityRepository forestFireEntityRepository;
     @Override
-    public Iterable<ForestFireEntity> getAllForestFire() {
-        return forestFireEntityRepository.findAll();
+    public Page<ForestFireEntity> getAllForestFire(Pageable pageable) {
+        return forestFireEntityRepository.findAll(pageable);
     }
 
     @Override
@@ -19,11 +23,11 @@ public class ForestFireEntityManagerImpl  implements ForestFireEntityManager{
 
     @Override
     public void removeForestFire(String id) {
-        forestFireEntityRepository.delete(id);
+        forestFireEntityRepository.deleteById(id);
     }
 
     @Override
-    public ForestFireEntity findByid(String id) {
+    public Optional<ForestFireEntity> findByid(String id) {
         return forestFireEntityRepository.findById(id);
     }
 

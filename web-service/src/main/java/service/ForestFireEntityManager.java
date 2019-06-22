@@ -1,13 +1,17 @@
 package service;
 
 import entity.ForestFireEntity;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
+import java.util.Optional;
 
 public interface ForestFireEntityManager {
-    Iterable<ForestFireEntity> getAllForestFire();
+    Page<ForestFireEntity> getAllForestFire(Pageable pageable);
 
     void saveForestFire(ForestFireEntity forestFire);
 
     void removeForestFire(String id);
 
-    ForestFireEntity findByid(String id);
+    Optional<ForestFireEntity> findByid(String id);
 }
