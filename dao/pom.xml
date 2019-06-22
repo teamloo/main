@@ -28,6 +28,14 @@
             <artifactId>hibernate-core</artifactId>
             <version>5.3.0.Final</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.9.5</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
     <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
 
