@@ -8,5 +8,7 @@ public interface DepartmentEntityManager {
     void saveDepartment(DepartmentEntity departmentEntity);
 
     void removeDepartment(DepartmentEntity departmentEntity);
+
+    DepartmentEntity findById(String id);
 }
 
