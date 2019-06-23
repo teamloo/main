@@ -40,6 +40,9 @@ public class UnlawfulEntity {
         this.areaDamaged = areaDamaged;
     }
 
+    public UnlawfulEntity() {
+    }
+
     public void setId(String id) {
         this.id = id;
     }

@@ -27,7 +27,7 @@ public class ForestFireEntityManagerImpl  implements ForestFireEntityManager{
     }
 
     @Override
-    public Optional<ForestFireEntity> findByid(String id) {
+    public Optional<ForestFireEntity> findById(String id) {
         return forestFireEntityRepository.findById(id);
     }
 
