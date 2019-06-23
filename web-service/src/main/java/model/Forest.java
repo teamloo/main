@@ -26,7 +26,7 @@ public class Forest {
 
     private Date timeadded;
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

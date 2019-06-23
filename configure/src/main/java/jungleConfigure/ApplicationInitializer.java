@@ -1,5 +1,6 @@
-package cms;
+package jungleConfigure;
 
+import jungleConfigure.ApplicationConfig;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
@@ -23,6 +24,7 @@ public class ApplicationInitializer extends AbstractAnnotationConfigDispatcherSe
     protected String[] getServletMappings() {
         return new String[]{"/"};
     }
+    @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
         FilterRegistration.Dynamic filterRegistration = servletContext.addFilter("characterEncodingFilter", new CharacterEncodingFilter());
         filterRegistration.setInitParameter("encoding", "UTF-8");
