@@ -43,7 +43,7 @@ public class DepartmentEntityController {
         return modelAndView;
     }
 
-    @GetMapping("/editDepartmentEntity/{id}")
+    @GetMapping("/departmentEntity/edit/{id}")
     public ModelAndView showEditForm(@PathVariable String id) {
         Optional<DepartmentEntity> departmentEntity = departmentEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
@@ -53,7 +53,7 @@ public class DepartmentEntityController {
     }
 
 
-    @PostMapping("/editDepartmentEntity")
+    @PostMapping("/departmentEntity/edit")
     public ModelAndView edit(@ModelAttribute("departmentEntity") DepartmentEntity departmentEntity) {
         departmentEntityManager.saveDepartment(departmentEntity);
         ModelAndView modelAndView = new ModelAndView("");
@@ -62,7 +62,7 @@ public class DepartmentEntityController {
         return modelAndView;
     }
 
-    @GetMapping("/deleteDepartmentEntity/{id}")
+    @GetMapping("/departmentEntity/delete/{id}")
     public ModelAndView showDeleteForm(@PathVariable String id) {
 
         Optional<DepartmentEntity> departmentEntity = departmentEntityManager.findById(id);
@@ -71,7 +71,7 @@ public class DepartmentEntityController {
         return modelAndView;
     }
 
-    @PostMapping("/deleteDepartmentEntity")
+    @PostMapping("/departmentEntity/delete")
     public ModelAndView delete(@ModelAttribute("departmentEntity") DepartmentEntity departmentEntity) {
         ModelAndView modelAndView = new ModelAndView("");
         departmentEntityManager.removeDepartment(departmentEntity.getId());
@@ -79,7 +79,7 @@ public class DepartmentEntityController {
         return modelAndView;
     }
 
-    @GetMapping("/viewDepartmentEntity/{id}")
+    @GetMapping("/departmentEntity/view/{id}")
     public ModelAndView show(@PathVariable String id) {
         Optional<DepartmentEntity> departmentEntity = departmentEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");

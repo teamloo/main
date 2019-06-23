@@ -2,11 +2,14 @@ package controller;
 
 import entity.ForestEntity;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import service.ForestEntityManager;
+
+import java.util.Optional;
 
 @Controller
 public class ForestEntityController {
@@ -22,65 +25,64 @@ public class ForestEntityController {
     }
 
 
-    @PostMapping("/exploitionEntity/create")
-    public ModelAndView create(@ModelAttribute("exploitionEntity") ExploitionEntity exploitionEntity) {
-        exploiEntityManager.saveExploition(exploitionEntity);
+    @PostMapping("/forestEntity/create")
+    public ModelAndView create(@ModelAttribute("forestEntity") ForestEntity forestEntity) {
+        forestEntityManager.saveForest(forestEntity);
         ModelAndView modelAndView = new ModelAndView("");
-        modelAndView.addObject("exploitionEntity", exploitionEntity);
+        modelAndView.addObject("forestEntity", forestEntity);
         modelAndView.addObject("message","success");
         return modelAndView;
     }
 
-    @RequestMapping(value = "/exploitionEntity")
+    @RequestMapping(value = "/forestEntity")
     public ModelAndView list(Pageable pageable) {
-        Page<ExploitionEntity> list = exploiEntityManager.getAllExploition(pageable);
+        Page<ForestEntity> list = forestEntityManager.getAllForest(pageable);
         ModelAndView modelAndView = new ModelAndView("");
         modelAndView.addObject("list", list);
         return modelAndView;
     }
 
-    @GetMapping("/editExploitionEntity/{id}")
+    @GetMapping("/exploitionEntity/edit/{id}")
     public ModelAndView showEditForm(@PathVariable String id) {
-        Optional<ExploitionEntity> exploitionEntity = exploiEntityManager.findById(id);
+        Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
 
-        modelAndView.addObject("exploitionEntity", exploitionEntity);
+        modelAndView.addObject("forestEntity", forestEntity);
         return modelAndView;
     }
 
 
-    @PostMapping("/editExploitionEntity")
-    public ModelAndView edit(@ModelAttribute("exploitionEntity") ExploitionEntity exploitionEntity) {
-        exploiEntityManager.saveExploition(exploitionEntity);
+    @PostMapping("/exploitionEntity/edit")
+    public ModelAndView edit(@ModelAttribute("forestEntity") ForestEntity forestEntity) {
+        forestEntityManager.saveForest(forestEntity);
         ModelAndView modelAndView = new ModelAndView("");
-        modelAndView.addObject("exploitionEntity",exploitionEntity);
+        modelAndView.addObject("forestEntity",forestEntity);
         modelAndView.addObject("message","Success");
         return modelAndView;
     }
 
-    @GetMapping("/deleteExploitionEntity/{id}")
+    @GetMapping("/exploitionEntity/delete/{id}")
     public ModelAndView showDeleteForm(@PathVariable String id) {
 
-        Optional<ExploitionEntity> exploitionEntity = exploiEntityManager.findById(id);
+        Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
-        modelAndView.addObject("exploitionEntity", exploitionEntity);
+        modelAndView.addObject("forestEntity", forestEntity);
         return modelAndView;
     }
 
-    @PostMapping("/deleteExploitionEntity")
-    public ModelAndView delete(@ModelAttribute("exploitionEntity") ExploitionEntity exploitionEntity) {
+    @PostMapping("/exploitionEntity/delete")
+    public ModelAndView delete(@ModelAttribute("forestEntity") ForestEntity forestEntity) {
         ModelAndView modelAndView = new ModelAndView("");
-        exploiEntityManager.removeExploition(exploitionEntity.getId());
+        forestEntityManager.removeForest(forestEntity.getId());
         modelAndView.addObject("message", "success");
         return modelAndView;
     }
 
-    @GetMapping("/viewExploitionEntity/{id}")
+    @GetMapping("/exploitionEntity//view/{id}")
     public ModelAndView show(@PathVariable String id) {
-        Optional<ExploitionEntity> exploitionEntity = exploiEntityManager.findById(id);
+        Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
-        modelAndView.addObject("exploitionEntity", exploitionEntity);
-
+        modelAndView.addObject("forestEntity", forestEntity);
         return modelAndView;
     }
 }
