@@ -17,15 +17,6 @@
         <module name="webservice" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="common" target="1.8" />
-      <module name="configure" target="1.8" />
-      <module name="dao" target="1.8" />
-      <module name="forest-service" target="1.8" />
-      <module name="projectTeamLo" target="1.8" />
-      <module name="web" target="1.8" />
-      <module name="web-service" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

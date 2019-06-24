@@ -9,4 +9,5 @@ import java.util.List;
 
 public interface UnitEntityRepository extends PagingAndSortingRepository<UnitEntity, String> {
     List<DepartmentEntity> findAllByNameContaining(String unitName);
+//    UnitEntity findById(String id);
 }

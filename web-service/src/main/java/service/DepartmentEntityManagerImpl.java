@@ -2,15 +2,19 @@ package service;
 
 import entity.DepartmentEntity;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import repository.DepartmentEntityRepository;
+
+import java.util.Optional;
 
 public class DepartmentEntityManagerImpl implements DepartmentEntityManager {
     @Autowired
     DepartmentEntityRepository departmentEntityRepository;
 
     @Override
-    public Iterable<DepartmentEntity> getAllDepartment() {
-        return departmentEntityRepository.findAll();
+    public Page<DepartmentEntity> getAllDepartment(Pageable pageable) {
+        return departmentEntityRepository.findAll(pageable);
     }
 
     @Override
@@ -20,12 +24,12 @@ public class DepartmentEntityManagerImpl implements DepartmentEntityManager {
 
 
     @Override
-    public void removeDepartment(DepartmentEntity department) {
-        departmentEntityRepository.delete(department);
+    public void removeDepartment(String id) {
+        departmentEntityRepository.deleteById(id);
     }
 
     @Override
-    public DepartmentEntity findById(String id) {
+    public Optional<DepartmentEntity> findById(String id) {
         return departmentEntityRepository.findById(id);
     }
 }
