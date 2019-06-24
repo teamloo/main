@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e26bde4c-dc1b-4923-816c-cf5309affc00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/controller/UnitEntityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/controller/UnitEntityController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -110,7 +109,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/UnitEntityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
+            <state relative-caret-position="278">
               <caret line="80" column="40" lean-forward="true" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -193,6 +192,7 @@
       <find>ForestFire</find>
       <find>Exploition</find>
       <find>Forest</find>
+      <find>OffenceEntity</find>
     </findStrings>
     <replaceStrings>
       <replace>Department</replace>
@@ -200,6 +200,7 @@
       <replace>ForestFire</replace>
       <replace>Forest</replace>
       <replace>Offence</replace>
+      <replace>UnitEntity</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\vv\TOOL_liemmm\code-james\lab\projectTeamLo\configure\src</dir>
@@ -546,7 +547,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561345784192" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561347907686" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -601,7 +602,7 @@
       <workItem from="1561208928502" duration="153000" />
       <workItem from="1561211315980" duration="1577000" />
       <workItem from="1561260908684" duration="4444000" />
-      <workItem from="1561344946461" duration="1081000" />
+      <workItem from="1561344946461" duration="1725000" />
     </task>
     <task id="LOCAL-00001" summary="6/7/2019 Lô commit">
       <created>1559973162142</created>
@@ -701,17 +702,23 @@
       <option name="project" value="LOCAL" />
       <updated>1561301907233</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Sang push controller">
+      <created>1561346058582</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1561346058582</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48973000" />
+    <option name="totallyTimeSpent" value="49617000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24357034" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24357034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -730,7 +737,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.48562783" weight="0.049099836" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51437217" side_tool="true" visible="true" weight="0.049099836" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="11" sideWeight="0.51437217" side_tool="true" visible="true" weight="0.31260228" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -753,7 +760,8 @@
     <MESSAGE value="17/06 Sang commit" />
     <MESSAGE value="18/06 Sang commit" />
     <MESSAGE value="Merge branch 'loo' of github.com:teamloo/main into loo&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'loo' of github.com:teamloo/main into loo&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="Sang push controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sang push controller" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/DepartmentEntity.java">
@@ -1181,7 +1189,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/UnitEntityController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
+        <state relative-caret-position="278">
           <caret line="80" column="40" lean-forward="true" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
