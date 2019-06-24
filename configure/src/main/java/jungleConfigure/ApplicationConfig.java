@@ -1,22 +1,16 @@
-package cms;
+package jungleConfigure;
 
-
-import cms.formatter.CategoryFormatter;
-import cms.repository.BlogRepository;
-import cms.service.BlogService;
-import cms.service.BlogServiceImpl;
-import cms.service.CategoryService;
-import cms.service.CategoryServiceImpl;
+import entity.DepartmentEntity;
+import model.ForestFire;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.data.web.config.EnableSpringDataWebSupport;
-import org.springframework.format.FormatterRegistry;
+import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
@@ -31,6 +25,8 @@ import org.thymeleaf.spring4.SpringTemplateEngine;
 import org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
+import repository.DepartmentEntityRepository;
+import service.*;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -40,9 +36,7 @@ import java.util.Properties;
 @Configuration
 @EnableWebMvc
 @EnableTransactionManagement
-@EnableJpaRepositories("cms.repository")
-@ComponentScan("cms")
-@EnableSpringDataWebSupport
+@ComponentScan("jungleConfigure")
 public class ApplicationConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
 
     private ApplicationContext applicationContext;
@@ -51,17 +45,35 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         this.applicationContext = applicationContext;
     }
+
     @Bean
-    public CategoryService CategoryService(){
-        return new CategoryServiceImpl();
+    public DepartmentEntityManager departmentEntityManager(){
+        return new DepartmentEntityManagerImpl();
+    }
+
+
+    @Bean
+    public ExploitionEntityManager exploitionEntityManager(){
+        return new ExploitionEntityManagerImpl();
+    }
+
+    @Bean
+    public ForestEntityManager forestEntityManager(){
+        return new ForestEntityManagerImpl();
     }
     @Bean
-    public BlogService BlogService(){
-        return new BlogServiceImpl();
+    public ForestFireEntityManager forestFireEntityManager(){
+        return new ForestFireEntityManagerImpl();
     }
-    @Override
-    public void addFormatters(FormatterRegistry registry) {
-        registry.addFormatter(new CategoryFormatter(applicationContext.getBean(CategoryService.class)));
+
+    @Bean
+    public OffenceEntityManager offenceEntityManager(){
+        return new OffenceEntityManagerImpl();
+    }
+
+    @Bean
+    public TreePlantedEntityManager treePlantedEntityManager(){
+        return new TreePlantedManagerImpl();
     }
     //Thymeleaf Configuration
     @Bean
@@ -70,8 +82,8 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
         templateResolver.setApplicationContext(applicationContext);
         templateResolver.setPrefix("/WEB-INF/views");
         templateResolver.setSuffix(".html");
-        templateResolver.setTemplateMode(TemplateMode.HTML);
         templateResolver.setCharacterEncoding("UTF-8");
+        templateResolver.setTemplateMode(TemplateMode.HTML);
         return templateResolver;
     }
 
@@ -101,7 +113,7 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
-        em.setPackagesToScan(new String[]{"cms.model"});
+        em.setPackagesToScan(new String[]{"model"});
 
         JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);
@@ -113,12 +125,11 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     public DataSource dataSource(){
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/customers");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/cms");
         dataSource.setUsername( "root" );
         dataSource.setPassword( "123456" );
         return dataSource;
     }
-
 
     @Bean
     public PlatformTransactionManager transactionManager(EntityManagerFactory emf){
@@ -133,27 +144,10 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
         return properties;
     }
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/resource/**").addResourceLocations("/WEB-INF/views/resource/");
-    }
     @Bean
     public MessageSource messageSource() {
         ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
-        messageSource.setBasename("message");
-        messageSource.setDefaultEncoding("UTF-8");
+        messageSource.setBasenames("ValidationMessages");
         return messageSource;
     }
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        LocaleChangeInterceptor interceptor = new LocaleChangeInterceptor();
-        interceptor.setParamName("lang");
-        registry.addInterceptor(interceptor);
-    }
-    @Bean
-    public LocaleResolver localeResolver() {
-        SessionLocaleResolver localeResolver = new SessionLocaleResolver();
-        localeResolver.setDefaultLocale(new Locale("en"));
-        return localeResolver;
-    }
-
 }

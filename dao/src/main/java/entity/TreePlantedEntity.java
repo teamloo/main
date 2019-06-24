@@ -9,10 +9,10 @@ import java.util.UUID;
 @Table(name = "treeplanted")
 @NamedQuery(name = "TreePlanted.findAll", query = "SELECT t FROM TreePlanted t")
 public class TreePlantedEntity implements Serializable {
-    private static final long serialVersionUID = 1L;
+
     @Id
     @JoinColumn(name = "treePlanted_id")
-    private String treePlantedID = UUID.randomUUID().toString();
+    private String id ;
     @ManyToOne
     @JoinColumn(name = "unit_ID")
     private ForestEntity forest;
@@ -27,16 +27,13 @@ public class TreePlantedEntity implements Serializable {
     public TreePlantedEntity() {
     }
 
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
+
+    public String getId() {
+        return id;
     }
 
-    public String getTreePlantedID() {
-        return treePlantedID;
-    }
-
-    public void setTreePlantedID(String treePlantedID) {
-        this.treePlantedID = treePlantedID;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public ForestEntity getForest() {
@@ -83,7 +80,7 @@ public class TreePlantedEntity implements Serializable {
     @Override
     public String toString() {
         return "TreePlantedEntity{" +
-                "treePlantedID='" + treePlantedID + '\'' +
+                "treePlantedID='" + id + '\'' +
                 ", forest='" + forest + '\'' +
                 ", date=" + date +
                 ", treeIncrease=" + treeIncrease +

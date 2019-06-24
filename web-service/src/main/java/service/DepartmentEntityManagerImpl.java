@@ -15,6 +15,7 @@ public class DepartmentEntityManagerImpl implements DepartmentEntityManager {
     @Override
     public Page<DepartmentEntity> getAllDepartment(Pageable pageable) {
         return departmentEntityRepository.findAll(pageable);
+
     }
 
     @Override
