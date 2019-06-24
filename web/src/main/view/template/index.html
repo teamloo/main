@@ -13,12 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="assets/css/Header-Dark.css">
-    <link rel="stylesheet" href="assets/css/Responsive-Form-1.css">
-    <link rel="stylesheet" href="assets/css/Responsive-Form.css">
-    <link rel="stylesheet" href="assets/css/Simple-Vertical-Navigation-Menu-v-10.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/Table-With-Search.css">
 </head>
 
 <body>
@@ -42,7 +37,10 @@
                 <div class="container hero">
                     <div class="row">
                         <div class="col-md-8 offset-md-2">
-                            <h1 class="text-center">Quản lý vi phạm</h1><button class="btn btn-primary" type="button" style="background-color: rgb(32,238,90);"><i class="fa fa-plus-circle"></i>Thêm</button>
+                            <h1 class="text-center">Quản lý vi phạm</h1>
+                           <button class="btn btn-primary"  id="search-btn" type="button" style="background-color: rgb(32,238,90);"><i class="fa fa-plus-circle"></i>Thêm</button>
+                           <button class="btn btn-warning no-result"  id="search-btn" type="button"><i class="fa fa-window-close"></i>Không tìm thây kết quả</button>
+                           
                             <div class="form-group pull-right col-lg-4"><input class="border rounded-circle border-primary shadow-lg search form-control" type="text" placeholder="Tìm kiếm ở đây" style="background-color: rgba(227,213,213,0.8);"></div>
                             <div class="table-responsive table-bordered table table-hover table-bordered results">
                                 <table class="table table-bordered table-hover">
@@ -62,6 +60,22 @@
                                             <td>Lô</td>
                                             <td>Test</td>
                                             <td>Test<br></td>
+                                            <td>2014</td>
+                                            <td><button class="btn btn-success" type="submit" style="margin-left: 5px;"><i class="fa fa-edit" style="font-size: 15px;"></i></button><button class="btn btn-danger" type="submit" style="margin-left: 5px;"><i class="fa fa-trash" style="font-size: 15px;"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>02</td>
+                                            <td>Luận</td>
+                                            <td>Thanh</td>
+                                            <td>Lê<br></td>
+                                            <td>2014</td>
+                                            <td><button class="btn btn-success" type="submit" style="margin-left: 5px;"><i class="fa fa-edit" style="font-size: 15px;"></i></button><button class="btn btn-danger" type="submit" style="margin-left: 5px;"><i class="fa fa-trash" style="font-size: 15px;"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>03</td>
+                                            <td>Luận</td>
+                                            <td>Thanh</td>
+                                            <td>Lô<br></td>
                                             <td>2014</td>
                                             <td><button class="btn btn-success" type="submit" style="margin-left: 5px;"><i class="fa fa-edit" style="font-size: 15px;"></i></button><button class="btn btn-danger" type="submit" style="margin-left: 5px;"><i class="fa fa-trash" style="font-size: 15px;"></i></button></td>
                                         </tr>
