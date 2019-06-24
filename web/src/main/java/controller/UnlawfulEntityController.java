@@ -37,7 +37,7 @@ public class UnlawfulEntityController {
 
     @RequestMapping(value = "/unlawfulEntity")
     public ModelAndView list(Pageable pageable) {
-        Page<UnlawfulEntity> list = unlawfulEntityManager.getAllUnlawfulEntity(pageable);
+        Page<UnlawfulEntity> list = unlawfulEntityManager.getAllUnlawful(pageable);
         ModelAndView modelAndView = new ModelAndView("");
         modelAndView.addObject("list", list);
         return modelAndView;
