@@ -10,7 +10,6 @@
         <module name="configure" />
         <module name="cpnfigure" />
         <module name="dao" />
-        <module name="forest-service" />
         <module name="forestservice" />
         <module name="web" />
         <module name="web-service" />
@@ -28,7 +27,7 @@
       <module name="forestservice" options="-parameters" />
       <module name="projectTeamLo" options="-parameters" />
       <module name="web" options="-parameters" />
-      <module name="web-service" options="-parameters" />
+      <module name="web-service" options="" />
       <module name="webservice" options="-parameters" />
     </option>
   </component>

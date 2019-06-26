@@ -15,5 +15,5 @@ public interface TreePlantedEntityManager {
 
     void deleteTreePlanted(String id);
 
-    Optional<TreePlantedEntity> findById(String id);
+    TreePlantedEntity findById(String id);
 }

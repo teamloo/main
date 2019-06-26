@@ -13,5 +13,5 @@ public interface UnitEntityManager {
 
     void deleteUnit(String id);
 
-    Optional<UnitEntity> findById(String id);
+    UnitEntity findById(String id);
 }

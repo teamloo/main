@@ -13,5 +13,5 @@ public interface ForestFireEntityManager {
 
     void removeForestFire(String id);
 
-    Optional<ForestFireEntity> findById(String id);
+    ForestFireEntity findById(String id);
 }

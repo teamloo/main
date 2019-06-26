@@ -13,5 +13,5 @@ public interface UnlawfulEntityManager {
 
     void deleteUnlawful(String id);
 
-    Optional<UnlawfulEntity> findById(String id);
+    UnlawfulEntity findById(String id);
 }

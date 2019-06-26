@@ -2,9 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e26bde4c-dc1b-4923-816c-cf5309affc00" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/view/template/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/view/template/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/view/template/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/view/template/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/ApplicationConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/DepartmentEntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/DepartmentEntityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/DepartmentEntityManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/DepartmentEntityManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/ExploitionEntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/ExploitionEntityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/ExploitionEntityManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/ExploitionEntityManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/ForestEntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/ForestEntityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/ForestEntityManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/ForestEntityManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/ForestFireEntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/ForestFireEntityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/ForestFireEntityManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/ForestFireEntityManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/OffenceEntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/OffenceEntityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/OffenceEntityManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/OffenceEntityManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/TreePlantedEntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/TreePlantedEntityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/TreePlantedManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/TreePlantedManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/UnlawfulEntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/UnlawfulEntityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/UnlawfulEntityManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/UnlawfulEntityManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,108 +60,107 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/view/template/assets/js/jquery.min.js">
+        <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/ForestFireEntityManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="187">
+              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/ForestFireEntityManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/OffenceEntityManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/OffenceEntityManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/TreePlantedManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/view/template/assets/js/Table-With-Search.js">
+        <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/view/template/create.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="65" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="65" />
+            <state relative-caret-position="192">
+              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
               <folding>
-                <element signature="e#1708#1714#0" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#742#743#0" expanded="true" />
+                <element signature="e#793#794#0" expanded="true" />
+                <element signature="e#862#863#0" expanded="true" />
+                <element signature="e#918#919#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/DepartmentEntityManagerImpl.java">
+        <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/UnlawfulEntityManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
               <folding>
-                <element signature="e#917#918#0" expanded="true" />
-                <element signature="e#979#980#0" expanded="true" />
+                <element signature="e#837#838#0" expanded="true" />
+                <element signature="e#893#894#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web-service/src/main/java/model/ForestFire.java">
+        <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/UnlawfulEntityManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="187">
+              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/view/template/index.html">
+        <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/TreePlantedEntityManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/view/template/assets/css/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="123" column="41" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/view/template/assets/img/tree-icon.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configure/src/main/java/jungleConfigure/ApplicationConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
+            <state relative-caret-position="249">
+              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2331#2332#0" expanded="true" />
-                <element signature="e#2387#2388#0" expanded="true" />
-                <element signature="e#2827#2828#0" expanded="true" />
-                <element signature="e#2878#2879#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configure/src/main/java/jungleConfigure/ApplicationInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -206,8 +223,6 @@
         <option value="$PROJECT_DIR$/web-service/src/main/java/model/Department.java" />
         <option value="$PROJECT_DIR$/web-service/src/main/java/model/Exploition.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/repository/FireForestEntityRepository.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/ApplicationConfig.java" />
-        <option value="$PROJECT_DIR$/web-service/src/main/java/service/DepartmentEntityManager.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/repository/DepartmentEntityRepository.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/repository/ExploitionEntityRepository.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/repository/ForestEntityRepository.java" />
@@ -215,16 +230,6 @@
         <option value="$PROJECT_DIR$/dao/src/main/java/repository/OffenceEntityRepository.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/repository/TreePlantedEntityRepository.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/repository/UnitEntityRepository.java" />
-        <option value="$PROJECT_DIR$/web-service/src/main/java/service/ExploitionEntityManager.java" />
-        <option value="$PROJECT_DIR$/web-service/src/main/java/service/ExploitionEntityManagerImpl.java" />
-        <option value="$PROJECT_DIR$/web-service/src/main/java/service/ForestEntityManager.java" />
-        <option value="$PROJECT_DIR$/web-service/src/main/java/service/ForestEntityManagerImpl.java" />
-        <option value="$PROJECT_DIR$/web-service/src/main/java/service/ForestFireEntityManager.java" />
-        <option value="$PROJECT_DIR$/web-service/src/main/java/service/ForestFireEntityManagerImpl.java" />
-        <option value="$PROJECT_DIR$/web-service/src/main/java/service/OffenceEntityManager.java" />
-        <option value="$PROJECT_DIR$/web-service/src/main/java/service/OffenceEntityManagerImpl.java" />
-        <option value="$PROJECT_DIR$/web-service/src/main/java/service/TreePlantedEntityManager.java" />
-        <option value="$PROJECT_DIR$/web-service/src/main/java/service/TreePlantedManagerImpl.java" />
         <option value="$PROJECT_DIR$/web-service/pom.xml" />
         <option value="$PROJECT_DIR$/configure/pom.xml" />
         <option value="$PROJECT_DIR$/configure/configure/java/ApplicationConfig.java" />
@@ -234,19 +239,31 @@
         <option value="$PROJECT_DIR$/web/src/main/java/controller/OffenceEntityController.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/entity/TreePlantedEntity.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/controller/TreePlantedEntityController.java" />
-        <option value="$PROJECT_DIR$/web-service/src/main/java/service/UnlawfulEntityManager.java" />
-        <option value="$PROJECT_DIR$/web-service/src/main/java/service/UnlawfulEntityManagerImpl.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/repository/UnlawfulEntityRepository.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/controller/UnlawfulEntityController.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/entity/UnlawfulEntity.java" />
         <option value="$PROJECT_DIR$/web-service/src/main/java/model/Unit.java" />
-        <option value="$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManager.java" />
-        <option value="$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManagerImpl.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/controller/UnitEntityController.java" />
         <option value="$PROJECT_DIR$/web/src/main/view/template/assets/css/styles.css" />
         <option value="$PROJECT_DIR$/web/src/main/view/template/index.html" />
         <option value="$PROJECT_DIR$/web/src/main/view/template/create.html" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/web-service/src/main/java/service/DepartmentEntityManagerImpl.java" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/service/DepartmentEntityManager.java" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/service/ExploitionEntityManager.java" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/service/ForestEntityManager.java" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/service/ExploitionEntityManagerImpl.java" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/service/ForestEntityManagerImpl.java" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/service/ForestFireEntityManager.java" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/service/ForestFireEntityManagerImpl.java" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/service/OffenceEntityManager.java" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/service/OffenceEntityManagerImpl.java" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/service/TreePlantedManagerImpl.java" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/service/TreePlantedEntityManager.java" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManagerImpl.java" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManager.java" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/service/UnlawfulEntityManager.java" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/service/UnlawfulEntityManagerImpl.java" />
       </list>
     </option>
   </component>
@@ -592,7 +609,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561555020402" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561555217272" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Xây dựng Website quản lý nhà hàng/New folder/QuanLyNH" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -619,6 +636,80 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.16" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.16" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="web:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_main" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56582" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="web:war" />
+        </option>
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -754,15 +845,21 @@
       <option name="project" value="LOCAL" />
       <updated>1561553517555</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Merge branch 'loo' of github.com:teamloo/main into loo&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;configure/pom.xml&#10;#&#9;web-service/src/main/java/service/UnitEntityManager.java&#10;#&#9;web-service/src/main/java/service/UnitEntityManagerImpl.java&#10;#&#9;web-service/src/main/java/service/UnlawfulEntityManager.java&#10;#&#9;web-service/src/main/java/service/UnlawfulEntityManagerImpl.java">
+      <created>1561555096076</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1561555096076</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50877000" />
+    <option name="totallyTimeSpent" value="51725000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23524962" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -772,6 +869,8 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -780,7 +879,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.48411497" visible="true" weight="0.049099836" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.48411497" weight="0.15384616" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51437217" side_tool="true" weight="0.049099836" />
@@ -810,51 +909,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'loo' of github.com:teamloo/main into loo&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;configure/pom.xml&#10;#&#9;web-service/src/main/java/service/UnitEntityManager.java&#10;#&#9;web-service/src/main/java/service/UnitEntityManagerImpl.java&#10;#&#9;web-service/src/main/java/service/UnlawfulEntityManager.java&#10;#&#9;web-service/src/main/java/service/UnlawfulEntityManagerImpl.java" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/src/main/view/template/assets/css/Header-Dark.css" />
-    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/model/Forest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/view/template/assets/css/Responsive-Form.css" />
-    <entry file="file://$PROJECT_DIR$/web/src/main/view/template/assets/css/Responsive-Form-1.css" />
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/ExploitionEntityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-476">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/DepartmentEntityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="88" column="5" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="88" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/ForestEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
-          <folding>
-            <element signature="e#1302#1303#0" expanded="true" />
-            <element signature="e#1327#1328#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/ForestEntityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="75" column="58" selection-start-line="75" selection-start-column="58" selection-end-line="75" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/ForestFireEntityController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -883,13 +937,6 @@
             <element signature="e#741#742#0" expanded="true" />
             <element signature="e#769#770#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/OffenceEntityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1025,26 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/TreePlantedEntityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="52" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="17" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/TreePlantedManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-service/src/main/java/model/Offence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1056,38 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/UnlawfulEntityManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/UnlawfulEntityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-          <folding>
-            <element signature="e#862#863#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1111,13 +1106,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/view/template/assets/fonts/fa-brands-400.svg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/ApplicationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-70">
-          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/view/template/assets/img/hinh-anh-nen-rung-tuyet-dep-3.jpg">
       <provider selected="true" editor-type-id="images" />
@@ -1194,10 +1182,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/model/ForestFire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/ApplicationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/DepartmentEntityManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        <state relative-caret-position="68">
+          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
           <folding>
             <element signature="e#917#918#0" expanded="true" />
             <element signature="e#979#980#0" expanded="true" />
@@ -1205,10 +1207,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/model/ForestFire.java">
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/DepartmentEntityManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state relative-caret-position="187">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/ExploitionEntityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/ExploitionEntityManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/ForestEntityManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding>
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/ForestEntityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/ForestFireEntityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/ForestFireEntityManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/OffenceEntityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/OffenceEntityManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/TreePlantedManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/TreePlantedEntityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+          <folding>
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/UnlawfulEntityManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding>
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/UnlawfulEntityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
         </state>
       </provider>
     </entry>

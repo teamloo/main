@@ -23,12 +23,12 @@ public class OffenceEntityManagerImpl implements OffenceEntityManager {
 
     @Override
     public void removeOffence(String id) {
-        offenceEntityRepository.deleteById(id);
+        offenceEntityRepository.delete(id);
     }
 
     @Override
-    public Optional<OffenceEntity> findById(String id) {
-        return offenceEntityRepository.findById(id);
+    public OffenceEntity findById(String id) {
+        return offenceEntityRepository.findOne(id);
     }
 
 }
