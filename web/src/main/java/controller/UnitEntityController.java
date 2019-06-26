@@ -44,7 +44,7 @@ public class UnitEntityController {
 
     @GetMapping("/offenceEntity/edit/{id}")
     public ModelAndView showEditForm(@PathVariable String id) {
-        Optional<OffenceEntity> offenceEntity = offenceEntityManager.findById(id);
+        OffenceEntity offenceEntity = offenceEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
 
         modelAndView.addObject("offenceEntity", offenceEntity);
@@ -64,7 +64,7 @@ public class UnitEntityController {
     @GetMapping("/offenceEntity/delete/{id}")
     public ModelAndView showDeleteForm(@PathVariable String id) {
 
-        Optional<OffenceEntity> offenceEntity = offenceEntityManager.findById(id);
+        OffenceEntity offenceEntity = offenceEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
         modelAndView.addObject("offenceEntity", offenceEntity);
         return modelAndView;
@@ -80,7 +80,7 @@ public class UnitEntityController {
 
     @GetMapping("/offenceEntity/view/{id}")
     public ModelAndView show(@PathVariable String id) {
-        Optional<OffenceEntity> offenceEntity = offenceEntityManager.findById(id);
+        OffenceEntity offenceEntity = offenceEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
         modelAndView.addObject("offenceEntity", offenceEntity);
 
