@@ -8,7 +8,7 @@ public class TreePlanted {
     private Date date;
     private int treeIncrease;
     private double area;
-    private Unit unit;
+//    private Unit unit;
     private Department department;
 
     @Override
@@ -19,7 +19,7 @@ public class TreePlanted {
                 ", date=" + date +
                 ", treeIncrease=" + treeIncrease +
                 ", area=" + area +
-                ", unit=" + unit +
+//                ", unit=" + unit +
                 ", department=" + department +
                 '}';
     }
@@ -64,13 +64,13 @@ public class TreePlanted {
         this.area = area;
     }
 
-    public Unit getUnit() {
-        return unit;
-    }
+//    public Unit getUnit() {
+//        return unit;
+//    }
 
-    public void setUnit(Unit unit) {
-        this.unit = unit;
-    }
+//    public void setUnit(Unit unit) {
+//        this.unit = unit;
+//    }
 
     public Department getDepartment() {
         return department;
@@ -83,13 +83,13 @@ public class TreePlanted {
     public TreePlanted() {
     }
 
-    public TreePlanted(String treePlantedID, Forest forest, Date date, int treeIncrease, double area, Unit unit, Department department) {
+    public TreePlanted(String treePlantedID, Forest forest, Date date, int treeIncrease, double area, Department department) {
         this.treePlantedID = treePlantedID;
         this.forest = forest;
         this.date = date;
         this.treeIncrease = treeIncrease;
         this.area = area;
-        this.unit = unit;
+//        this.unit = unit;
         this.department = department;
     }
 }

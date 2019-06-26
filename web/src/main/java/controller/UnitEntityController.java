@@ -1,88 +1,88 @@
 package controller;
 
-import entity.UnitEntity;
+import entity.OffenceEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import service.UnitEntityManager;
+import service.OffenceEntityManager;
 
 import java.util.Optional;
 
 @Controller
 public class UnitEntityController {
     @Autowired
-    UnitEntityManager unitEntityManager;
+    OffenceEntityManager offenceEntityManager;
 
 
-    @GetMapping("/unitEntity/create")
+    @GetMapping("/offenceEntity/create")
     public ModelAndView showCreateForm() {
         ModelAndView modelAndView = new ModelAndView("");
-        modelAndView.addObject("unitEntity",new UnitEntity());
+        modelAndView.addObject("departmentEntity",new OffenceEntity());
         return modelAndView;
     }
 
 
-    @PostMapping("/UnitEntity/create")
-    public ModelAndView create(@ModelAttribute("UnitEntity") UnitEntity unitEntity) {
-        unitEntityManager.saveUnit(unitEntity);
+    @PostMapping("/offenceEntity/create")
+    public ModelAndView create(@ModelAttribute("offenceEntity") OffenceEntity offenceEntity) {
+        offenceEntityManager.saveOffence(offenceEntity);
         ModelAndView modelAndView = new ModelAndView("");
-        modelAndView.addObject("unitEntity", unitEntity);
+        modelAndView.addObject("offenceEntity", offenceEntity);
         modelAndView.addObject("message","success");
         return modelAndView;
     }
 
-    @RequestMapping(value = "/unitEntity")
+    @RequestMapping(value = "/offenceEntity")
     public ModelAndView list(Pageable pageable) {
-        Page<UnitEntity> list = unitEntityManager.getAllUnit(pageable);
+        Page<OffenceEntity> list = offenceEntityManager.getAllOffence(pageable);
         ModelAndView modelAndView = new ModelAndView("");
         modelAndView.addObject("list", list);
         return modelAndView;
     }
 
-    @GetMapping("/unitEntity/edit/{id}")
+    @GetMapping("/offenceEntity/edit/{id}")
     public ModelAndView showEditForm(@PathVariable String id) {
-        Optional<UnitEntity> unitEntity = unitEntityManager.findById(id);
+        Optional<OffenceEntity> offenceEntity = offenceEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
 
-        modelAndView.addObject("unitEntity", unitEntity);
+        modelAndView.addObject("offenceEntity", offenceEntity);
         return modelAndView;
     }
 
 
-    @PostMapping("/unitEntity/edit")
-    public ModelAndView edit(@ModelAttribute("unitEntity") UnitEntity unitEntity) {
-        unitEntityManager.saveUnit(unitEntity);
+    @PostMapping("/offenceEntity/edit")
+    public ModelAndView edit(@ModelAttribute("offenceEntity") OffenceEntity offenceEntity) {
+        offenceEntityManager.saveOffence(offenceEntity);
         ModelAndView modelAndView = new ModelAndView("");
-        modelAndView.addObject("unitEntity",unitEntity);
+        modelAndView.addObject("offenceEntity",offenceEntity);
         modelAndView.addObject("message","Success");
         return modelAndView;
     }
 
-    @GetMapping("/unitEntity/delete/{id}")
+    @GetMapping("/offenceEntity/delete/{id}")
     public ModelAndView showDeleteForm(@PathVariable String id) {
 
-        Optional<UnitEntity> unitEntity = unitEntityManager.findById(id);
+        Optional<OffenceEntity> offenceEntity = offenceEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
-        modelAndView.addObject("unitEntity", unitEntity);
+        modelAndView.addObject("offenceEntity", offenceEntity);
         return modelAndView;
     }
 
-    @PostMapping("/unitEntity/delete")
-    public ModelAndView delete(@ModelAttribute("unitEntity") UnitEntity unitEntity) {
+    @PostMapping("/offenceEntity/delete")
+    public ModelAndView delete(@ModelAttribute("offenceEntity") OffenceEntity offenceEntity) {
         ModelAndView modelAndView = new ModelAndView("");
-        unitEntityManager.deleteUnit(unitEntity.getId());
+        offenceEntityManager.removeOffence(offenceEntity.getId());
         modelAndView.addObject("message", "success");
         return modelAndView;
     }
 
-    @GetMapping("/unitEntity/view/{id}")
+    @GetMapping("/offenceEntity/view/{id}")
     public ModelAndView show(@PathVariable String id) {
-        Optional<UnitEntity> unitEntity = unitEntityManager.findById(id);
+        Optional<OffenceEntity> offenceEntity = offenceEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
-        modelAndView.addObject("unitEntity", unitEntity);
+        modelAndView.addObject("offenceEntity", offenceEntity);
 
         return modelAndView;
     }

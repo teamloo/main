@@ -7,7 +7,7 @@ import org.springframework.data.domain.Pageable;
 import java.util.Optional;
 
 public interface UnlawfulEntityManager {
-    Page<UnlawfulEntity> getAllUnlawfulEntity(Pageable pageable);
+    Page<UnlawfulEntity> getAllUnlawful(Pageable pageable);
 
     void saveUnlawful(UnlawfulEntity unlawfulEntity);
 

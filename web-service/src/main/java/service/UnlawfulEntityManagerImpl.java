@@ -1,31 +1,38 @@
 package service;
 
-import entity.TreePlantedEntity;
+import entity.UnitEntity;
+import entity.UnlawfulEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import repository.UnitEntityRepository;
+import repository.UnlawfullEntityRepository;
 
-public class UnlawfulEntityManagerImpl implements UnlawfulEntityManager{
+import java.util.Optional;
+
+public class UnlawfulEntityManagerImpl implements UnlawfulEntityManager {
+
     @Autowired
-    UnlawfulEntityRepository plantedEntityRepository;
+    UnlawfullEntityRepository unlawfullEntityRepository;
+
     @Override
-    public Page<TreePlantedEntity> getAllTreePlanted(Pageable pageable) {
-        return plantedEntityRepository.findAll(pageable);
+    public Page<UnlawfulEntity> getAllUnlawful(Pageable pageable) {
+        return unlawfullEntityRepository.findAll(pageable);
     }
 
     @Override
-    public void saveTreePlanted(TreePlantedEntity treePlantedEntity) {
-        plantedEntityRepository.save(treePlantedEntity);
+    public void saveUnlawful(UnlawfulEntity unlawfulEntity) {
+        unlawfullEntityRepository.save(unlawfulEntity);
     }
 
     @Override
-    public void deleteTreePlanted(String id) {
-        plantedEntityRepository.deleteById(id);
+    public void deleteUnlawful(String id) {
+        unlawfullEntityRepository.deleteById(id);
     }
 
     @Override
-    public Optional<TreePlantedEntity> findById(String id) {
-        return plantedEntityRepository.findById(id);
+    public Optional<UnlawfulEntity> findById(String id) {
+        return unlawfullEntityRepository.findById(id);
     }
-
 
 }

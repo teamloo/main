@@ -6,18 +6,18 @@ public class Department {
     private String Position;
     private String salary;
     private String phoneNumber;
-    private Unit unit; // cán bộ thuộc đơn vị nào đó
+//    private Unit unit; // cán bộ thuộc đơn vị nào đó
 
     public Department() {
     }
 
-    public Department(String id, String name, String position, String salary, String phoneNumber, Unit unit) {
+    public Department(String id, String name, String position, String salary, String phoneNumber) {
         this.id = id;
         this.name = name;
         Position = position;
         this.salary = salary;
         this.phoneNumber = phoneNumber;
-        this.unit = unit;
+//        this.unit = unit;
     }
 
     public String getId() {
@@ -60,11 +60,11 @@ public class Department {
         this.phoneNumber = phoneNumber;
     }
 
-    public Unit getUnit() {
-        return unit;
-    }
+//    public Unit getUnit() {
+//        return unit;
+//    }
 
-    public void setUnit(Unit unit) {
-        this.unit = unit;
-    }
+//    public void setUnit(Unit unit) {
+//        this.unit = unit;
+//    }
 }
