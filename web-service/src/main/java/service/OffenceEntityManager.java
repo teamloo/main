@@ -13,5 +13,5 @@ public interface OffenceEntityManager {
 
     void removeOffence(String id);
 
-    OffenceEntity findById(String id);
+    Optional<OffenceEntity> findById(String id);
 }

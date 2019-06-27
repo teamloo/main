@@ -13,6 +13,6 @@ public interface DepartmentEntityManager {
 
     void removeDepartment(String id);
 
-    DepartmentEntity findById(String id);
+    Optional<DepartmentEntity> findById(String id);
 }
 

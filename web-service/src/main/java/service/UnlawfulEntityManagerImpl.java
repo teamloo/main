@@ -27,12 +27,12 @@ public class UnlawfulEntityManagerImpl implements UnlawfulEntityManager {
 
     @Override
     public void deleteUnlawful(String id) {
-        unlawfullEntityRepository.delete(id);
+        unlawfullEntityRepository.deleteById(id);
     }
 
     @Override
-    public UnlawfulEntity findById(String id) {
-        return unlawfullEntityRepository.findOne(id);
+    public Optional<UnlawfulEntity> findById(String id) {
+        return unlawfullEntityRepository.findById(id);
     }
 
 }

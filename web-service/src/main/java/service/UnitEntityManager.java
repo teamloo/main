@@ -1,5 +1,6 @@
 package service;
 
+
 import entity.UnitEntity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -13,5 +14,5 @@ public interface UnitEntityManager {
 
     void deleteUnit(String id);
 
-    UnitEntity findById(String id);
+    Optional<UnitEntity> findById(String id);
 }
