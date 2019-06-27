@@ -1,6 +1,7 @@
 package service;
 
 import entity.UnitEntity;
+import entity.UnlawfulEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -8,10 +9,9 @@ import repository.UnitEntityRepository;
 
 import java.util.Optional;
 
-public class UnitEntityManagerImpl implements UnitEntityManager {
-
-    @Autowired
-    UnitEntityRepository unitEntityRepository;
+public class UnitEntityManagerImpl implements  UnitEntityManager {
+   @Autowired
+   private UnitEntityRepository unitEntityRepository;
 
     @Override
     public Page<UnitEntity> getAllUnit(Pageable pageable) {
@@ -32,5 +32,4 @@ public class UnitEntityManagerImpl implements UnitEntityManager {
     public Optional<UnitEntity> findById(String id) {
         return unitEntityRepository.findById(id);
     }
-
 }
