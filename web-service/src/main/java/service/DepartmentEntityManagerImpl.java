@@ -30,7 +30,7 @@ public class DepartmentEntityManagerImpl implements DepartmentEntityManager {
     }
 
     @Override
-    public DepartmentEntity findById(String id) {
-        return departmentEntityRepository.findOne(id);
+    public Optional<DepartmentEntity> findById(String id) {
+        return departmentEntityRepository.findById(id);
     }
 }
