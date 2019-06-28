@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import service.ForestEntityManager;
 
+import java.util.Optional;
+
 @Controller
 public class ForestEntityController {
 
@@ -42,7 +44,7 @@ public class ForestEntityController {
 
     @GetMapping("/exploitionEntity/edit/{id}")
     public ModelAndView showEditForm(@PathVariable String id) {
-        ForestEntity forestEntity = forestEntityManager.findById(id);
+        Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
 
         modelAndView.addObject("forestEntity", forestEntity);
@@ -62,7 +64,7 @@ public class ForestEntityController {
     @GetMapping("/exploitionEntity/delete/{id}")
     public ModelAndView showDeleteForm(@PathVariable String id) {
 
-        ForestEntity forestEntity = forestEntityManager.findById(id);
+        Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
         modelAndView.addObject("forestEntity", forestEntity);
         return modelAndView;
@@ -78,7 +80,7 @@ public class ForestEntityController {
 
     @GetMapping("/exploitionEntity//view/{id}")
     public ModelAndView show(@PathVariable String id) {
-        ForestEntity forestEntity = forestEntityManager.findById(id);
+        Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
         modelAndView.addObject("forestEntity", forestEntity);
         return modelAndView;

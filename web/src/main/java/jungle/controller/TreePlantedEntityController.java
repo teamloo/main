@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import service.TreePlantedEntityManager;
 
+import java.util.Optional;
+
 @Controller
 public class TreePlantedEntityController {
     @Autowired
@@ -43,7 +45,7 @@ public class TreePlantedEntityController {
 
     @GetMapping("/treePlantedEntity/edit/{id}")
     public ModelAndView showEditForm(@PathVariable String id) {
-        TreePlantedEntity treePlantedEntity = treePlantedEntityManager.findById(id);
+        Optional<TreePlantedEntity> treePlantedEntity = treePlantedEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
 
         modelAndView.addObject("treePlantedEntity", treePlantedEntity);
@@ -63,7 +65,7 @@ public class TreePlantedEntityController {
     @GetMapping("/treePlantedEntity/delete/{id}")
     public ModelAndView showDeleteForm(@PathVariable String id) {
 
-        TreePlantedEntity treePlantedEntity = treePlantedEntityManager.findById(id);
+        Optional<TreePlantedEntity> treePlantedEntity = treePlantedEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
         modelAndView.addObject("treePlantedEntity", treePlantedEntity);
         return modelAndView;
@@ -79,7 +81,7 @@ public class TreePlantedEntityController {
 
     @GetMapping("/treePlantedEntity/view/{id}")
     public ModelAndView show(@PathVariable String id) {
-        TreePlantedEntity treePlantedEntity = treePlantedEntityManager.findById(id);
+        Optional<TreePlantedEntity> treePlantedEntity = treePlantedEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
         modelAndView.addObject("treePlantedEntity", treePlantedEntity);
 

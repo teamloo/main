@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import service.DepartmentEntityManager;
 
+import java.util.Optional;
+
 @Controller
 public class DepartmentEntityController {
 
@@ -43,7 +45,7 @@ public class DepartmentEntityController {
 
     @GetMapping("/departmentEntity/edit/{id}")
     public ModelAndView showEditForm(@PathVariable String id) {
-        DepartmentEntity departmentEntity = departmentEntityManager.findById(id);
+        Optional<DepartmentEntity> departmentEntity = departmentEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
 
         modelAndView.addObject("departmentEntity", departmentEntity);
@@ -63,7 +65,7 @@ public class DepartmentEntityController {
     @GetMapping("/departmentEntity/delete/{id}")
     public ModelAndView showDeleteForm(@PathVariable String id) {
 
-        DepartmentEntity departmentEntity = departmentEntityManager.findById(id);
+        Optional<DepartmentEntity> departmentEntity = departmentEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
         modelAndView.addObject("departmentEntity", departmentEntity);
         return modelAndView;
@@ -79,7 +81,7 @@ public class DepartmentEntityController {
 
     @GetMapping("/departmentEntity/view/{id}")
     public ModelAndView show(@PathVariable String id) {
-        DepartmentEntity departmentEntity = departmentEntityManager.findById(id);
+        Optional<DepartmentEntity> departmentEntity = departmentEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
         modelAndView.addObject("departmentEntity", departmentEntity);
 

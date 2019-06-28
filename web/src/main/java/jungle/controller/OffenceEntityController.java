@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import service.OffenceEntityManager;
 
+import java.util.Optional;
+
 @Controller
 public class OffenceEntityController {
     @Autowired
@@ -42,7 +44,7 @@ public class OffenceEntityController {
 
     @GetMapping("/offenceEntity/edit/{id}")
     public ModelAndView showEditForm(@PathVariable String id) {
-        OffenceEntity offenceEntity = offenceEntityManager.findById(id);
+        Optional<OffenceEntity> offenceEntity = offenceEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
 
         modelAndView.addObject("offenceEntity", offenceEntity);
@@ -62,7 +64,7 @@ public class OffenceEntityController {
     @GetMapping("/offenceEntity/delete/{id}")
     public ModelAndView showDeleteForm(@PathVariable String id) {
 
-        OffenceEntity offenceEntity = offenceEntityManager.findById(id);
+        Optional<OffenceEntity> offenceEntity = offenceEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
         modelAndView.addObject("offenceEntity", offenceEntity);
         return modelAndView;
@@ -78,7 +80,7 @@ public class OffenceEntityController {
 
     @GetMapping("/offenceEntity/view/{id}")
     public ModelAndView show(@PathVariable String id) {
-        OffenceEntity offenceEntity = offenceEntityManager.findById(id);
+        Optional<OffenceEntity> offenceEntity = offenceEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
         modelAndView.addObject("offenceEntity", offenceEntity);
 

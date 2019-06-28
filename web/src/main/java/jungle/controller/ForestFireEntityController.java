@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import service.ForestFireEntityManager;
 
+import java.util.Optional;
+
 @Controller
 public class ForestFireEntityController {
 
@@ -45,7 +47,7 @@ public class ForestFireEntityController {
 
     @GetMapping("/forestFireEntity/edit/{id}")
     public ModelAndView showEditForm(@PathVariable String id) {
-        ForestFireEntity forestFireEntity = forestFireEntityManager.findById(id);
+        Optional<ForestFireEntity> forestFireEntity = forestFireEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
 
         modelAndView.addObject("forestFireEntity", forestFireEntity);
@@ -65,7 +67,7 @@ public class ForestFireEntityController {
     @GetMapping("/forestFireEntity/delete/{id}")
     public ModelAndView showDeleteForm(@PathVariable String id) {
 
-        ForestFireEntity forestFireEntity = forestFireEntityManager.findById(id);
+        Optional<ForestFireEntity> forestFireEntity = forestFireEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
         modelAndView.addObject("foreforestFireEntitystEntity", forestFireEntity);
         return modelAndView;
@@ -81,7 +83,7 @@ public class ForestFireEntityController {
 
     @GetMapping("/forestFireEntity//view/{id}")
     public ModelAndView show(@PathVariable String id) {
-        ForestFireEntity forestFireEntity = forestFireEntityManager.findById(id);
+        Optional<ForestFireEntity> forestFireEntity = forestFireEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
         modelAndView.addObject("forestFireEntity", forestFireEntity);
         return modelAndView;
