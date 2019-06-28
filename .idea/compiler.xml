@@ -10,7 +10,6 @@
         <module name="configure" />
         <module name="cpnfigure" />
         <module name="dao" />
-        <module name="forest-service" />
         <module name="forestservice" />
         <module name="web" />
         <module name="web-service" />
