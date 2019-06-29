@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>teamlo</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="../assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+
+    <div class="vertical-nav">
+        <h4 class="text-center"> <img class="img-fluid" src="../assets/img/tree-icon.png"></h4>
+        <h4>Quản lý rừng</h4>
+        <ul class="vertical-nav-list">
+            <li class="vnav-li"><a href="#" class="vnav-link"><i class="fas fa-user"></i>&nbsp;Cán Bộ</a></li>
+            <li class="vnav-li"><a href="#" class="vnav-link"><i class="fas fa-users"></i>Đơn vị</a></li>
+            <li class="vnav-li"><a href="#" class="vnav-link"><i class="fa fa-tree"></i>&nbsp;Rừng</a></li>
+            <li class="vnav-li"><a href="#" class="vnav-link"><i class="icon ion-plus"></i>Trổng rừng</a></li>
+            <li class="vnav-li"><a href="#" class="vnav-link"><i class="material-icons">import_export</i>&nbsp;Khai thác</a></li>
+            <li class="vnav-li"><a href="#" class="vnav-link"><i class="fab fa-gripfire"></i>&nbsp;Cháy rừng</a></li>
+            <li class="vnav-li"><a href="#" class="active-link vnav-link"><i class="fa fa-remove"></i>&nbsp;Vi phạm</a><span class="active-link traingle-left"> </span></li>
+            <li class="vnav-li"><a href="#" class="vnav-link"><i class="fa fa-eject"></i> Logout</a></li>
+        </ul>
+    </div>
+    <div>
+        <div class="header-dark" style="background-position: center;background-size: cover;background-repeat: no-repeat;background-color: rgb(40,35,35);background-image: url(&quot;assets/img/hinh-anh-nen-rung-tuyet-dep-3.jpg&quot;);">
+            <div class="bg-shadow" style="background-color: rgba(91,81,81,0.52);">
+                <div class="container hero">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <h1 class="text-center">Quản lý vi phạm</h1>
+                           <button class="btn btn-primary"  id="search-btn" type="button" style="background-color: rgb(32,238,90);"><i class="fa fa-plus-circle"></i>Thêm</button>
+                           <button class="btn btn-warning no-result"  id="search-btn" type="button"><i class="fa fa-window-close"></i>Không tìm thây kết quả</button>
+                           
+                            <div class="form-group pull-right col-lg-4"><input class="border rounded-circle border-primary shadow-lg search form-control" type="text" placeholder="Tìm kiếm ở đây" style="background-color: rgba(227,213,213,0.8);"></div>
+                            <div class="table-responsive table-bordered table table-hover table-bordered results">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="bill-header cs">
+                                        <tr>
+                                            <th id="trs-hd" class="col-lg-1">ID</th>
+                                            <th id="trs-hd" class="col-lg-1">Tên</th>
+                                            <th id="trs-hd" class="col-lg-1">Hình thức vi phạm</th>
+                                            <th id="trs-hd" class="col-lg-1">Khu vực rừng</th>
+                                            <th id="trs-hd" class="col-lg-1">Date</th>
+                                            <th id="trs-hd" class="col-lg-1">Sửa, Xóa</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>Lô</td>
+                                            <td>Test</td>
+                                            <td>Test<br></td>
+                                            <td>2014</td>
+                                            <td><button class="btn btn-success" type="submit" style="margin-left: 5px;"><i class="fa fa-edit" style="font-size: 15px;"></i></button><button class="btn btn-danger" type="submit" style="margin-left: 5px;"><i class="fa fa-trash" style="font-size: 15px;"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>02</td>
+                                            <td>Luận</td>
+                                            <td>Thanh</td>
+                                            <td>Lê<br></td>
+                                            <td>2014</td>
+                                            <td><button class="btn btn-success" type="submit" style="margin-left: 5px;"><i class="fa fa-edit" style="font-size: 15px;"></i></button><button class="btn btn-danger" type="submit" style="margin-left: 5px;"><i class="fa fa-trash" style="font-size: 15px;"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>03</td>
+                                            <td>Luận</td>
+                                            <td>Thanh</td>
+                                            <td>Lô<br></td>
+                                            <td>2014</td>
+                                            <td><button class="btn btn-success" type="submit" style="margin-left: 5px;"><i class="fa fa-edit" style="font-size: 15px;"></i></button><button class="btn btn-danger" type="submit" style="margin-left: 5px;"><i class="fa fa-trash" style="font-size: 15px;"></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/Table-With-Search.js"></script>
+</body>
+
+</html>

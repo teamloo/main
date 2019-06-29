@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>teamlo</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="../assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/css/Header-Dark.css">
+    <link rel="stylesheet" href="assets/css/Responsive-Form-1.css">
+    <link rel="stylesheet" href="assets/css/Responsive-Form.css">
+    <link rel="stylesheet" href="assets/css/Simple-Vertical-Navigation-Menu-v-10.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Table-With-Search.css">
+</head>
+
+<body>
+    <div class="vertical-nav">
+        <h4 class="text-center"> <img class="img-fluid" src="../assets/img/tree-icon.png"></h4>
+        <h4>Quản lý rừng</h4>
+        <ul class="vertical-nav-list">
+            <li class="vnav-li"><a href="#" class="vnav-link"><i class="fas fa-user"></i>&nbsp;Cán Bộ</a></li>
+            <li class="vnav-li"><a href="#" class="vnav-link"><i class="fas fa-users"></i>Đơn vị</a></li>
+            <li class="vnav-li"><a href="#" class="vnav-link"><i class="fa fa-tree"></i>&nbsp;Rừng</a></li>
+            <li class="vnav-li"><a href="#" class="vnav-link"><i class="icon ion-plus"></i>Trổng rừng</a></li>
+            <li class="vnav-li"><a href="#" class="vnav-link"><i class="material-icons">import_export</i>&nbsp;Khai thác</a></li>
+            <li class="vnav-li"><a href="#" class="vnav-link"><i class="fab fa-gripfire"></i>&nbsp;Cháy rừng</a></li>
+            <li class="vnav-li"><a href="#" class="active-link vnav-link"><i class="fa fa-remove"></i>&nbsp;Vi phạm</a><span class="active-link traingle-left"> </span></li>
+            <li class="vnav-li"><a href="#" class="vnav-link"><i class="fa fa-eject"></i> Logout</a></li>
+        </ul>
+    </div>
+    <div>
+        <div class="header-dark" style="background-position: center;background-size: cover;background-repeat: no-repeat;background-color: rgb(40,35,35);background-image: url(&quot;assets/img/hinh-anh-nen-rung-tuyet-dep-3.jpg&quot;);">
+            <div class="bg-shadow" style="background-color: rgba(91,81,81,0.52);">
+                <div class="container hero">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <h1 class="text-center">Quản lý vi phạm</h1><button class="btn btn-primary" type="button" style="background-color: rgb(32,238,90);"><i class="fa fa-external-link"></i>&nbsp;Quay lại</button>
+                            <div class="form-group pull-right col-lg-4"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div>
+                        <form>
+                            <div class="form-group">
+                                <div id="formdiv">
+                                    <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                                        <div class="col-md-8 offset-md-1">
+                                            <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Name </strong></p>
+                                        </div>
+                                        <div class="col-md-10 offset-md-1"><input class="form-control" type="text" name="name" placeholder="Name" style="margin-left:0px;font-family:Roboto, sans-serif;"></div>
+                                    </div>
+                                    <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;margin-top:-16px;">
+                                        <div class="col-md-8 offset-md-1">
+                                            <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Gender </strong></p>
+                                        </div>
+                                        <div class="col-md-10 offset-md-1"><select class="form-control" name="gender" style="font-family:Roboto, sans-serif;"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></div>
+                                    </div>
+                                    <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                                        <div class="col-md-8 offset-md-1">
+                                            <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Birth Date</strong></p>
+                                        </div>
+                                        <div class="col-md-10 offset-md-1"><input class="form-control" type="date" name="birthDate" style="font-family:Roboto, sans-serif;"></div>
+                                    </div>
+                                    <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                                        <div class="col-md-8 offset-md-1">
+                                            <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Birth Place</strong></p>
+                                        </div>
+                                        <div class="col-md-10 offset-md-1"><input class="form-control" type="text" name="birthPlace" placeholder="Place" style="margin-left:0px;font-family:Roboto, sans-serif;"></div>
+                                    </div>
+                                    <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                                        <div class="col-md-8 offset-md-1">
+                                            <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Mother's Name</strong></p>
+                                        </div>
+                                        <div class="col-md-10 offset-md-1" style="font-family:Roboto, sans-serif;"><input class="form-control" type="text" placeholder="Name" style="margin-left:0px;"></div>
+                                    </div>
+                                    <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                                        <div class="col-md-8 offset-md-1">
+                                            <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Father's Name</strong></p>
+                                        </div>
+                                        <div class="col-md-10 offset-md-1"><input class="form-control" type="text" placeholder="Name" style="margin-left:0px;font-family:Roboto, sans-serif;"></div>
+                                    </div>
+                                    <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                                        <div class="col-md-8 offset-md-1">
+                                            <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Birth Place Address</strong></p>
+                                        </div>
+                                        <div class="col-md-10 offset-md-1"><textarea class="form-control" placeholder="Address" style="font-family:Roboto, sans-serif;"></textarea></div>
+                                    </div>
+                                    <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                                        <div class="col-md-8 offset-md-1">
+                                            <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Permenent Address</strong></p>
+                                        </div>
+                                        <div class="col-md-10 offset-md-1"><textarea class="form-control" placeholder="Address" style="font-family:Roboto, sans-serif;"></textarea></div>
+                                    </div>
+                                    <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                                        <div class="col-md-8 offset-md-1">
+                                            <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Register Number</strong></p>
+                                        </div>
+                                        <div class="col-md-10 offset-md-1"><input class="form-control" type="number" placeholder="Number" style="font-family:Roboto, sans-serif;"></div>
+                                    </div>
+                                    <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                                        <div class="col-md-8 offset-md-1">
+                                            <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Register Date</strong></p>
+                                        </div>
+                                        <div class="col-md-10 offset-md-1"><input class="form-control" type="date" style="font-family:Roboto, sans-serif;"></div>
+                                    </div>
+                                    <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                                        <div class="col-md-8 offset-md-1">
+                                            <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Remarks </strong></p>
+                                        </div>
+                                        <div class="col-md-10 offset-md-1"><textarea class="form-control" placeholder="Remarks" style="font-family:Roboto, sans-serif;font-size:14px;"></textarea></div>
+                                    </div>
+                                    <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                                        <div class="col-12 col-md-4 offset-md-4"><button class="btn btn-light btn-lg" type="reset" style="font-family:Roboto, sans-serif;">Clear </button><button class="btn btn-light btn-lg" type="submit" style="margin-left:16px;">Submit </button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/Table-With-Search.js"></script>
+</body>
+
+</html>
