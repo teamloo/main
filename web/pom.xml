@@ -64,8 +64,9 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>4.3.17.RELEASE</version>
+            <version>5.1.3.RELEASE</version>
         </dependency>
+
         <dependency>
             <groupId>codegym.com</groupId>
             <artifactId>web</artifactId>

@@ -11,11 +11,9 @@ import java.util.Optional;
 public class DepartmentEntityManagerImpl implements DepartmentEntityManager {
     @Autowired
     DepartmentEntityRepository departmentEntityRepository;
-
     @Override
     public Page<DepartmentEntity> getAllDepartment(Pageable pageable) {
         return departmentEntityRepository.findAll(pageable);
-
     }
 
     @Override

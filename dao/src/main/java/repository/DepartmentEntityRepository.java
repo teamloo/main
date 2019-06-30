@@ -10,6 +10,5 @@ import java.util.List;
 public interface DepartmentEntityRepository extends PagingAndSortingRepository<DepartmentEntity, String> {
 
 //    DepartmentEntity findById(String id);
-
     List<DepartmentEntity> findAllByUnit(UnitEntity unitEntity);
 }

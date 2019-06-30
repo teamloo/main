@@ -5,7 +5,7 @@ import javax.persistence.*;
 // cán bộ
 @Entity
 @Table(name = "department")
-@NamedQuery(name = "Department.findAll", query = "SELECT e FROM Department e")
+//@NamedQuery(name = "Department.findAll", query = "SELECT e FROM Department e")
 public class DepartmentEntity {
 
     @Id

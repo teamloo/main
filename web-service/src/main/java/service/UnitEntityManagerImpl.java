@@ -1,7 +1,6 @@
 package service;
 
 import entity.UnitEntity;
-import entity.UnlawfulEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

@@ -1,12 +1,12 @@
 package entity;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
 
 @Entity
 @Table(name = "Forest")
-@NamedQuery(name = "Forest.findAll", query = "SELECT t FROM Forest t")
+//@NamedQuery(name = "Forest.findAll", query = "SELECT t FROM Forest t")
 public class ForestEntity {
 
     @Id
@@ -21,7 +21,6 @@ public class ForestEntity {
     private String functionForest;
     private String lifeTime;
 
-    @Temporal(TemporalType.TIMESTAMP)
     private Date timeadded;
 
     @OneToMany(mappedBy = "forest")
@@ -36,17 +35,6 @@ public class ForestEntity {
 
     @OneToMany(mappedBy = "forest")
     private List<ForestFireEntity> fireForest;
-
-    @OneToMany(mappedBy = "forest")
-    private List<UnlawfulEntity> unlawful;
-
-    public void setUnlawful(List<UnlawfulEntity> unlawful) {
-        this.unlawful = unlawful;
-    }
-
-    public List<UnlawfulEntity> getUnlawful() {
-        return unlawful;
-    }
 
     public void setFireForest(List<ForestFireEntity> fireForest) {
         this.fireForest = fireForest;
@@ -209,19 +197,6 @@ public class ForestEntity {
         getFireForest().remove(fireForest);
         fireForest.setForest(null);
         return fireForest;
-    }
-
-
-    public UnlawfulEntity addUnlawful(UnlawfulEntity unlawfulEntity) {
-        getUnlawful().add(unlawfulEntity);
-        unlawfulEntity.setForest(this);
-        return unlawfulEntity;
-    }
-
-    public UnlawfulEntity removeUnlawful(UnlawfulEntity unlawfulEntity) {
-        getUnlawful().remove(unlawfulEntity);
-        unlawfulEntity.setForest(null);
-        return unlawfulEntity;
     }
 
 

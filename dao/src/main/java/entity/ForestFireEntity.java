@@ -1,14 +1,12 @@
 package entity;
 
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-import java.util.Date;
+import javax.persistence.*;
+import java.sql.Date;
 
 @Entity
 @Table(name = "fire")
 public class ForestFireEntity {
+    @Id
     private String id;
     private double area;
     private String cause;

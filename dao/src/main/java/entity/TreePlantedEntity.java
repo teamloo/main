@@ -7,7 +7,7 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "treeplanted")
-@NamedQuery(name = "TreePlanted.findAll", query = "SELECT t FROM TreePlanted t")
+//@NamedQuery(name = "TreePlanted.findAll", query = "SELECT t FROM TreePlanted t")
 public class TreePlantedEntity implements Serializable {
 
     @Id
@@ -16,7 +16,7 @@ public class TreePlantedEntity implements Serializable {
     @ManyToOne
     @JoinColumn(name = "unit_ID")
     private ForestEntity forest;
-    @Temporal(TemporalType.TIMESTAMP)
+    
     private Date date;
     private int treeIncrease;
     private double area;
