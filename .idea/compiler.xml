@@ -6,14 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="web" />
-        <module name="configure" />
         <module name="common" />
-        <module name="webservice" />
-        <module name="dao" />
+        <module name="configure" />
         <module name="cpnfigure" />
+        <module name="dao" />
         <module name="forestservice" />
+        <module name="web" />
         <module name="web-service" />
+        <module name="webservice" />
       </profile>
     </annotationProcessing>
   </component>
