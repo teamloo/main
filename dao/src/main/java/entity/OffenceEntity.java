@@ -13,12 +13,11 @@ public class OffenceEntity {
     private long numberOfTreeLost;
     private String sanctionForm;
     private double compensationMoney;
-    private Date date;
+    private Date datee;
     private double areaOfDamage;
     @ManyToOne
     @JoinColumn(name = "forest_ID")
     private ForestEntity forest;
-    public OffenceEntity(){}
 
     public String getId() {
         return id;
@@ -28,6 +27,54 @@ public class OffenceEntity {
         this.id = id;
     }
 
+    public String getOffender() {
+        return offender;
+    }
+
+    public void setOffender(String offender) {
+        this.offender = offender;
+    }
+
+    public long getNumberOfTreeLost() {
+        return numberOfTreeLost;
+    }
+
+    public void setNumberOfTreeLost(long numberOfTreeLost) {
+        this.numberOfTreeLost = numberOfTreeLost;
+    }
+
+    public String getSanctionForm() {
+        return sanctionForm;
+    }
+
+    public void setSanctionForm(String sanctionForm) {
+        this.sanctionForm = sanctionForm;
+    }
+
+    public double getCompensationMoney() {
+        return compensationMoney;
+    }
+
+    public void setCompensationMoney(double compensationMoney) {
+        this.compensationMoney = compensationMoney;
+    }
+
+    public Date getDatee() {
+        return datee;
+    }
+
+    public void setDatee(Date datee) {
+        this.datee = datee;
+    }
+
+    public double getAreaOfDamage() {
+        return areaOfDamage;
+    }
+
+    public void setAreaOfDamage(double areaOfDamage) {
+        this.areaOfDamage = areaOfDamage;
+    }
+
     public ForestEntity getForest() {
         return forest;
     }
@@ -35,61 +82,4 @@ public class OffenceEntity {
     public void setForest(ForestEntity forest) {
         this.forest = forest;
     }
-
-    public double getCompensationMoney() {
-        return compensationMoney;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public double getAreaOfDamage() {
-        return areaOfDamage;
-    }
-
-    public long getNumberOfTreeLost() {
-        return numberOfTreeLost;
-    }
-
-    public String getOffenceId() {
-        return id;
-    }
-
-    public String getOffender() {
-        return offender;
-    }
-
-    public String getSanctionForm() {
-        return sanctionForm;
-    }
-
-    public void setAreaOfDamage(double areaOfDamage) {
-        this.areaOfDamage = areaOfDamage;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
-    public void setCompensationMoney(double compensationMoney) {
-        this.compensationMoney = compensationMoney;
-    }
-
-    public void setNumberOfTreeLost(long numberOfTreeLost) {
-        this.numberOfTreeLost = numberOfTreeLost;
-    }
-
-    public void setOffenceId(String offenceId) {
-        this.id = offenceId;
-    }
-
-    public void setOffender(String offender) {
-        this.offender = offender;
-    }
-
-    public void setSanctionForm(String sanctionForm) {
-        this.sanctionForm = sanctionForm;
-    }
-
 }

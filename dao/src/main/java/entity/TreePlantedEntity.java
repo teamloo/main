@@ -17,16 +17,12 @@ public class TreePlantedEntity implements Serializable {
     @JoinColumn(name = "unit_ID")
     private ForestEntity forest;
     
-    private Date date;
+    private Date datee;
     private int treeIncrease;
     private double area;
 
     @ManyToOne
     private UnitEntity unit;
-
-    public TreePlantedEntity() {
-    }
-
 
     public String getId() {
         return id;
@@ -44,12 +40,12 @@ public class TreePlantedEntity implements Serializable {
         this.forest = forest;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getDatee() {
+        return datee;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDatee(Date datee) {
+        this.datee = datee;
     }
 
     public int getTreeIncrease() {
@@ -74,18 +70,5 @@ public class TreePlantedEntity implements Serializable {
 
     public void setUnit(UnitEntity unit) {
         this.unit = unit;
-    }
-
-
-    @Override
-    public String toString() {
-        return "TreePlantedEntity{" +
-                "treePlantedID='" + id + '\'' +
-                ", forest='" + forest + '\'' +
-                ", date=" + date +
-                ", treeIncrease=" + treeIncrease +
-                ", area=" + area +
-                ", unit=" + unit +
-                '}';
     }
 }

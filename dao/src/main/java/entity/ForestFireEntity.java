@@ -11,14 +11,11 @@ public class ForestFireEntity {
     private double area;
     private String cause;
     private double numberOfTreeLost;
-    private Date date;
+    private Date datee;
 
     @ManyToOne
-    @JoinColumn(name = "forest_ID")
+    @JoinColumn(name = "forest_id")
     private ForestEntity forest;
-
-    public ForestFireEntity() {
-    }
 
     public String getId() {
         return id;
@@ -28,51 +25,43 @@ public class ForestFireEntity {
         this.id = id;
     }
 
-    public ForestEntity getForest() {
-        return forest;
-    }
-
-    public void setForest(ForestEntity forest) {
-        this.forest = forest;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
     public double getArea() {
         return area;
-    }
-
-    public double getNumberOfTreeLost() {
-        return numberOfTreeLost;
-    }
-
-    public String getCause() {
-        return cause;
-    }
-
-    public String getFireId() {
-        return id;
-    }
-
-    public void setNumberOfTreeLost(double numberOfTreeLost) {
-        this.numberOfTreeLost = numberOfTreeLost;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
     }
 
     public void setArea(double area) {
         this.area = area;
     }
 
+    public String getCause() {
+        return cause;
+    }
+
     public void setCause(String cause) {
         this.cause = cause;
     }
 
-    public void setFireId(String fireId) {
-        this.id = fireId;
+    public double getNumberOfTreeLost() {
+        return numberOfTreeLost;
+    }
+
+    public void setNumberOfTreeLost(double numberOfTreeLost) {
+        this.numberOfTreeLost = numberOfTreeLost;
+    }
+
+    public Date getDatee() {
+        return datee;
+    }
+
+    public void setDatee(Date datee) {
+        this.datee = datee;
+    }
+
+    public ForestEntity getForest() {
+        return forest;
+    }
+
+    public void setForest(ForestEntity forest) {
+        this.forest = forest;
     }
 }

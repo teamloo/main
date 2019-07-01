@@ -31,22 +31,6 @@ public class UnitEntity {
     public UnitEntity() {
     }
 
-    public List<TreePlantedEntity> getTreePlanted() {
-        return treePlanted;
-    }
-
-    public List<ExploitionEntity> getExploition() {
-        return exploition;
-    }
-
-    public void setTreePlanted(List<TreePlantedEntity> treePlanted) {
-        this.treePlanted = treePlanted;
-    }
-
-    public void setExploition(List<ExploitionEntity> exploition) {
-        this.exploition = exploition;
-    }
-
     public String getId() {
         return id;
     }
@@ -83,17 +67,32 @@ public class UnitEntity {
         return departments;
     }
 
+    public void setDepartments(List<DepartmentEntity> departments) {
+        this.departments = departments;
+    }
+
+    public List<TreePlantedEntity> getTreePlanted() {
+        return treePlanted;
+    }
+
+    public void setTreePlanted(List<TreePlantedEntity> treePlanted) {
+        this.treePlanted = treePlanted;
+    }
+
+    public List<ExploitionEntity> getExploition() {
+        return exploition;
+    }
+
+    public void setExploition(List<ExploitionEntity> exploition) {
+        this.exploition = exploition;
+    }
+
     public ForestEntity getForest() {
         return forest;
     }
 
     public void setForest(ForestEntity forest) {
         this.forest = forest;
-    }
-
-
-    public void setDepartments(List<DepartmentEntity> departments) {
-        this.departments = departments;
     }
 
     //  tại sao phải có hàm addDepartment(DepartmentEntity department)<Thêm cán bộ vào đơn vị> ?

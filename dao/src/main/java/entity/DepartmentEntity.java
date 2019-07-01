@@ -1,5 +1,7 @@
 package entity;
 
+import org.springframework.stereotype.Component;
+
 import javax.persistence.*;
 
 // cán bộ
@@ -9,7 +11,7 @@ import javax.persistence.*;
 public class DepartmentEntity {
 
     @Id
-    @Column(name = "department_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
 
     private String name;
@@ -18,6 +20,7 @@ public class DepartmentEntity {
     private String phoneNumber;
 
     @ManyToOne
+    @JoinColumn(name = "unit_id")
     private UnitEntity unit;
 
     public DepartmentEntity() {

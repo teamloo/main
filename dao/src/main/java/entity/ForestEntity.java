@@ -14,7 +14,7 @@ public class ForestEntity {
     private String id;
 
     private String name;
-    private Double areenErea;
+    private Double greenErea;
     private String address;
     private String typeOfTrees;
     private Integer totalNumberOfTree;
@@ -40,89 +40,76 @@ public class ForestEntity {
         this.fireForest = fireForest;
     }
 
-
     public String getId() {
         return id;
     }
 
-    public void setId(String forestId) {
-        this.id = forestId;
-    }
-
-    public void setAreenErea(Double areenErea) {
-        this.areenErea = areenErea;
-    }
-
-    public void setTotalNumberOfTree(Integer totalNumberOfTree) {
-        this.totalNumberOfTree = totalNumberOfTree;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAreenErea(double areenErea) {
-        this.areenErea = areenErea;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public void setTypeOfTrees(String typeOfTrees) {
-        this.typeOfTrees = typeOfTrees;
-    }
-
-    public void setTotalNumberOfTree(int totalNumberOfTree) {
-        this.totalNumberOfTree = totalNumberOfTree;
-    }
-
-    public void setFunctionForest(String functionForest) {
-        this.functionForest = functionForest;
-    }
-
-    public void setLifeTime(String lifeTime) {
-        this.lifeTime = lifeTime;
-    }
-
-    public void setTimeadded(Date timeadded) {
-        this.timeadded = timeadded;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
         return name;
     }
 
-    public double getAreenErea() {
-        return areenErea;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Double getGreenErea() {
+        return greenErea;
+    }
+
+    public void setGreenErea(Double greenErea) {
+        this.greenErea = greenErea;
     }
 
     public String getAddress() {
         return address;
     }
 
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     public String getTypeOfTrees() {
         return typeOfTrees;
     }
 
-    public int getTotalNumberOfTree() {
+    public void setTypeOfTrees(String typeOfTrees) {
+        this.typeOfTrees = typeOfTrees;
+    }
+
+    public Integer getTotalNumberOfTree() {
         return totalNumberOfTree;
+    }
+
+    public void setTotalNumberOfTree(Integer totalNumberOfTree) {
+        this.totalNumberOfTree = totalNumberOfTree;
     }
 
     public String getFunctionForest() {
         return functionForest;
     }
 
+    public void setFunctionForest(String functionForest) {
+        this.functionForest = functionForest;
+    }
+
     public String getLifeTime() {
         return lifeTime;
+    }
+
+    public void setLifeTime(String lifeTime) {
+        this.lifeTime = lifeTime;
     }
 
     public Date getTimeadded() {
         return timeadded;
     }
 
-    public List<ForestFireEntity> getFireForest() {
-        return fireForest;
+    public void setTimeadded(Date timeadded) {
+        this.timeadded = timeadded;
     }
 
     public List<UnitEntity> getUnit() {
@@ -147,6 +134,10 @@ public class ForestEntity {
 
     public void setTreePlanted(List<TreePlantedEntity> treePlanted) {
         this.treePlanted = treePlanted;
+    }
+
+    public List<ForestFireEntity> getFireForest() {
+        return fireForest;
     }
 
     public UnitEntity addUnit(UnitEntity unit) {
