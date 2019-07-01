@@ -21,7 +21,6 @@ public class DepartmentEntityManagerImpl implements DepartmentEntityManager {
         departmentEntityRepository.save(department);
     }
 
-
     @Override
     public void removeDepartment(String id) {
         departmentEntityRepository.deleteById(id);

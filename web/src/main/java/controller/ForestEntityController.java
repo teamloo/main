@@ -16,72 +16,72 @@ public class ForestEntityController {
     @Autowired
     ForestEntityManager forestEntityManager;
 
-    @GetMapping("/forestEntity/create")
-    public ModelAndView showCreateForm() {
-        ModelAndView modelAndView = new ModelAndView("");
-        modelAndView.addObject("forestEntity",new ForestEntity());
-        return modelAndView;
-    }
-
-
-    @PostMapping("/forestEntity/create")
-    public ModelAndView create(@ModelAttribute("forestEntity") ForestEntity forestEntity) {
-        forestEntityManager.saveForest(forestEntity);
-        ModelAndView modelAndView = new ModelAndView("");
-        modelAndView.addObject("forestEntity", forestEntity);
-        modelAndView.addObject("message","success");
-        return modelAndView;
-    }
-
-    @RequestMapping(value = "/forestEntity")
-    public ModelAndView list(Pageable pageable) {
-        Page<ForestEntity> list = forestEntityManager.getAllForest(pageable);
-        ModelAndView modelAndView = new ModelAndView("");
-        modelAndView.addObject("list", list);
-        return modelAndView;
-    }
-
-    @GetMapping("/forestEntity/edit/{id}")
-    public ModelAndView showEditForm(@PathVariable String id) {
-        Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
-        ModelAndView modelAndView = new ModelAndView("");
-
-        modelAndView.addObject("forestEntity", forestEntity);
-        return modelAndView;
-    }
-
-
-    @PostMapping("/forestEntity/edit")
-    public ModelAndView edit(@ModelAttribute("forestEntity") ForestEntity forestEntity) {
-        forestEntityManager.saveForest(forestEntity);
-        ModelAndView modelAndView = new ModelAndView("");
-        modelAndView.addObject("forestEntity",forestEntity);
-        modelAndView.addObject("message","Success");
-        return modelAndView;
-    }
-
-    @GetMapping("/forestEntity/delete/{id}")
-    public ModelAndView showDeleteForm(@PathVariable String id) {
-
-        Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
-        ModelAndView modelAndView = new ModelAndView("");
-        modelAndView.addObject("forestEntity", forestEntity);
-        return modelAndView;
-    }
-
-    @PostMapping("/forestEntity/delete")
-    public ModelAndView delete(@ModelAttribute("forestEntity") ForestEntity forestEntity) {
-        ModelAndView modelAndView = new ModelAndView("");
-        forestEntityManager.removeForest(forestEntity.getId());
-        modelAndView.addObject("message", "success");
-        return modelAndView;
-    }
-
-    @GetMapping("/forestEntity//view/{id}")
-    public ModelAndView show(@PathVariable String id) {
-        Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
-        ModelAndView modelAndView = new ModelAndView("");
-        modelAndView.addObject("forestEntity", forestEntity);
-        return modelAndView;
-    }
+//    @GetMapping("/forestEntity/create")
+//    public ModelAndView showCreateForm() {
+//        ModelAndView modelAndView = new ModelAndView("");
+//        modelAndView.addObject("forestEntity",new ForestEntity());
+//        return modelAndView;
+//    }
+//
+//
+//    @PostMapping("/forestEntity/create")
+//    public ModelAndView create(@ModelAttribute("forestEntity") ForestEntity forestEntity) {
+//        forestEntityManager.saveForest(forestEntity);
+//        ModelAndView modelAndView = new ModelAndView("");
+//        modelAndView.addObject("forestEntity", forestEntity);
+//        modelAndView.addObject("message","success");
+//        return modelAndView;
+//    }
+//
+//    @RequestMapping(value = "/forestEntity")
+//    public ModelAndView list(Pageable pageable) {
+//        Page<ForestEntity> list = forestEntityManager.getAllForest(pageable);
+//        ModelAndView modelAndView = new ModelAndView("");
+//        modelAndView.addObject("list", list);
+//        return modelAndView;
+//    }
+//
+//    @GetMapping("/forestEntity/edit/{id}")
+//    public ModelAndView showEditForm(@PathVariable String id) {
+//        Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
+//        ModelAndView modelAndView = new ModelAndView("");
+//
+//        modelAndView.addObject("forestEntity", forestEntity);
+//        return modelAndView;
+//    }
+//
+//
+//    @PostMapping("/forestEntity/edit")
+//    public ModelAndView edit(@ModelAttribute("forestEntity") ForestEntity forestEntity) {
+//        forestEntityManager.saveForest(forestEntity);
+//        ModelAndView modelAndView = new ModelAndView("");
+//        modelAndView.addObject("forestEntity",forestEntity);
+//        modelAndView.addObject("message","Success");
+//        return modelAndView;
+//    }
+//
+//    @GetMapping("/forestEntity/delete/{id}")
+//    public ModelAndView showDeleteForm(@PathVariable String id) {
+//
+//        Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
+//        ModelAndView modelAndView = new ModelAndView("");
+//        modelAndView.addObject("forestEntity", forestEntity);
+//        return modelAndView;
+//    }
+//
+//    @PostMapping("/forestEntity/delete")
+//    public ModelAndView delete(@ModelAttribute("forestEntity") ForestEntity forestEntity) {
+//        ModelAndView modelAndView = new ModelAndView("");
+//        forestEntityManager.removeForest(forestEntity.getId());
+//        modelAndView.addObject("message", "success");
+//        return modelAndView;
+//    }
+//
+//    @GetMapping("/forestEntity//view/{id}")
+//    public ModelAndView show(@PathVariable String id) {
+//        Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
+//        ModelAndView modelAndView = new ModelAndView("");
+//        modelAndView.addObject("forestEntity", forestEntity);
+//        return modelAndView;
+//    }
 }
