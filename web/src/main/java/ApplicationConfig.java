@@ -98,7 +98,6 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
         templateEngine.setTemplateResolver(templateResolver());
         return templateEngine;
     }
-
     @Bean
     public ThymeleafViewResolver viewResolver(){
         ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
@@ -130,7 +129,8 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     public DataSource dataSource(){
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/sang");
+        // thay đổi tk mk sql của a thì mới chạy đc
+        dataSource.setUrl("jdbc:mysql://localhost:3306/project");
         dataSource.setUsername( "root" );
         dataSource.setPassword( "123456" );
         return dataSource;
