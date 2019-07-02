@@ -18,73 +18,73 @@ public class TreePlantedEntityController {
     TreePlantedEntityManager treePlantedEntityManager;
 
 
-//    @GetMapping("/treePlantedEntity/create")
-//    public ModelAndView showCreateForm() {
-//        ModelAndView modelAndView = new ModelAndView("");
-//        modelAndView.addObject("treePlantedEntity",new OffenceEntity());
-//        return modelAndView;
-//    }
-//
-//
-//    @PostMapping("/treePlantedEntity/create")
-//    public ModelAndView create(@ModelAttribute("treePlantedEntity") TreePlantedEntity treePlantedEntity) {
-//        treePlantedEntityManager.saveTreePlanted(treePlantedEntity);
-//        ModelAndView modelAndView = new ModelAndView("");
-//        modelAndView.addObject("treePlantedEntity", treePlantedEntity);
-//        modelAndView.addObject("message","success");
-//        return modelAndView;
-//    }
-//
-//    @RequestMapping(value = "/treePlantedEntity")
-//    public ModelAndView list(Pageable pageable) {
-//        Page<TreePlantedEntity> list = treePlantedEntityManager.getAllTreePlanted(pageable);
-//        ModelAndView modelAndView = new ModelAndView("");
-//        modelAndView.addObject("list", list);
-//        return modelAndView;
-//    }
-//
-//    @GetMapping("/treePlantedEntity/edit/{id}")
-//    public ModelAndView showEditForm(@PathVariable String id) {
-//        Optional<TreePlantedEntity> treePlantedEntity = treePlantedEntityManager.findById(id);
-//        ModelAndView modelAndView = new ModelAndView("");
-//
-//        modelAndView.addObject("treePlantedEntity", treePlantedEntity);
-//        return modelAndView;
-//    }
-//
-//
-//    @PostMapping("/treePlantedEntity/edit")
-//    public ModelAndView edit(@ModelAttribute("treePlantedEntity") TreePlantedEntity treePlantedEntity) {
-//        treePlantedEntityManager.saveTreePlanted(treePlantedEntity);
-//        ModelAndView modelAndView = new ModelAndView("");
-//        modelAndView.addObject("treePlantedEntity",treePlantedEntity);
-//        modelAndView.addObject("message","Success");
-//        return modelAndView;
-//    }
-//
-//    @GetMapping("/treePlantedEntity/delete/{id}")
-//    public ModelAndView showDeleteForm(@PathVariable String id) {
-//
-//        Optional<TreePlantedEntity> treePlantedEntity = treePlantedEntityManager.findById(id);
-//        ModelAndView modelAndView = new ModelAndView("");
-//        modelAndView.addObject("treePlantedEntity", treePlantedEntity);
-//        return modelAndView;
-//    }
-//
-//    @PostMapping("/treePlantedEntity/delete")
-//    public ModelAndView delete(@ModelAttribute("treePlantedEntity") TreePlantedEntity treePlantedEntity) {
-//        ModelAndView modelAndView = new ModelAndView("");
-//        treePlantedEntityManager.deleteTreePlanted(treePlantedEntity.getId());
-//        modelAndView.addObject("message", "success");
-//        return modelAndView;
-//    }
-//
-//    @GetMapping("/treePlantedEntity/view/{id}")
-//    public ModelAndView show(@PathVariable String id) {
-//        Optional<TreePlantedEntity> treePlantedEntity = treePlantedEntityManager.findById(id);
-//        ModelAndView modelAndView = new ModelAndView("");
-//        modelAndView.addObject("treePlantedEntity", treePlantedEntity);
-//
-//        return modelAndView;
-//    }
+    @GetMapping("/treePlantedEntity/create")
+    public ModelAndView showCreateForm() {
+        ModelAndView modelAndView = new ModelAndView("/treePlanted/create");
+        modelAndView.addObject("treePlantedEntity",new OffenceEntity());
+        return modelAndView;
+    }
+
+
+    @PostMapping("/treePlantedEntity/create")
+    public ModelAndView create(@ModelAttribute("treePlantedEntity") TreePlantedEntity treePlantedEntity) {
+        treePlantedEntityManager.saveTreePlanted(treePlantedEntity);
+        ModelAndView modelAndView = new ModelAndView("/treePlanted/create");
+        modelAndView.addObject("treePlantedEntity", treePlantedEntity);
+        modelAndView.addObject("message","success");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/treePlantedEntity")
+    public ModelAndView list(Pageable pageable) {
+        Page<TreePlantedEntity> list = treePlantedEntityManager.getAllTreePlanted(pageable);
+        ModelAndView modelAndView = new ModelAndView("/treePlanted/index");
+        modelAndView.addObject("list", list);
+        return modelAndView;
+    }
+
+    @GetMapping("/treePlantedEntity/edit/{id}")
+    public ModelAndView showEditForm(@PathVariable String id) {
+        Optional<TreePlantedEntity> treePlantedEntity = treePlantedEntityManager.findById(id);
+        ModelAndView modelAndView = new ModelAndView("/treePlanted/update");
+
+        modelAndView.addObject("treePlantedEntity", treePlantedEntity);
+        return modelAndView;
+    }
+
+
+    @PostMapping("/treePlantedEntity/edit")
+    public ModelAndView edit(@ModelAttribute("treePlantedEntity") TreePlantedEntity treePlantedEntity) {
+        treePlantedEntityManager.saveTreePlanted(treePlantedEntity);
+        ModelAndView modelAndView = new ModelAndView("/treePlanted/update");
+        modelAndView.addObject("treePlantedEntity",treePlantedEntity);
+        modelAndView.addObject("message","Success");
+        return modelAndView;
+    }
+
+    @GetMapping("/treePlantedEntity/delete/{id}")
+    public ModelAndView showDeleteForm(@PathVariable String id) {
+
+        Optional<TreePlantedEntity> treePlantedEntity = treePlantedEntityManager.findById(id);
+        ModelAndView modelAndView = new ModelAndView("/treePlanted/delete");
+        modelAndView.addObject("treePlantedEntity", treePlantedEntity);
+        return modelAndView;
+    }
+
+    @PostMapping("/treePlantedEntity/delete")
+    public ModelAndView delete(@ModelAttribute("treePlantedEntity") TreePlantedEntity treePlantedEntity) {
+        ModelAndView modelAndView = new ModelAndView("/treePlanted/delete");
+        treePlantedEntityManager.deleteTreePlanted(treePlantedEntity.getId());
+        modelAndView.addObject("message", "success");
+        return modelAndView;
+    }
+
+    @GetMapping("/treePlantedEntity/view/{id}")
+    public ModelAndView show(@PathVariable String id) {
+        Optional<TreePlantedEntity> treePlantedEntity = treePlantedEntityManager.findById(id);
+        ModelAndView modelAndView = new ModelAndView("");
+        modelAndView.addObject("treePlantedEntity", treePlantedEntity);
+
+        return modelAndView;
+    }
 }
