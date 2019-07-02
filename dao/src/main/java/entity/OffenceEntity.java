@@ -15,9 +15,12 @@ public class OffenceEntity {
     private double compensationMoney;
     private Date datee;
     private double areaOfDamage;
+
     @ManyToOne
     @JoinColumn(name = "forest_ID")
     private ForestEntity forest;
+
+
 
     public String getId() {
         return id;

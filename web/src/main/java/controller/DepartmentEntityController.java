@@ -38,7 +38,7 @@ public class DepartmentEntityController {
     @GetMapping(value = "/departmentEntity")
     public ModelAndView list(Pageable pageable) {
        // Page<DepartmentEntity> list = departmentEntityManager.getAllDepartment(pageable);
-        ModelAndView modelAndView = new ModelAndView("/department/list");
+        ModelAndView modelAndView = new ModelAndView("");
        // modelAndView.addObject("list", list);
         return modelAndView;
     }
