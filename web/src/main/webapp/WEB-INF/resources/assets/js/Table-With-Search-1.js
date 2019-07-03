@@ -2,7 +2,7 @@
 $(document).ready(function () {
     $(".search").keyup(function () {
         var searchTerm = $(".search").val();
-        var listItem = $('.results tbody').children('tr');
+        var listItem = $('.result').children('figure');
         var searchSplit = searchTerm.replace(/ /g, "'):containsi('");
         $.extend($.expr[':'], {
             'containsi': function (elem, i, match) {
@@ -10,15 +10,15 @@ $(document).ready(function () {
             }
         });
 
-        $(".results tbody tr").not(":containsi('" + searchSplit + "')").each(function () {
-            $(this).attr('visible', 'false');
+        $(".result figure").not(":containsi('" + searchSplit + "')").each(function () {
+            $(this).hide();
         });
        
-        $(".results tbody tr:containsi('" + searchSplit + "')").each(function (e) {
-            $(this).attr('visible', 'true');
+        $(".result figure:containsi('" + searchSplit + "')").each(function (e) {
+            $(this).show();
         });
 
-        var jobCount = $('.results tbody tr[visible="true"]').length;
+        var jobCount = $('.snip1563 figcaption p[visible="true"]').length;
         $('.counter').text(jobCount + ' item');
        
         if (jobCount == '0') {
