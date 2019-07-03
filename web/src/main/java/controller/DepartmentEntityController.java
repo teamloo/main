@@ -45,7 +45,7 @@ public class DepartmentEntityController {
     }
 
     @GetMapping("/edit-exploition/{id}")
-    public ModelAndView showEditForm(@PathVariable String id) {
+    public ModelAndView showEditForm(@PathVariable Long id) {
         Optional<ExploitionEntity> exploitionEntity = exploitionEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("/exploition/edit");
 
@@ -53,53 +53,6 @@ public class DepartmentEntityController {
         return modelAndView;
     }
 
-<<<<<<< HEAD
-//    @GetMapping("/departmentEntity/edit/{id}")
-//    public ModelAndView showEditForm(@PathVariable Long id) {
-//        Optional<DepartmentEntity> departmentEntity = departmentEntityManager.findById(id);
-//        ModelAndView modelAndView = new ModelAndView("");
-//
-//        modelAndView.addObject("departmentEntity", departmentEntity);
-//        return modelAndView;
-//    }
-//
-//
-//    @PostMapping("/departmentEntity/edit")
-//    public ModelAndView edit(@ModelAttribute("departmentEntity") DepartmentEntity departmentEntity) {
-//        departmentEntityManager.saveDepartment(departmentEntity);
-//        ModelAndView modelAndView = new ModelAndView("");
-//        modelAndView.addObject("departmentEntity",departmentEntity);
-//        modelAndView.addObject("message","Success");
-//        return modelAndView;
-//    }
-//
-//    @GetMapping("/departmentEntity/delete/{id}")
-//    public ModelAndView showDeleteForm(@PathVariable Long id) {
-//
-//        Optional<DepartmentEntity> departmentEntity = departmentEntityManager.findById(id);
-//        ModelAndView modelAndView = new ModelAndView("");
-//        modelAndView.addObject("departmentEntity", departmentEntity);
-//        return modelAndView;
-//    }
-//
-//    @PostMapping("/departmentEntity/delete")
-//    public ModelAndView delete(@ModelAttribute("departmentEntity") DepartmentEntity departmentEntity) {
-//        ModelAndView modelAndView = new ModelAndView("");
-//        departmentEntityManager.removeDepartment(departmentEntity.getId());
-//        modelAndView.addObject("message", "success");
-//        return modelAndView;
-//    }
-//
-//    @GetMapping("/departmentEntity/view/{id}")
-//    public ModelAndView show(@PathVariable Long id) {
-//        Optional<DepartmentEntity> departmentEntity = departmentEntityManager.findById(id);
-//        ModelAndView modelAndView = new ModelAndView("");
-//        modelAndView.addObject("departmentEntity", departmentEntity);
-//
-//        return modelAndView;
-//    }
-//
-=======
 
     @PostMapping("/edit-exploition")
     public ModelAndView edit(@ModelAttribute("exploitionEntity") ExploitionEntity exploitionEntity) {
@@ -111,7 +64,7 @@ public class DepartmentEntityController {
     }
 
     @GetMapping("/delete-exploition/{id}")
-    public ModelAndView showDeleteForm(@PathVariable String id) {
+    public ModelAndView showDeleteForm(@PathVariable Long id) {
 
         Optional<ExploitionEntity> exploitionEntity = exploitionEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("/exploition/delete");
@@ -128,13 +81,12 @@ public class DepartmentEntityController {
     }
 
     @GetMapping("/view-exploition/{id}")
-    public ModelAndView show(@PathVariable String id) {
+    public ModelAndView show(@PathVariable Long id) {
         Optional<ExploitionEntity> exploitionEntity = exploitionEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("/exploition/view");
         modelAndView.addObject("exploition", exploitionEntity);
         return modelAndView;
     }
->>>>>>> 1ce8ca3a933cf65605f7fde1121d43a4ff79c829
 
 }
 

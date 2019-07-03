@@ -15,76 +15,6 @@ public class ForestEntityController {
     @Autowired
     ForestEntityManager forestEntityManager;
 
-<<<<<<< HEAD
-//    @GetMapping("/forestEntity/create")
-//    public ModelAndView showCreateForm() {
-//        ModelAndView modelAndView = new ModelAndView("");
-//        modelAndView.addObject("forestEntity",new ForestEntity());
-//        return modelAndView;
-//    }
-//
-//
-//    @PostMapping("/forestEntity/create")
-//    public ModelAndView create(@ModelAttribute("forestEntity") ForestEntity forestEntity) {
-//        forestEntityManager.saveForest(forestEntity);
-//        ModelAndView modelAndView = new ModelAndView("");
-//        modelAndView.addObject("forestEntity", forestEntity);
-//        modelAndView.addObject("message","success");
-//        return modelAndView;
-//    }
-//
-//    @RequestMapping(value = "/forestEntity")
-//    public ModelAndView list(Pageable pageable) {
-//        Page<ForestEntity> list = forestEntityManager.getAllForest(pageable);
-//        ModelAndView modelAndView = new ModelAndView("");
-//        modelAndView.addObject("list", list);
-//        return modelAndView;
-//    }
-//
-//    @GetMapping("/forestEntity/edit/{id}")
-//    public ModelAndView showEditForm(@PathVariable Long id) {
-//        Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
-//        ModelAndView modelAndView = new ModelAndView("");
-//
-//        modelAndView.addObject("forestEntity", forestEntity);
-//        return modelAndView;
-//    }
-//
-//
-//    @PostMapping("/forestEntity/edit")
-//    public ModelAndView edit(@ModelAttribute("forestEntity") ForestEntity forestEntity) {
-//        forestEntityManager.saveForest(forestEntity);
-//        ModelAndView modelAndView = new ModelAndView("");
-//        modelAndView.addObject("forestEntity",forestEntity);
-//        modelAndView.addObject("message","Success");
-//        return modelAndView;
-//    }
-//
-//    @GetMapping("/forestEntity/delete/{id}")
-//    public ModelAndView showDeleteForm(@PathVariable Long id) {
-//
-//        Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
-//        ModelAndView modelAndView = new ModelAndView("");
-//        modelAndView.addObject("forestEntity", forestEntity);
-//        return modelAndView;
-//    }
-//
-//    @PostMapping("/forestEntity/delete")
-//    public ModelAndView delete(@ModelAttribute("forestEntity") ForestEntity forestEntity) {
-//        ModelAndView modelAndView = new ModelAndView("");
-//        forestEntityManager.removeForest(forestEntity.getId());
-//        modelAndView.addObject("message", "success");
-//        return modelAndView;
-//    }
-//
-//    @GetMapping("/forestEntity//view/{id}")
-//    public ModelAndView show(@PathVariable Long id) {
-//        Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
-//        ModelAndView modelAndView = new ModelAndView("");
-//        modelAndView.addObject("forestEntity", forestEntity);
-//        return modelAndView;
-//    }
-=======
     @GetMapping("/forestEntity/create")
     public ModelAndView showCreateForm() {
         ModelAndView modelAndView = new ModelAndView("");
@@ -111,7 +41,7 @@ public class ForestEntityController {
     }
 
     @GetMapping("/forestEntity/edit/{id}")
-    public ModelAndView showEditForm(@PathVariable String id) {
+    public ModelAndView showEditForm(@PathVariable Long id) {
         Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
 
@@ -130,7 +60,7 @@ public class ForestEntityController {
     }
 
     @GetMapping("/forestEntity/delete/{id}")
-    public ModelAndView showDeleteForm(@PathVariable String id) {
+    public ModelAndView showDeleteForm(@PathVariable Long id) {
 
         Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
@@ -147,11 +77,10 @@ public class ForestEntityController {
     }
 
     @GetMapping("/forestEntity/view/{id}")
-    public ModelAndView show(@PathVariable String id) {
+    public ModelAndView show(@PathVariable Long id) {
         Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
         modelAndView.addObject("forestEntity", forestEntity);
         return modelAndView;
     }
->>>>>>> 1ce8ca3a933cf65605f7fde1121d43a4ff79c829
 }
