@@ -11,7 +11,7 @@ public interface ForestEntityManager {
 
     void saveForest(ForestEntity forest);
 
-    void removeForest(String id);
+    void removeForest(Long id);
 
-    Optional<ForestEntity> findById(String id);
+    Optional<ForestEntity> findById(Long id);
 }

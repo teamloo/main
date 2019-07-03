@@ -44,7 +44,7 @@ public class TreePlantedEntityController {
 //    }
 //
 //    @GetMapping("/treePlantedEntity/edit/{id}")
-//    public ModelAndView showEditForm(@PathVariable String id) {
+//    public ModelAndView showEditForm(@PathVariable Long id) {
 //        Optional<TreePlantedEntity> treePlantedEntity = treePlantedEntityManager.findById(id);
 //        ModelAndView modelAndView = new ModelAndView("");
 //
@@ -63,7 +63,7 @@ public class TreePlantedEntityController {
 //    }
 //
 //    @GetMapping("/treePlantedEntity/delete/{id}")
-//    public ModelAndView showDeleteForm(@PathVariable String id) {
+//    public ModelAndView showDeleteForm(@PathVariable Long id) {
 //
 //        Optional<TreePlantedEntity> treePlantedEntity = treePlantedEntityManager.findById(id);
 //        ModelAndView modelAndView = new ModelAndView("");
@@ -80,7 +80,7 @@ public class TreePlantedEntityController {
 //    }
 //
 //    @GetMapping("/treePlantedEntity/view/{id}")
-//    public ModelAndView show(@PathVariable String id) {
+//    public ModelAndView show(@PathVariable Long id) {
 //        Optional<TreePlantedEntity> treePlantedEntity = treePlantedEntityManager.findById(id);
 //        ModelAndView modelAndView = new ModelAndView("");
 //        modelAndView.addObject("treePlantedEntity", treePlantedEntity);

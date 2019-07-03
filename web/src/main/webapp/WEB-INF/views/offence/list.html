@@ -58,7 +58,6 @@
                             <table class="table table-bordered table-hover">
                                 <thead class="bill-header cs">
                                 <tr>
-                                    <th id="trs-hd" class="col-lg-1">ID</th>
                                     <th id="trs-hd" class="col-lg-1">Tên</th>
                                     <th id="trs-hd" class="col-lg-1">Hình thức vi phạm</th>
                                     <th id="trs-hd" class="col-lg-1">Khu vực rừng</th>
@@ -68,7 +67,6 @@
                                 </thead>
                                 <tbody th:each="lists:${list}">
                                 <tr>
-                                    <td th:text="${lists.id}"></td>
                                     <td th:text="${lists.offender}"></td>
                                     <td th:text="${lists.sanctionForm}"></td>
                                     <td th:text="${lists.forest}"><br></td>

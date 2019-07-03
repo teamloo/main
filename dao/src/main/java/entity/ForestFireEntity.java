@@ -7,7 +7,8 @@ import java.sql.Date;
 @Table(name = "fire")
 public class ForestFireEntity {
     @Id
-    private String id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
     private double area;
     private String cause;
     private double numberOfTreeLost;
@@ -17,11 +18,11 @@ public class ForestFireEntity {
     @JoinColumn(name = "forest_id")
     private ForestEntity forest;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

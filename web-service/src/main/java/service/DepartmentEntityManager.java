@@ -11,8 +11,8 @@ public interface DepartmentEntityManager {
 
     void saveDepartment(DepartmentEntity departmentEntity);
 
-    void removeDepartment(String id);
+    void removeDepartment(Long id);
 
-    Optional<DepartmentEntity> findById(String id);
+    Optional<DepartmentEntity> findById(Long id);
 }
 

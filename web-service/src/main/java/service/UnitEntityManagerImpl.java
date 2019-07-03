@@ -23,12 +23,12 @@ public class UnitEntityManagerImpl implements  UnitEntityManager {
     }
 
     @Override
-    public void deleteUnit(String id) {
+    public void deleteUnit(Long id) {
         unitEntityRepository.deleteById(id);
     }
 
     @Override
-    public Optional<UnitEntity> findById(String id) {
+    public Optional<UnitEntity> findById(Long id) {
         return unitEntityRepository.findById(id);
     }
 }

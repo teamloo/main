@@ -11,8 +11,8 @@ import java.util.UUID;
 public class TreePlantedEntity implements Serializable {
 
     @Id
-    @JoinColumn(name = "treePlanted_id")
-    private String id ;
+    @Column(name = "treePlanted_id")
+    private Long id ;
     @ManyToOne
     @JoinColumn(name = "unit_ID")
     private ForestEntity forest;
@@ -24,11 +24,11 @@ public class TreePlantedEntity implements Serializable {
     @ManyToOne
     private UnitEntity unit;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

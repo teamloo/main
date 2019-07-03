@@ -22,12 +22,12 @@ public class DepartmentEntityManagerImpl implements DepartmentEntityManager {
     }
 
     @Override
-    public void removeDepartment(String id) {
+    public void removeDepartment(Long id) {
         departmentEntityRepository.deleteById(id);
     }
 
     @Override
-    public Optional<DepartmentEntity> findById(String id) {
+    public Optional<DepartmentEntity> findById(Long id) {
         return departmentEntityRepository.findById(id);
     }
 }

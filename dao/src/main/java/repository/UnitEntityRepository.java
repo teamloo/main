@@ -7,7 +7,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 
 import java.util.List;
 
-public interface UnitEntityRepository extends PagingAndSortingRepository<UnitEntity, String> {
+public interface UnitEntityRepository extends PagingAndSortingRepository<UnitEntity, Long> {
     List<DepartmentEntity> findAllByNameContaining(String unitName);
 //    UnitEntity findById(String id);
 }

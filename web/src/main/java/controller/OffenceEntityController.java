@@ -28,7 +28,7 @@ public class OffenceEntityController {
     @PostMapping("/offenceEntity/create")
     public ModelAndView create(@ModelAttribute("offenceEntity") OffenceEntity offenceEntity) {
         offenceEntityManager.saveOffence(offenceEntity);
-        ModelAndView modelAndView = new ModelAndView("");
+        ModelAndView modelAndView = new ModelAndView("/offence/create");
         modelAndView.addObject("offenceEntity", offenceEntity);
         modelAndView.addObject("message","success");
         return modelAndView;
@@ -43,7 +43,7 @@ public class OffenceEntityController {
     }
 
     @GetMapping("/offenceEntity/edit/{id}")
-    public ModelAndView showEditForm(@PathVariable String id) {
+    public ModelAndView showEditForm(@PathVariable Long id) {
         Optional<OffenceEntity> offenceEntity = offenceEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
 
@@ -62,7 +62,7 @@ public class OffenceEntityController {
     }
 
     @GetMapping("/offenceEntity/delete/{id}")
-    public ModelAndView showDeleteForm(@PathVariable String id) {
+    public ModelAndView showDeleteForm(@PathVariable Long id) {
 
         Optional<OffenceEntity> offenceEntity = offenceEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
@@ -79,7 +79,7 @@ public class OffenceEntityController {
     }
 
     @GetMapping("/offenceEntity/view/{id}")
-    public ModelAndView show(@PathVariable String id) {
+    public ModelAndView show(@PathVariable Long id) {
         Optional<OffenceEntity> offenceEntity = offenceEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("");
         modelAndView.addObject("offenceEntity", offenceEntity);

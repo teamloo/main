@@ -44,7 +44,7 @@ public class DepartmentEntityController {
     }
 
 //    @GetMapping("/departmentEntity/edit/{id}")
-//    public ModelAndView showEditForm(@PathVariable String id) {
+//    public ModelAndView showEditForm(@PathVariable Long id) {
 //        Optional<DepartmentEntity> departmentEntity = departmentEntityManager.findById(id);
 //        ModelAndView modelAndView = new ModelAndView("");
 //
@@ -63,7 +63,7 @@ public class DepartmentEntityController {
 //    }
 //
 //    @GetMapping("/departmentEntity/delete/{id}")
-//    public ModelAndView showDeleteForm(@PathVariable String id) {
+//    public ModelAndView showDeleteForm(@PathVariable Long id) {
 //
 //        Optional<DepartmentEntity> departmentEntity = departmentEntityManager.findById(id);
 //        ModelAndView modelAndView = new ModelAndView("");
@@ -80,7 +80,7 @@ public class DepartmentEntityController {
 //    }
 //
 //    @GetMapping("/departmentEntity/view/{id}")
-//    public ModelAndView show(@PathVariable String id) {
+//    public ModelAndView show(@PathVariable Long id) {
 //        Optional<DepartmentEntity> departmentEntity = departmentEntityManager.findById(id);
 //        ModelAndView modelAndView = new ModelAndView("");
 //        modelAndView.addObject("departmentEntity", departmentEntity);
