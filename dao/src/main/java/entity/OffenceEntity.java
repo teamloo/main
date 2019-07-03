@@ -8,7 +8,8 @@ import java.sql.Date;
 
 public class OffenceEntity {
     @Id
-    private String id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
     private String offender;
     private long numberOfTreeLost;
     private String sanctionForm;
@@ -22,11 +23,11 @@ public class OffenceEntity {
 
 
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -11,7 +11,7 @@ public interface OffenceEntityManager {
 
     void saveOffence(OffenceEntity offenceEntity);
 
-    void removeOffence(String id);
+    void removeOffence(Long id);
 
-    Optional<OffenceEntity> findById(String id);
+    Optional<OffenceEntity> findById(Long id);
 }

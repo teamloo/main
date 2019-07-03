@@ -45,7 +45,7 @@ public class DepartmentEntityController {
     }
 
     @GetMapping("/edit-exploition/{id}")
-    public ModelAndView showEditForm(@PathVariable String id) {
+    public ModelAndView showEditForm(@PathVariable Long id) {
         Optional<ExploitionEntity> exploitionEntity = exploitionEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("/exploition/edit");
 
@@ -64,7 +64,7 @@ public class DepartmentEntityController {
     }
 
     @GetMapping("/delete-exploition/{id}")
-    public ModelAndView showDeleteForm(@PathVariable String id) {
+    public ModelAndView showDeleteForm(@PathVariable Long id) {
 
         Optional<ExploitionEntity> exploitionEntity = exploitionEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("/exploition/delete");
@@ -81,7 +81,7 @@ public class DepartmentEntityController {
     }
 
     @GetMapping("/view-exploition/{id}")
-    public ModelAndView show(@PathVariable String id) {
+    public ModelAndView show(@PathVariable Long id) {
         Optional<ExploitionEntity> exploitionEntity = exploitionEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("/exploition/view");
         modelAndView.addObject("exploition", exploitionEntity);

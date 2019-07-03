@@ -41,7 +41,7 @@ public class UnitEntityController {
 //    }
 //
 //    @GetMapping("/unitEntity/edit/{id}")
-//    public ModelAndView showEditForm(@PathVariable String id) {
+//    public ModelAndView showEditForm(@PathVariable Long id) {
 //        Optional<UnitEntity> unitEntity = unitEntityManager.findById(id);
 //        ModelAndView modelAndView = new ModelAndView("");
 //
@@ -60,7 +60,7 @@ public class UnitEntityController {
 //    }
 //
 //    @GetMapping("/unitEntity/delete/{id}")
-//    public ModelAndView showDeleteForm(@PathVariable String id) {
+//    public ModelAndView showDeleteForm(@PathVariable Long id) {
 //
 //        Optional<UnitEntity> unitEntity = unitEntityManager.findById(id);
 //        ModelAndView modelAndView = new ModelAndView("");
@@ -77,7 +77,7 @@ public class UnitEntityController {
 //    }
 //
 //    @GetMapping("/unitEntity/view/{id}")
-//    public ModelAndView show(@PathVariable String id) {
+//    public ModelAndView show(@PathVariable Long id) {
 //        Optional<UnitEntity> unitEntity = unitEntityManager.findById(id);
 //        ModelAndView modelAndView = new ModelAndView("");
 //        modelAndView.addObject("unitEntity", unitEntity);

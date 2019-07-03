@@ -12,7 +12,7 @@ public interface UnitEntityManager {
 
     void saveUnit(UnitEntity unitEntity);
 
-    void deleteUnit(String id);
+    void deleteUnit(Long id);
 
-    Optional<UnitEntity> findById(String id);
+    Optional<UnitEntity> findById(Long id);
 }

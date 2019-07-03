@@ -10,7 +10,8 @@ import java.util.List;
 public class UnitEntity {
     @Id
     @Column(name = "unit_id")
-    private String id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
     private String name;
     private String organizationForm; // hình thức tổ chức: chí cho phép 3 loại: hộ gia đình, ban quản lý rừng, Công ty theo hợp đồng
     private String contract; // hợp đồng - chí áp dụng cho công ty, nếu không ghi không có;
@@ -31,11 +32,11 @@ public class UnitEntity {
     public UnitEntity() {
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

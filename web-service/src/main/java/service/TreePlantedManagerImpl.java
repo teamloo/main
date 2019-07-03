@@ -22,12 +22,12 @@ public class TreePlantedManagerImpl implements TreePlantedEntityManager{
     }
 
     @Override
-    public void deleteTreePlanted(String id) {
+    public void deleteTreePlanted(Long id) {
         plantedEntityRepository.deleteById(id);
     }
 
     @Override
-    public Optional<TreePlantedEntity> findById(String id) {
+    public Optional<TreePlantedEntity> findById(Long id) {
         return plantedEntityRepository.findById(id);
     }
 

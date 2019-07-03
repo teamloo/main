@@ -11,7 +11,8 @@ public class ForestEntity {
 
     @Id
     @Column(name = "forest_id")
-    private String id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
     private String name;
     private Double greenErea;
@@ -40,11 +41,11 @@ public class ForestEntity {
         this.fireForest = fireForest;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

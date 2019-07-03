@@ -22,12 +22,12 @@ public class ForestEntityManagerImpl implements ForestEntityManager {
     }
 
     @Override
-    public void removeForest(String id) {
+    public void removeForest(Long id) {
         forestEntityRepository.deleteById(id);
     }
 
     @Override
-    public Optional<ForestEntity> findById(String id) {
+    public Optional<ForestEntity> findById(Long id) {
         return forestEntityRepository.findById(id);
     }
 
