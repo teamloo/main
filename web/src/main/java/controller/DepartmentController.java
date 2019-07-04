@@ -15,10 +15,16 @@ public class DepartmentController {
     @Autowired
     DepartmentEntityManager departmentEntityManager;
 
+<<<<<<< HEAD
     @GetMapping("/departmentEntity")
     public ModelAndView list(Pageable pageable){
+=======
+    @GetMapping("/department")
+    public ModelAndView list(Pageable pageable) {
+>>>>>>> 3ac452d6e47fd633f8829f425bb0d24fbe03a833
         Page<DepartmentEntity> list = departmentEntityManager.getAllDepartment(pageable);
         ModelAndView mav = new ModelAndView("/department/index");
+        mav.addObject("list", list);
         return mav;
     }
 }

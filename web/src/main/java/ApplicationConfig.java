@@ -129,9 +129,13 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+<<<<<<< HEAD
         dataSource.setUrl("jdbc:mysql://localhost:3306/blog");
+=======
+        dataSource.setUrl("jdbc:mysql://localhost:3306/ap");
+>>>>>>> 3ac452d6e47fd633f8829f425bb0d24fbe03a833
         dataSource.setUsername("root");
-        dataSource.setPassword("123456");
+        dataSource.setPassword("liem123456");
         return dataSource;
     }
 
@@ -157,6 +161,6 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/resources/**").addResourceLocations("/WEB-INF/resources/");
+        registry.addResourceHandler("../resources/**").addResourceLocations("/WEB-INF/views/resources/");
     }
 }
