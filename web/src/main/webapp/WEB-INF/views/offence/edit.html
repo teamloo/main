@@ -153,6 +153,7 @@
                     class="fa fa-plus-circle"></i>Quay lại
             </button>
         </a>
+
         <div>
             <form method="post" th:object="${offenceEntity}" th:action="@{/offenceEntity/edit}">
                 <div class="form-group">
@@ -165,7 +166,7 @@
                             <div class="col-md-10 offset-md-1"><input th:field="*{id}" pattern="\d*"
                                                                       class="form-control" type="number"
                                                                       placeholder="mã" min="0"
-                                                                      style="font-family:Roboto, sans-serif;" th:disabled="on"></div>
+                                                                      style="font-family:Roboto, sans-serif;" th:hidden="on"></div>
                         </div>
 
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
@@ -198,13 +199,12 @@
                                 </p>
                             </div>
                             <div class="col-md-10 offset-md-1">
-                                <select class="form-control" name="gender"
-                                        style="font-family:Roboto, sans-serif;" >
+                                <select class="form-control" name="forest"
+                                        style="font-family:Roboto, sans-serif;">
 
-                                <option th:each="a : ${forestList}"
+                                <option th:each="a:${forestList}"
                                         th:value="${a.id}"
                                         th:text="${a.name}"
-                                        th:selected="(${a.id} == *{forestList.id})"
                                         id="companyId">
 
                                 </option>
@@ -266,7 +266,7 @@
                                 <button class="btn btn-light btn-lg" type="reset"
                                         style="font-family:Roboto, sans-serif;">Làm mới
                                 </button>
-                                <button class="btn btn-light btn-lg" type="submit" style="margin-left:16px;">Thêm
+                                <button  class="btn btn-light btn-lg" type="submit" style="margin-left:16px;">Sửa
                                 </button>
                             </div>
                         </div>

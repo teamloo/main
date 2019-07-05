@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import service.ForestEntityManager;
@@ -27,6 +28,15 @@ public class OffenceEntityController {
         return forestEntityManager.getAllForest(pageable);
     }
 
+    @RequestMapping(value = "/offenceEntity")
+    public ModelAndView list(Pageable pageable) {
+        Page<OffenceEntity> list = offenceEntityManager.getAllOffence(pageable);
+        ModelAndView modelAndView = new ModelAndView("/offence/list");
+        modelAndView.addObject("list", list);
+        return modelAndView;
+    }
+
+
     @GetMapping("/offenceEntity/create")
     public ModelAndView showCreateForm() {
         ModelAndView modelAndView = new ModelAndView("/offence/create");
@@ -40,17 +50,10 @@ public class OffenceEntityController {
         offenceEntityManager.saveOffence(offenceEntity);
         ModelAndView modelAndView = new ModelAndView("/offence/create");
         modelAndView.addObject("offenceEntity", offenceEntity);
-        modelAndView.addObject("message","success");
+        modelAndView.addObject("message","Thành công");
         return modelAndView;
     }
 
-    @RequestMapping(value = "/offenceEntity")
-    public ModelAndView list(Pageable pageable) {
-        Page<OffenceEntity> list = offenceEntityManager.getAllOffence(pageable);
-        ModelAndView modelAndView = new ModelAndView("/offence/list");
-        modelAndView.addObject("list", list);
-        return modelAndView;
-    }
 
     @GetMapping("/offenceEntity/edit/{id}")
     public ModelAndView showEditForm(@PathVariable Long id) {
@@ -79,11 +82,12 @@ public class OffenceEntityController {
     }
 
     @PostMapping("/offenceEntity/delete")
-    public ModelAndView delete(@ModelAttribute("offenceEntity") OffenceEntity offenceEntity) {
-        ModelAndView modelAndView = new ModelAndView("/offence/delete");
+    public String
+    delete(@ModelAttribute("offenceEntity") OffenceEntity offenceEntity, Model model) {
+
         offenceEntityManager.removeOffence(offenceEntity.getId());
-        modelAndView.addObject("message", "success");
-        return modelAndView;
+
+        return "redirect:/offenceEntity";
     }
 
     @GetMapping("/offenceEntity/view/{id}")
