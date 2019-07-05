@@ -139,11 +139,10 @@
 <section>
     <div class="caption v-middle text-center">
         <h1 class="cd-headline clip">
-            <span class="blc">Manage</span>
+            <span class="blc"></span>
             <span class="cd-words-wrapper">
-			              <b class="is-visible">Forest</b>
-			              <b>Wood</b>
-			              <b>Trees</b>
+			              <b class="is-visible">Quản lý rừng</b>
+
 			            </span>
             <span class="blc"> | </span>
         </h1>
@@ -163,22 +162,30 @@
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample110.jpg" alt="sample110"/>
                 <figcaption>
                     <h3 th:text="'ID: '+${lists.id}"></h3>
-                    <p th:text="'Name: '+${lists.offender}"></p>
-                    <p th:text="'SanctionForm: '+${lists.sanctionForm}"></p>
+                    <p th:text="'Tên: '+${lists.offender}"></p>
+                    <p th:text="'Hình thức xử phạt: '+${lists.sanctionForm}"></p>
                     <th:block th:if="${lists.forest}">
                         <p th:text="${lists.forest.name}"></p>
                     </th:block>
                     <th:block th:unless="${lists.forest}">
                         <p>Have not set yet</p>
                     </th:block>
-                    <p th:text="'Date: '+${lists.datee}"></p>
+                    <p th:text="'Ngày phạt: '+${lists.datee}"></p>
+                    <p th:text="'Số cây mất: '+${lists.numberOfTreeLost}"></p>
+                    <p th:text="'Diện tích thiệt hại: '+${lists.areaOfDamage}"></p>
+                    <p th:text="'Số tiền phạt: '+${lists.compensationMoney}"></p>
 
-                    <button class="btn btn-success" type="submit" style="margin-left: 5px;"><i class="fa fa-edit"
+                    <a class="btn btn-primay" th:href="@{/offenceEntity/edit/__${lists.id}__}">
+                    <button class="btn btn-success" type="button" style="margin-left: 5px;"><i class="fa fa-edit"
                                                                                                style="font-size: 15px;"></i>
                     </button>
-                    <button class="btn btn-danger" type="submit" style="margin-left: 5px;"><i class="fa fa-trash"
+                    </a>
+
+                    <a class="btn btn-primay" th:href="@{/offenceEntity/delete/__${lists.id}__}">
+                    <button class="btn btn-danger" type="button" style="margin-left: 5px;"><i class="fa fa-trash"
                                                                                               style="font-size: 15px;"></i>
                     </button>
+                    </a>
                 </figcaption>
                 <a href="#"></a>
             </figure>

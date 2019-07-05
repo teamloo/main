@@ -139,11 +139,10 @@
 <section>
     <div class="caption v-middle text-center">
         <h1 class="cd-headline clip">
-            <span class="blc">Manage</span>
+            <span class="blc"></span>
             <span class="cd-words-wrapper">
-			              <b class="is-visible">Offence</b>
-			              <b>Wood</b>
-			              <b>Trees</b>
+			              <b class="is-visible">Thêm người vi phạm</b>
+
 			            </span>
             <span class="blc"> | </span>
         </h1>
@@ -151,7 +150,7 @@
     <div class="container">
         <a th:href="@{/offenceEntity}">
             <button class="btn btn-primary" type="button" style="background-color: rgb(32,238,90);margin-left: 20vh;"><i
-                    class="fa fa-plus-circle"></i>Back
+                    class="fa fa-plus-circle"></i>Quay lại
             </button>
         </a>
         <div>
@@ -161,11 +160,11 @@
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 offset-md-1">
                                 <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
-                                    <strong>Offender </strong></p>
+                                    <strong>Tên </strong></p>
                             </div>
                             <div class="col-md-10 offset-md-1"><input th:field="*{offender}" class="form-control"
                                                                       type="text" name="name"
-                                                                      placeholder="Name" maxlength="30" minlength="2"
+                                                                      placeholder="nhập tên ở đây" maxlength="30" minlength="2"
                                                                       style="margin-left:0px;font-family:Roboto, sans-serif;">
                             </div>
                         </div>
@@ -184,7 +183,7 @@
                         <div class="form-row"
                              style="margin-right:0px;margin-left:0px;padding-top:24px;margin-top:-16px;">
                             <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Forest </strong>
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Loại rừng </strong>
                                 </p>
                             </div>
                             <div class="col-md-10 offset-md-1"><select class="form-control" name="gender"
@@ -197,39 +196,37 @@
 
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Number
-                                    of tree lost</strong></p>
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Số cây mất</strong></p>
                             </div>
                             <div class="col-md-10 offset-md-1"><input th:field="*{numberOfTreeLost}" pattern="\d*"
                                                                       class="form-control" type="number"
-                                                                      placeholder="Number" min="0"
+                                                                      placeholder="nhập số cây" min="0"
                                                                       style="font-family:Roboto, sans-serif;"></div>
                         </div>
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 offset-md-1">
                                 <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
-                                    <strong>Sanction Form </strong></p>
+                                    <strong>Hình thức xử phạt</strong></p>
                             </div>
                             <div class="col-md-10 offset-md-1"><input th:field="*{sanctionForm}" class="form-control"
                                                                       type="text" name="name"
-                                                                      placeholder="Name" maxlength="30" minlength="2"
+                                                                      placeholder="hình thức" maxlength="30" minlength="2"
                                                                       style="margin-left:0px;font-family:Roboto, sans-serif;">
                             </div>
                         </div>
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Compensation
-                                    Money</strong></p>
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Số tiền phạt</strong></p>
                             </div>
                             <div class="col-md-10 offset-md-1"><input th:field="*{compensationMoney}" step="0.1"
                                                                       class="form-control" type="number"
-                                                                      placeholder="Number" min="0"
+                                                                      placeholder="nhập ở đây" min="0"
                                                                       style="font-family:Roboto, sans-serif;"></div>
                         </div>
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 offset-md-1">
                                 <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
-                                    <strong>Date</strong></p>
+                                    <strong>Ngày vi phạm</strong></p>
                             </div>
                             <div class="col-md-10 offset-md-1"><input th:field="*{datee}" class="form-control"
                                                                       type="date"
@@ -237,21 +234,20 @@
                         </div>
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Area of
-                                    Damage</strong></p>
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Diện tích thiệt hại</strong></p>
                             </div>
                             <div class="col-md-10 offset-md-1"><input th:field="*{areaOfDamage}" class="form-control" step="0.1"
                                                                       type="number"
-                                                                      placeholder="Number" min="0"
+                                                                      placeholder="Nhập ở đây" min="0"
                                                                       style="font-family:Roboto, sans-serif;"></div>
                         </div>
 
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-12 col-md-4 offset-md-4">
                                 <button class="btn btn-light btn-lg" type="reset"
-                                        style="font-family:Roboto, sans-serif;">Clear
+                                        style="font-family:Roboto, sans-serif;">Làm mới
                                 </button>
-                                <button class="btn btn-light btn-lg" type="submit" style="margin-left:16px;">Submit
+                                <button class="btn btn-light btn-lg" type="submit" style="margin-left:16px;">Thêm
                                 </button>
                             </div>
                         </div>

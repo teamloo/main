@@ -55,8 +55,7 @@ public class OffenceEntityController {
     @GetMapping("/offenceEntity/edit/{id}")
     public ModelAndView showEditForm(@PathVariable Long id) {
         Optional<OffenceEntity> offenceEntity = offenceEntityManager.findById(id);
-        ModelAndView modelAndView = new ModelAndView("");
-
+        ModelAndView modelAndView = new ModelAndView("/offence/edit");
         modelAndView.addObject("offenceEntity", offenceEntity);
         return modelAndView;
     }
@@ -65,7 +64,7 @@ public class OffenceEntityController {
     @PostMapping("/offenceEntity/edit")
     public ModelAndView edit(@ModelAttribute("offenceEntity") OffenceEntity offenceEntity) {
         offenceEntityManager.saveOffence(offenceEntity);
-        ModelAndView modelAndView = new ModelAndView("");
+        ModelAndView modelAndView = new ModelAndView("/offence/edit");
         modelAndView.addObject("offenceEntity",offenceEntity);
         modelAndView.addObject("message","Success");
         return modelAndView;
@@ -73,16 +72,15 @@ public class OffenceEntityController {
 
     @GetMapping("/offenceEntity/delete/{id}")
     public ModelAndView showDeleteForm(@PathVariable Long id) {
-
         Optional<OffenceEntity> offenceEntity = offenceEntityManager.findById(id);
-        ModelAndView modelAndView = new ModelAndView("");
+        ModelAndView modelAndView = new ModelAndView("/offence/delete");
         modelAndView.addObject("offenceEntity", offenceEntity);
         return modelAndView;
     }
 
     @PostMapping("/offenceEntity/delete")
     public ModelAndView delete(@ModelAttribute("offenceEntity") OffenceEntity offenceEntity) {
-        ModelAndView modelAndView = new ModelAndView("");
+        ModelAndView modelAndView = new ModelAndView("/offence/delete");
         offenceEntityManager.removeOffence(offenceEntity.getId());
         modelAndView.addObject("message", "success");
         return modelAndView;
