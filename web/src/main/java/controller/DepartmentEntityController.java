@@ -28,7 +28,7 @@ public class DepartmentEntityController {
 
 
     @PostMapping("/create-exploition")
-    public ModelAndView create(@ModelAttribute("exploitionEntity") ExploitionEntity exploitionEntity) {
+    public ModelAndView create(@ModelAttribute("exploition") ExploitionEntity exploitionEntity) {
         exploitionEntityManager.saveExploition(exploitionEntity);
         ModelAndView modelAndView = new ModelAndView("/exploition/create");
         modelAndView.addObject("exploition", exploitionEntity);
@@ -55,7 +55,7 @@ public class DepartmentEntityController {
 
 
     @PostMapping("/edit-exploition")
-    public ModelAndView edit(@ModelAttribute("exploitionEntity") ExploitionEntity exploitionEntity) {
+    public ModelAndView edit(@ModelAttribute("exploition") ExploitionEntity exploitionEntity) {
         exploitionEntityManager.saveExploition(exploitionEntity);
         ModelAndView modelAndView = new ModelAndView("/exploition/edit");
         modelAndView.addObject("exploition",exploitionEntity);
@@ -66,7 +66,7 @@ public class DepartmentEntityController {
     @GetMapping("/delete-exploition/{id}")
     public ModelAndView showDeleteForm(@PathVariable Long id) {
 
-        Optional<ExploitionEntity> exploitionEntity = exploitionEntityManager.findById(id);
+        ExploitionEntity exploitionEntity = exploitionEntityManager.findById(id).get();
         ModelAndView modelAndView = new ModelAndView("/exploition/delete");
         modelAndView.addObject("exploition", exploitionEntity);
         return modelAndView;
@@ -82,7 +82,7 @@ public class DepartmentEntityController {
 
     @GetMapping("/view-exploition/{id}")
     public ModelAndView show(@PathVariable Long id) {
-        Optional<ExploitionEntity> exploitionEntity = exploitionEntityManager.findById(id);
+        ExploitionEntity exploitionEntity = exploitionEntityManager.findById(id).get();
         ModelAndView modelAndView = new ModelAndView("/exploition/view");
         modelAndView.addObject("exploition", exploitionEntity);
         return modelAndView;

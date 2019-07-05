@@ -1,10 +1,11 @@
-package service;
+package service.Impl;
 
 import entity.OffenceEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import repository.OffenceEntityRepository;
+import service.OffenceEntityManager;
 
 import java.util.Optional;
 

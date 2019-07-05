@@ -7,212 +7,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ef45d4a-faa8-4c99-9ea2-abbf34a037a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/dao.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/entity/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/entity/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forest-service/forest-service.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectTeamLo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/ExploitionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/ExploitionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/entity/ExploitionEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/entity/ExploitionEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/DepartmentEntityManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/Impl/DepartmentEntityManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/ExploitionEntityManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/Impl/ExploitionEntityManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/ForestEntityManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/Impl/ForestEntityManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/ForestFireEntityManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/Impl/ForestFireEntityManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/OffenceEntityManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/Impl/OffenceEntityManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/TreePlantedManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/Impl/TreePlantedManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-service/src/main/java/service/Impl/UnitEntityManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/target/classes/service/DepartmentEntityManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/target/classes/service/ExploitionEntityManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/target/classes/service/ForestEntityManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/target/classes/service/ForestFireEntityManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/target/classes/service/OffenceEntityManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/target/classes/service/TreePlantedManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-service/target/classes/service/UnitEntityManagerImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/ApplicationConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/controller/DepartmentEntityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/controller/DepartmentEntityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/controller/ExploitionEntityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/controller/ExploitionEntityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/controller/ForestEntityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/controller/ForestEntityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/controller/TreePlantedEntityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/controller/TreePlantedEntityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/classes/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/ApplicationConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/classes/controller/DepartmentEntityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/controller/DepartmentEntityController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/controller/ExploitionEntityController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/controller/ForestEntityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/controller/ForestEntityController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/controller/TreePlantedEntityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/controller/TreePlantedEntityController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/ApplicationConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/ApplicationInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/controller/DepartmentEntityController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/controller/ExploitionEntityController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/controller/ForestEntityController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/controller/ForestFireEntityController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/controller/OffenceEntityController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/controller/TreePlantedEntityController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/controller/UnitEntityController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/activation-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/aspectjrt-1.9.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/attoparser-2.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/byte-buddy-1.9.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/classmate-1.4.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/fest-assert-1.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/fest-util-1.1.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-5.0.4.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/hibernate-core-5.3.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/hibernate-validator-6.0.16.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.9.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.9.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/jackson-datatype-jdk8-2.9.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/jackson-datatype-jsr310-2.9.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/jackson-module-parameter-names-2.9.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/jandex-2.0.5.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.23.2-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/javax.annotation-api-1.3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/jaxb-api-2.2.11.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/jaxb-core-2.2.11.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/jaxb-impl-2.2.11.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.26.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/log4j-api-2.11.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.11.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.16.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.26.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/snakeyaml-1.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-2.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-json-2.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-tomcat-2.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-2.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-data-commons-2.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-data-jpa-2.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-orm-5.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.1.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.1.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/thymeleaf-3.0.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/thymeleaf-spring4-3.0.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-core-9.0.19.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-el-9.0.19.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-websocket-9.0.19.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/unbescape-1.1.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/validation-api-2.0.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/web-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/web-service-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/MaterialIcons-Regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/MaterialIcons-Regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/MaterialIcons-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/MaterialIcons-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/MaterialIcons-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fa-brands-400.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fa-brands-400.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fa-brands-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fa-brands-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fa-brands-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fa-regular-400.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fa-regular-400.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fa-regular-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fa-regular-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fa-regular-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fa-solid-900.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fa-solid-900.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fa-solid-900.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fa-solid-900.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fa-solid-900.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fontawesome-all.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/ionicons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/ionicons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/ionicons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/ionicons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/ionicons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/fonts/material-icons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/img/hinh-anh-nen-rung-tuyet-dep-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/img/tree-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/js/Table-With-Search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/resources/assets/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/css/-Fixed-Navbar-start-with-transparency-background-BS4-.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/css/Animated-Type-Heading.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/css/Card-hover-affect-2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/css/Pretty-Footer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/css/Table-With-Search.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/css/js-image-slider.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/MaterialIcons-Regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/MaterialIcons-Regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/MaterialIcons-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/MaterialIcons-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/MaterialIcons-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fa-brands-400.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fa-brands-400.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fa-brands-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fa-brands-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fa-brands-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fa-regular-400.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fa-regular-400.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fa-regular-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fa-regular-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fa-regular-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fa-solid-900.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fa-solid-900.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fa-solid-900.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fa-solid-900.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fa-solid-900.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fontawesome-all.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/ionicons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/ionicons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/ionicons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/ionicons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/ionicons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/fonts/material-icons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/img/Lakeside Infinity-25.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/img/Lakeside Infinity-26.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/img/Lakeside Infinity-32.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/img/Lakeside Infinity-36.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/img/Lakeside Infinity-37.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/img/Lakeside Infinity-38.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/img/architect-at-the-construction.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/img/architects-and-worker.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/img/hinh-anh-nen-rung-tuyet-dep-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/img/tree-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/img/young-college-students.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/js/-Fixed-Navbar-start-with-transparency-background-BS4-.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/js/Animated-Type-Heading.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/js/Card-hover-affect-2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/js/Table-With-Search-1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/assets/js/js-image-slider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/create.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/template/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/views/exploition/create.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/views/exploition/delete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/views/exploition/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/views/exploition/list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/views/offence/create.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/views/offence/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/ApplicationConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/controller/DepartmentEntityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/controller/DepartmentEntityController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/web-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/web-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/web-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/web-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/views/exploition/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/views/exploition/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/views/exploition/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/views/exploition/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/views/exploition/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/views/exploition/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/views/exploition/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/views/exploition/list.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/forest-service/target/" />
     <ignored path="$PROJECT_DIR$/configure/target/" />
@@ -228,104 +59,69 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/DepartmentEntityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1717">
-              <caret line="112" selection-start-line="112" selection-end-line="112" />
+            <state relative-caret-position="145">
+              <caret line="68" column="86" selection-start-line="68" selection-start-column="86" selection-end-line="68" selection-end-column="86" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/ExploitionEntityController.java">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/delete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
-              <folding>
-                <element signature="e#0#3695#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/ForestEntityController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="86" selection-start-line="86" selection-end-line="86" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/ForestFireEntityController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="91" selection-start-line="91" selection-end-line="91" />
+            <state relative-caret-position="255">
+              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/OffenceEntityController.java">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="54">
+              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/TreePlantedEntityController.java">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
+            <state relative-caret-position="197">
+              <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/UnitEntityController.java">
+        <entry file="file://$PROJECT_DIR$/dao/src/main/java/repository/DepartmentEntityRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="86" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="68">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/ApplicationConfig.java">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="150" column="9" selection-start-line="150" selection-start-column="9" selection-end-line="150" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/ApplicationInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/DepartmentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+            <state relative-caret-position="17">
+              <caret line="10" column="82" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="82" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -334,7 +130,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/dao/src/main/java/entity/DepartmentEntity.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/entity/ExploitionEntity.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/entity/ForestEntity.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/entity/ForestFireEntity.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/entity/OffenceEntity.java" />
@@ -361,15 +156,21 @@
         <option value="$PROJECT_DIR$/web-service/src/main/java/service/TreePlantedManagerImpl.java" />
         <option value="$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManager.java" />
         <option value="$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManagerImpl.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/controller/DepartmentEntityController.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/controller/ForestEntityController.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/controller/ExploitionEntityController.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/controller/ForestFireEntityController.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/controller/TreePlantedEntityController.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/controller/UnitEntityController.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/ApplicationInitializer.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/controller/OffenceEntityController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/create.html" />
+        <option value="$PROJECT_DIR$/web/src/main/java/ApplicationConfig.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/entity/ExploitionEntity.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/controller/ExploitionEntityController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/edit.html" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/view.html" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/list.html" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/delete.html" />
+        <option value="$PROJECT_DIR$/web/src/main/java/controller/DepartmentEntityController.java" />
       </list>
     </option>
   </component>
@@ -390,6 +191,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -401,6 +204,36 @@
               <item name="main" type="b2602c69:ProjectViewProjectNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="main" type="b2602c69:ProjectViewProjectNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="main" type="b2602c69:ProjectViewProjectNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="main" type="b2602c69:ProjectViewProjectNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="main" type="b2602c69:ProjectViewProjectNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="main" type="b2602c69:ProjectViewProjectNode" />
@@ -462,49 +295,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="main" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="main" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="main" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="main" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="department" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="main" type="b2602c69:ProjectViewProjectNode" />
@@ -520,39 +311,37 @@
             <path>
               <item name="main" type="b2602c69:ProjectViewProjectNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="forest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="main" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="offence" type="462c0819:PsiDirectoryNode" />
+              <item name="web-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="main" type="b2602c69:ProjectViewProjectNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="web-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="main" type="b2602c69:ProjectViewProjectNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="web-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="main" type="b2602c69:ProjectViewProjectNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="web-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562144755086" />
@@ -574,7 +363,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.16" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.37" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="web:war">
@@ -731,16 +520,20 @@
       <option name="presentableId" value="Default" />
       <updated>1562137020317</updated>
       <workItem from="1562137024754" duration="4749000" />
+      <workItem from="1562148612451" duration="2178000" />
+      <workItem from="1562212967622" duration="1147000" />
+      <workItem from="1562223674094" duration="4487000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6230000" />
+    <option name="totallyTimeSpent" value="14042000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.26172465" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -750,7 +543,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33224222" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6535948" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -761,9 +554,9 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32843137" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.31751227" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.31699347" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -775,6 +568,42 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26172465" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info id="Image Layers" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21078432" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.11292962" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32843137" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.31699347" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -813,20 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/ExploitionEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/ForestEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="58" selection-start-line="55" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/ForestFireEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -856,13 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/repository/DepartmentEntityRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="101" selection-start-line="9" selection-start-column="101" selection-end-line="9" selection-end-column="101" />
         </state>
       </provider>
     </entry>
@@ -908,45 +716,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/DepartmentEntityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/DepartmentEntityManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/ExploitionEntityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/ExploitionEntityManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/ForestEntityManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/ForestEntityManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -957,24 +730,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/ForestFireEntityManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/OffenceEntityManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/OffenceEntityManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -985,13 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/TreePlantedManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -999,10 +751,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/UnitEntityManagerImpl.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        <state relative-caret-position="736">
+          <caret line="1070" column="10" selection-start-line="1070" selection-start-column="10" selection-end-line="1070" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/TreePlantedEntityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/UnitEntityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/ApplicationInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/ForestEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/ForestEntityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/ForestFireEntityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/OffenceEntityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="37" column="49" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/ExploitionEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -1015,77 +826,127 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/ExploitionEntityController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <element signature="e#0#3695#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/DepartmentEntityController.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/create.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        <state relative-caret-position="170">
+          <caret line="10" column="78" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/ForestEntityController.java">
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/ExploitionEntityManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/ForestFireEntityController.java">
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/Impl/ExploitionEntityManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        <state relative-caret-position="68">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/TreePlantedEntityController.java">
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/Impl/ForestEntityManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        <state relative-caret-position="-7">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/UnitEntityController.java">
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/Impl/ForestFireEntityManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        <state relative-caret-position="-7">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/Impl/OffenceEntityManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="1070" column="10" selection-start-line="1070" selection-start-column="10" selection-end-line="1070" selection-end-column="10" />
+        <state relative-caret-position="-7">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/ApplicationInitializer.java">
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/Impl/TreePlantedManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="-7">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/Impl/UnitEntityManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/ApplicationConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="150" column="9" selection-start-line="150" selection-start-column="9" selection-end-line="150" selection-end-column="9" />
+        <state relative-caret-position="1114">
+          <caret line="131" column="62" selection-start-line="131" selection-start-column="62" selection-end-line="131" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/OffenceEntityController.java">
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/DepartmentEntityManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="187">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/service/Impl/DepartmentEntityManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/repository/DepartmentEntityRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="82" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/DepartmentEntityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="68" column="86" selection-start-line="68" selection-start-column="86" selection-end-line="68" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
         </state>
       </provider>
     </entry>

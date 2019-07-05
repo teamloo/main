@@ -1,14 +1,15 @@
-package service;
+package service.Impl;
 
 import entity.ForestFireEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import repository.ForestFireEntityRepository;
+import service.ForestFireEntityManager;
 
 import java.util.Optional;
 
-public class ForestFireEntityManagerImpl  implements ForestFireEntityManager{
+public class ForestFireEntityManagerImpl  implements ForestFireEntityManager {
     @Autowired
     ForestFireEntityRepository forestFireEntityRepository;
     @Override

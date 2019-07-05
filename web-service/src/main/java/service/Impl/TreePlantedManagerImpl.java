@@ -1,14 +1,15 @@
-package service;
+package service.Impl;
 
 import entity.TreePlantedEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import repository.TreePlantedEntityRepository;
+import service.TreePlantedEntityManager;
 
 import java.util.Optional;
 
-public class TreePlantedManagerImpl implements TreePlantedEntityManager{
+public class TreePlantedManagerImpl implements TreePlantedEntityManager {
     @Autowired
     TreePlantedEntityRepository plantedEntityRepository;
     @Override

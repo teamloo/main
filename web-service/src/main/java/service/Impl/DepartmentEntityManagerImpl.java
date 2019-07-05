@@ -1,10 +1,11 @@
-package service;
+package service.Impl;
 
 import entity.DepartmentEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import repository.DepartmentEntityRepository;
+import service.DepartmentEntityManager;
 
 import java.util.Optional;
 

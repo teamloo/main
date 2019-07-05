@@ -1,14 +1,15 @@
-package service;
+package service.Impl;
 
 import entity.UnitEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import repository.UnitEntityRepository;
+import service.UnitEntityManager;
 
 import java.util.Optional;
 
-public class UnitEntityManagerImpl implements  UnitEntityManager {
+public class UnitEntityManagerImpl implements UnitEntityManager {
    @Autowired
    private UnitEntityRepository unitEntityRepository;
 
