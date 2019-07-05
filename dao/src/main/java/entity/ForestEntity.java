@@ -1,5 +1,8 @@
 package entity;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
 import javax.persistence.*;
 import java.sql.Date;
 import java.util.List;
@@ -24,17 +27,25 @@ public class ForestEntity {
 
     private Date timeadded;
 
-    @OneToMany(mappedBy = "forest")
+    @OneToMany(mappedBy = "forest",
+            cascade= {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH}, fetch = FetchType.EAGER)
+    @Fetch(value = FetchMode.SUBSELECT)
     private List<UnitEntity> unit;
 
-    @OneToMany(mappedBy = "forest")
+    @OneToMany(mappedBy = "forest",
+            cascade= {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH}, fetch = FetchType.EAGER)
+    @Fetch(value = FetchMode.SUBSELECT)
     private List<ExploitionEntity> exploition;
 
-    @OneToMany(mappedBy = "forest")
+    @OneToMany(mappedBy = "forest",
+            cascade= {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH}, fetch = FetchType.EAGER)
+    @Fetch(value = FetchMode.SUBSELECT)
     private List<TreePlantedEntity> treePlanted;
 
 
-    @OneToMany(mappedBy = "forest")
+    @OneToMany(mappedBy = "forest",
+            cascade= {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH}, fetch = FetchType.EAGER)
+    @Fetch(value = FetchMode.SUBSELECT)
     private List<ForestFireEntity> fireForest;
 
     public void setFireForest(List<ForestFireEntity> fireForest) {

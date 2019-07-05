@@ -9,9 +9,9 @@
   min-width: 230px;
   overflow: hidden;
   position: relative;
-  text-align: right;
+  text-align: left;
   width: 100%;
-  height: auto;
+  min-height: 400px;
 }
 
 .snip1563 *, .snip1563 *:before, .snip1563 *:after {
@@ -103,12 +103,12 @@
 }
 
 .snip1563 a {
-  position: absolute;
+  position: relative;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 0;
 }
 
 .snip1563:hover h3, .snip1563.hover h3, .snip1563:hover p, .snip1563.hover p {

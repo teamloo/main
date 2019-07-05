@@ -200,7 +200,7 @@
                                 <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Number
                                     of tree lost</strong></p>
                             </div>
-                            <div class="col-md-10 offset-md-1"><input th:field="*{numberOfTreeLost}"
+                            <div class="col-md-10 offset-md-1"><input th:field="*{numberOfTreeLost}" pattern="\d*"
                                                                       class="form-control" type="number"
                                                                       placeholder="Number" min="0"
                                                                       style="font-family:Roboto, sans-serif;"></div>
@@ -221,7 +221,7 @@
                                 <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Compensation
                                     Money</strong></p>
                             </div>
-                            <div class="col-md-10 offset-md-1"><input th:field="*{compensationMoney}"
+                            <div class="col-md-10 offset-md-1"><input th:field="*{compensationMoney}" step="0.1"
                                                                       class="form-control" type="number"
                                                                       placeholder="Number" min="0"
                                                                       style="font-family:Roboto, sans-serif;"></div>
@@ -240,12 +240,11 @@
                                 <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Area of
                                     Damage</strong></p>
                             </div>
-                            <div class="col-md-10 offset-md-1"><input th:field="*{areaOfDamage}" class="form-control"
+                            <div class="col-md-10 offset-md-1"><input th:field="*{areaOfDamage}" class="form-control" step="0.1"
                                                                       type="number"
                                                                       placeholder="Number" min="0"
                                                                       style="font-family:Roboto, sans-serif;"></div>
                         </div>
-
 
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-12 col-md-4 offset-md-4">
