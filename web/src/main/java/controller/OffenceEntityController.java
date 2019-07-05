@@ -1,5 +1,6 @@
 package controller;
 
+import entity.ForestEntity;
 import entity.OffenceEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -7,6 +8,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import service.ForestEntityManager;
 import service.OffenceEntityManager;
 
 import java.util.Optional;
@@ -16,6 +18,14 @@ public class OffenceEntityController {
     @Autowired
     OffenceEntityManager offenceEntityManager;
 
+    @Autowired
+    ForestEntityManager forestEntityManager;
+
+
+    @ModelAttribute("forestList")
+    Iterable<ForestEntity> forestList(Pageable pageable) {
+        return forestEntityManager.getAllForest(pageable);
+    }
 
     @GetMapping("/offenceEntity/create")
     public ModelAndView showCreateForm() {
