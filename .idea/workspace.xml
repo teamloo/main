@@ -6,18 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ef45d4a-faa8-4c99-9ea2-abbf34a037a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/offence/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/offence/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/entity/Company.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/entity/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/entity/ForestEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/entity/ForestEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/ApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/controller/OffenceEntityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/controller/OffenceEntityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/offence/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/offence/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/offence/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/offence/list.html" afterDir="false" />
-    </list>
+    <list default="true" id="1ef45d4a-faa8-4c99-9ea2-abbf34a037a1" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/forest-service/target/" />
     <ignored path="$PROJECT_DIR$/configure/target/" />
     <ignored path="$PROJECT_DIR$/dao/target/" />
@@ -255,10 +244,10 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
-    <option name="height" value="735" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-4" />
+    <option name="width" value="1380" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -486,7 +475,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562314780102" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562315850818" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -671,7 +660,7 @@
       <workItem from="1562155330489" duration="1092000" />
       <workItem from="1562159449441" duration="3001000" />
       <workItem from="1562204835898" duration="5667000" />
-      <workItem from="1562309544002" duration="5164000" />
+      <workItem from="1562309544002" duration="5755000" />
     </task>
     <task id="LOCAL-00001" summary="luan up">
       <created>1562156287488</created>
@@ -684,12 +673,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21590000" />
+    <option name="totallyTimeSpent" value="22181000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="-4" y="0" width="1380" height="788" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2393617" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23863636" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -699,7 +688,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848023" visible="true" weight="0.21767594" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848023" visible="true" weight="0.20305343" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
