@@ -68,7 +68,6 @@ public class ForestEntityController {
     public ModelAndView showEditForm(@PathVariable Long id) {
         Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
         ModelAndView modelAndView = new ModelAndView("/forest/edit");
-
         modelAndView.addObject("forestEntity", forestEntity);
         return modelAndView;
     }

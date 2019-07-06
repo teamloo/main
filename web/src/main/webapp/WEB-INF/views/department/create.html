@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Forest</title>
+    <title>Department</title>
     <link rel="stylesheet" href="/resources/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="/resources/assets/fonts/font-awesome.min.css">
@@ -155,17 +155,17 @@
             </button>
         </a>
         <div>
-            <form method="post" th:object="${forestEntity}" th:action="@{/forestEntity/create}">
+            <form method="post" th:object="${departmentEntity}" th:action="@{/forestEntity/create}">
                 <div class="form-group">
                     <div id="formdiv">
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 offset-md-1">
                                 <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
-                                    <strong>Tên rừng </strong></p>
+                                    <strong>Tên cán bộ </strong></p>
                             </div>
                             <div class="col-md-10 offset-md-1"><input th:field="*{name}" class="form-control"
                                                                       type="text" name="name"
-                                                                      placeholder="Name" maxlength="30" minlength="2"
+                                                                      placeholder="Tên" maxlength="30" minlength="2"
                                                                       style="margin-left:0px;font-family:Roboto, sans-serif;">
                             </div>
                         </div>
@@ -173,86 +173,51 @@
 
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Diện tích phủ xanh</strong></p>
-                            </div>
-                            <div class="col-md-10 offset-md-1"><input th:field="*{greenErea}" step="0.1"
-                                                                      class="form-control" type="number"
-                                                                      placeholder="Number" min="0"
-                                                                      style="font-family:Roboto, sans-serif;">
-                            </div>
-                        </div>
-                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
-                            <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Số cây ước tính</strong></p>
-                            </div>
-                            <div class="col-md-10 offset-md-1"><input th:field="*{totalNumberOfTree}"
-                                                                      class="form-control" type="number"
-                                                                      placeholder="Number" min="0"
-                                                                      style="font-family:Roboto, sans-serif;">
-                            </div>
-                        </div>
-                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
-                            <div class="col-md-8 offset-md-1">
                                 <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
-                                    <strong>Vị trí </strong></p>
+                                    <strong>Chức vụ </strong></p>
                             </div>
-                            <div class="col-md-10 offset-md-1"><input th:field="*{address}" class="form-control"
+                            <div class="col-md-10 offset-md-1"><input th:field="*{position}" class="form-control"
                                                                       type="text" name="name"
-                                                                      placeholder="Name" maxlength="30" minlength="2"
+                                                                      placeholder="Chức vụ" maxlength="30" minlength="2"
                                                                       style="margin-left:0px;font-family:Roboto, sans-serif;">
                             </div>
                         </div>
+
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 offset-md-1">
                                 <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
-                                    <strong>Những loại cây có trong rừng </strong></p>
+                                    <strong>Lương</strong></p>
                             </div>
-                            <div class="col-md-10 offset-md-1"><input th:field="*{typeOfTrees}" class="form-control"
+                            <div class="col-md-10 offset-md-1"><input th:field="*{salary}" step="0.1"
+                                                                      class="form-control" type="number"
+                                                                      placeholder="lương" min="0"
+                                                                      style="font-family:Roboto, sans-serif;">
+                            </div>
+                        </div>
+                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
+                                    <strong>Số điện thoại </strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><input th:field="*{phoneNumber}" class="form-control"
                                                                       type="text" name="name"
-                                                                      placeholder="Name" maxlength="30" minlength="2"
+                                                                      placeholder="Số điện thoại" maxlength="30" minlength="2"
                                                                       style="margin-left:0px;font-family:Roboto, sans-serif;">
                             </div>
                         </div>
                         <div class="form-row"
                              style="margin-right:0px;margin-left:0px;padding-top:24px;margin-top:-16px;">
                             <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Chức năng rừng </strong>
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Thuộc
+                                    đơn vị </strong>
                                 </p>
                             </div>
                             <div class="col-md-10 offset-md-1"><select class="form-control" name="gender"
-                                                                       style="font-family:Roboto, sans-serif;" th:field="*{functionForest}">
-                                <option th:each="a : ${functionList}" th:value="${a}" th:text="${a}" ></option>
+                                                                       style="font-family:Roboto, sans-serif;"
+                                                                       th:field="*{unit}">
+                                <option th:each="a : ${unitList}" th:value="${a.id}" th:text="${a.name}"
+                                        id="companyId"></option>
                             </select>
-                            </div>
-                        </div>
-                        <div class="form-row"
-                             style="margin-right:0px;margin-left:0px;padding-top:24px;margin-top:-16px;">
-                            <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Tuổi rừng </strong>
-                                </p>
-                            </div>
-                            <div class="col-md-10 offset-md-1"><select class="form-control" name="gender"
-                                                                       style="font-family:Roboto, sans-serif;" th:field="*{lifeTime}">
-                                <option th:each="a : ${forestAge}" th:value="${a}" th:text="${a}" ></option>
-                            </select>
-                            </div>
-                        </div>
-                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
-                            <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
-                                    <strong>Date</strong></p>
-                            </div>
-                            <div class="col-md-10 offset-md-1"><input th:field="*{timeadded}" class="form-control"
-                                                                      type="date"
-                                                                      style="font-family:Roboto, sans-serif;"></div>
-                        </div>
-                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
-                            <div class="col-12 col-md-4 offset-md-4">
-                                <button class="btn btn-light btn-lg" type="reset"
-                                        style="font-family:Roboto, sans-serif;">Clear
-                                </button>
-                                <button class="btn btn-light btn-lg" type="submit" style="margin-left:16px;">Thêm
-                                </button>
                             </div>
                         </div>
                     </div>

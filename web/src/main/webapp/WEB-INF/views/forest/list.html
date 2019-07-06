@@ -261,8 +261,8 @@
             $checkboxClicked = $(this);
             dataConfirmTxt = $checkboxClicked.attr('data-confirm');
             confirm = false;
-            $('#exampleModalCenter').find('.modal-body').html("bạn có muốn xóa không?" + dataConfirmTxt);
-            $('#exampleModalCenter').modal('show')
+            $('#exampleModalCenter').find('.modal-body').html("bạn có muốn xóa không?");
+            $('#exampleModalCenter').modal('show');
             $('#dataConfirmOK').click(function () {
                 confirm = true;
                 $('#exampleModalCenter').modal('hide');
@@ -274,7 +274,6 @@
     $('#exampleModalCenter').on('hidden.bs.modal', function (e) {
         if (confirm == true) {
             $('#exampleModalCenter').modal('hide');
-            alert(dataConfirmTxt)
             $.ajax({
                 type: "post",
                 url: "/forestEntity/delete",

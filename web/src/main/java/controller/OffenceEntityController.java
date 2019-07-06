@@ -22,7 +22,6 @@ public class OffenceEntityController {
     @Autowired
     ForestEntityManager forestEntityManager;
 
-
     @ModelAttribute("forestList")
     Iterable<ForestEntity> forestList(Pageable pageable) {
         return forestEntityManager.getAllForest(pageable);

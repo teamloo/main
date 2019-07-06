@@ -155,7 +155,7 @@
             </button>
         </a>
         <div>
-            <form method="post" th:object="${forestEntity}" th:action="@{/forestEntity/create}">
+            <form method="post" th:object="${forestEntity}" th:action="@{/departmentEntity/edit}">
                 <div class="form-group">
                     <div id="formdiv">
                         <input th:type="hidden" name="id" th:field="*{id}"/>
@@ -174,22 +174,24 @@
 
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Diện tích phủ xanh</strong></p>
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Diện
+                                    tích phủ xanh</strong></p>
                             </div>
                             <div class="col-md-10 offset-md-1"><input th:field="*{greenErea}" step="0.1"
                                                                       class="form-control" type="number"
                                                                       placeholder="Number" min="0"
-                                                                      style="font-family:Roboto, sans-serif;">
+                                                                      style="font-family:Roboto, sans-serif;" required>
                             </div>
                         </div>
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Diện tích phủ xanh</strong></p>
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Diện
+                                    tích phủ xanh</strong></p>
                             </div>
                             <div class="col-md-10 offset-md-1"><input th:field="*{totalNumberOfTree}" step="0.1"
                                                                       class="form-control" type="number"
                                                                       placeholder="Number" min="0"
-                                                                      style="font-family:Roboto, sans-serif;">
+                                                                      style="font-family:Roboto, sans-serif;" required>
                             </div>
                         </div>
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
@@ -217,24 +219,33 @@
                         <div class="form-row"
                              style="margin-right:0px;margin-left:0px;padding-top:24px;margin-top:-16px;">
                             <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Chức năng rừng </strong>
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Chức
+                                    năng rừng </strong>
                                 </p>
                             </div>
                             <div class="col-md-10 offset-md-1"><select class="form-control" name="gender"
-                                                                       style="font-family:Roboto, sans-serif;" th:field="*{functionForest}">
-                                <option th:each="a : ${functionList}" th:value="${a}" th:text="${a}" ></option>
+                                                                       style="font-family:Roboto, sans-serif;"
+                                                                       th:field="*{functionForest}">
+                                <option th:each="a : ${functionList}" th:value="${a}" th:text="${a}"></option>
                             </select>
                             </div>
                         </div>
                         <div class="form-row"
                              style="margin-right:0px;margin-left:0px;padding-top:24px;margin-top:-16px;">
                             <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Tuổi rừng </strong>
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Tuổi
+                                    rừng </strong>
                                 </p>
                             </div>
-                            <div class="col-md-10 offset-md-1"><select class="form-control" name="gender"
-                                                                       style="font-family:Roboto, sans-serif;" th:field="*{lifeTime}">
-                                <option th:each="a : ${forestAge}" th:value="${a}" th:text="${a}" ></option>
+                            <div class="col-md-10 offset-md-1">
+                                <select class="form-control" name="gender"
+                                                                       style="font-family:Roboto, sans-serif;"
+                                                                       th:field="*{lifeTime}">
+                                <option th:each="a : ${forestAge}"
+                                        th:value="${a}"
+                                        th:text="${a}">
+
+                                </option>
                             </select>
                             </div>
                         </div>
@@ -245,7 +256,7 @@
                             </div>
                             <div class="col-md-10 offset-md-1"><input th:field="*{timeadded}" class="form-control"
                                                                       type="date"
-                                                                      style="font-family:Roboto, sans-serif;"></div>
+                                                                      style="font-family:Roboto, sans-serif;" required></div>
                         </div>
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-12 col-md-4 offset-md-4">
