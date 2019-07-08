@@ -1,5 +1,8 @@
 package entity;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -22,7 +25,10 @@ public class UnitEntity {
     @OneToMany(mappedBy = "unit")
     private List<TreePlantedEntity> treePlanted;
 
-    @OneToMany(mappedBy = "unit")
+//    @OneToMany(mappedBy = "unit")
+    @OneToMany(mappedBy = "unit",
+            cascade= {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH}, fetch = FetchType.EAGER)
+    @Fetch(value = FetchMode.SUBSELECT)
     private List<ExploitionEntity> exploition;
 
     @ManyToOne
