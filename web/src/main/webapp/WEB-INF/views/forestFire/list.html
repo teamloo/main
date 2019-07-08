@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Forest</title>
+    <title>Cháy rừng</title>
     <link rel="stylesheet" href="/resources/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="/resources/assets/fonts/font-awesome.min.css">
@@ -22,6 +22,12 @@
     <link rel="stylesheet" href="/resources/assets/css/styles.css">
     <link rel="stylesheet" href="/resources/assets/css/Table-With-Search.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .snip1563 a, .snip1563 button {
+            position: relative;
+            z-index: 7;
+        }
+    </style>
 </head>
 
 <body>
@@ -37,10 +43,10 @@
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
                                                          aria-expanded="false" href="#">Department&nbsp;</a>
-                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
-                                                                      href="services.html">Price Packages</a><a
+                            <div class="dropdown-menu" role="menu">
+                                <a class="dropdown-item" role="presentation"
+                                   href="services.html">Price Packages</a><a
                                     class="dropdown-item" role="presentation" href="#">Custom Request</a><a
-                                    class="dropdown-item" role="presentation" href="#">Custom Request</a></div>
                         </li>
                         <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
                                                          aria-expanded="false" href="#">Unit&nbsp;</a>
@@ -115,117 +121,102 @@
         </a>
     </div>
     <div id="htmlcaption" style="display: none;">
-        <h1 class="hero-title">vị trí</h1>
+        <h1 class="hero-title">Trees</h1>
         <p class="hero-subtitle">Tóm tắt về vị trí</p>
     </div>
     <div id="htmlcaption2" style="display: none;">
-        <h1 class="hero-title">vị trí</h1>
+        <h1 class="hero-title">Trees</h1>
         <p class="hero-subtitle">Tóm tắt về vị tríyyy</p>
     </div>
     <div id="htmlcaption3" style="display: none;">
-        <h1 class="hero-title">vị trí</h1>
+        <h1 class="hero-title">Trees</h1>
         <p class="hero-subtitle">Tóm tắt về vị trí</p>
     </div>
     <div id="htmlcaption4" style="display: none;">
-        <h1 class="hero-title">vị trí</h1>
+        <h1 class="hero-title">Trees</h1>
         <p class="hero-subtitle">Tóm tắt về vị tríyyy</p>
     </div>
 
     <div id="htmlcaption5" style="display: none;">
-        <h1 class="hero-title">vị trí</h1>
+        <h1 class="hero-title">Trees</h1>
         <p class="hero-subtitle">Tóm tắt về vị tríyyy</p>
     </div>
 </div>
 <section>
     <div class="caption v-middle text-center">
         <h1 class="cd-headline clip">
-            <span class="blc">Quản lý </span>
+            <span class="blc">Manage</span>
             <span class="cd-words-wrapper">
-			              <b class="is-visible">Rừng</b>
-			              <b>Cây</b>
-			              <b>Gỗ</b>
+			              <b class="is-visible">Forest</b>
+			              <b>Wood</b>
+			              <b>Trees</b>
 			            </span>
             <span class="blc"> | </span>
         </h1>
     </div>
     <div class="container">
-        <a th:href="@{/departmentEntity}">
+        <a th:href="@{/forestFireEntity/create}">
             <button class="btn btn-primary" type="button" style="background-color: rgb(32,238,90);margin-left: 20vh;"><i
-                    class="fa fa-home"></i>Quay lại
+                    class="fa fa-plus-circle"></i> Thêm
             </button>
         </a>
-        <div>
-            <form method="post" th:object="${departmentEntity}" th:action="@{/departmentEntity/edit}">
-                <div class="form-group">
-                    <div id="formdiv">
-                        <input th:type="hidden" name="id" th:field="*{id}"/>
-                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
-                            <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
-                                    <strong>Tên cán bộ </strong></p>
-                            </div>
-                            <div class="col-md-10 offset-md-1"><input th:field="*{name}" class="form-control"
-                                                                      type="text" name="name"
-                                                                      placeholder="Tên" maxlength="30" minlength="2"
-                                                                      style="margin-left:0px;font-family:Roboto, sans-serif;">
-                            </div>
-                        </div>
-
-                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
-                            <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
-                                    <strong>Chức vụ </strong></p>
-                            </div>
-                            <div class="col-md-10 offset-md-1"><input th:field="*{position}" class="form-control"
-                                                                      type="text" name="name"
-                                                                      placeholder="Chức vụ" maxlength="30" minlength="2"
-                                                                      style="margin-left:0px;font-family:Roboto, sans-serif;">
-                            </div>
-                        </div>
-
-                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
-                            <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
-                                    <strong>Lương</strong></p>
-                            </div>
-                            <div class="col-md-10 offset-md-1"><input th:field="*{salary}" step="0.1"
-                                                                      class="form-control" type="number"
-                                                                      placeholder="Lương" min="0"
-                                                                      style="font-family:Roboto, sans-serif;">
-                            </div>
-                        </div>
-                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
-                            <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
-                                    <strong>Số điện thoại </strong></p>
-                            </div>
-                            <div class="col-md-10 offset-md-1"><input th:field="*{phoneNumber}" class="form-control"
-                                                                      type="text" name="name"
-                                                                      placeholder="Số điện thoại" maxlength="30" minlength="2"
-                                                                      style="margin-left:0px;font-family:Roboto, sans-serif;">
-                            </div>
-                        </div>
-                        <div class="form-row"
-                             style="margin-right:0px;margin-left:0px;padding-top:24px;margin-top:-16px;">
-                            <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Thuộc
-                                    đơn vị </strong>
-                                </p>
-                            </div>
-                            <div class="col-md-10 offset-md-1"><select class="form-control" name="gender"
-                                                                       style="font-family:Roboto, sans-serif;"
-                                                                       th:field="*{unit}">
-                                <option th:each="a : ${unitList}" th:value="${a.id}" th:text="${a.name}"
-                                        id="companyId"></option>
-                            </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
+        <input class="border rounded-circle b   order-primary shadow-lg d-flex float-right search form-control"
+               type="text" placeholder="Tìm kiếm ở đây"
+               style="background-color: rgba(227,213,213,0.8);width: 300px;margin-right: 20vh;"></div>
+    <div class="container result">
+        <block th:each="lists:${list}">
+            <figure class="snip1563" style="min-height: 350px; text-align: left; ">
+                <img src="https://i.pinimg.com/originals/24/4a/70/244a70a7916bf9b411deb294af95076c.jpg"
+                     alt="sample110"/>
+                <figcaption>
+                    <h5 th:text="'Ngày xảy ra '+${lists.datee}"></h5>
+                    <p th:text="'-Diện tích thiệt hại: '+${lists.area}"></p>
+                    <p th:text="'-Nguyên nhân '+${lists.cause}"></p>
+                    <p th:text="'-Số lượng cây mất '+${lists.numberOfTreeLost}"></p>
+                    <th:block th:if="${lists.forest}">
+                        <p th:text="'-Khu rừng thiệt hại: '+${lists.forest.name}"></p>
+                    </th:block>
+                    <th:block th:unless="${lists.forest}">
+                        <!--                        <p>Have not set unit yet</p>-->
+                    </th:block>
+                    <a th:href="@{/forestFireEntity/edit/__${lists.id}__}" class="btn btn-success"
+                       style="margin-left: 5px;">
+                        <i class="fa fa-edit" style="font-size: 15px;"></i></a>
+                    <button type="button" class="btn btn-danger" data-toggle="modal"
+                            style="margin-left: 5px;z-index: 3;"
+                            data-target="#exampleModalCenter" th:attr="data-confirm=${lists.id}" id="delete-entity">
+                        <i class="fa fa-trash"
+                           style="font-size: 15px;"></i>
+                    </button>
+                </figcaption>
+                <a href="#"></a>
+            </figure>
+        </block>
     </div>
 </section>
+
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Thông báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Không</button>
+                <button type="button" class="btn btn-primary" id="dataConfirmOK">Có, tôi muốn</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <footer>
     <div class="row">
         <div class="col-sm-6 col-md-4 footer-navigation">
@@ -257,6 +248,7 @@
         </div>
     </div>
 </footer>
+
 <script src="/resources/assets/js/jquery.min.js"></script>
 <script src="/resources/assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="/resources/assets/js/-Fixed-Navbar-start-with-transparency-background-BS4-.js"></script>
@@ -264,6 +256,64 @@
 <script src="/resources/assets/js/Card-hover-affect-2.js"></script>
 <script src="/resources/assets/js/js-image-slider.js"></script>
 <script src="/resources/assets/js/Table-With-Search-1.js"></script>
+<script type="text/javascript">
+    var dataConfirmTxt;
+    var confirm;
+    $(document).ready(function () {
+        $('#delete-entity[data-confirm]').click(function (ev) {
+            $checkboxClicked = $(this);
+            dataConfirmTxt = $checkboxClicked.attr('data-confirm');
+            confirm = false;
+            $('#exampleModalCenter').find('.modal-body').html("bạn có muốn xóa không?" + dataConfirmTxt);
+            $('#exampleModalCenter').modal('show')
+            $('#dataConfirmOK').click(function () {
+                confirm = true;
+                $('#exampleModalCenter').modal('hide');
+            });
+            return false;
+        });
+    });
+
+    $('#exampleModalCenter').on('hidden.bs.modal', function (e) {
+        if (confirm == true) {
+            $('#exampleModalCenter').modal('hide');
+            $.ajax({
+                type: "post",
+                url: "/forestFireEntity/delete",
+                data: {
+                    id: dataConfirmTxt,
+                },
+                success: function (data) {
+                    setData(data);
+                },
+                error: function () {
+                    alert("Lỗi khi gửi yêu cầu!");
+                }
+            });
+        }
+    })
+    function setData(data) {
+        var result = "";
+        $.each(data.content, function (k, v) {
+            result += "<figure class=\"snip1563\" style=\"min-height: 350px; text-align: left; \">";
+            result += '<img src="https://i.pinimg.com/originals/24/4a/70/244a70a7916bf9b411deb294af95076c.jpg" style="" alt="sample110"/>   <figcaption>';
+            result += '<h5>Ngày xảy ra : ' + v.datee + '</h5>';
+            result += '<p>-Diện tích thiệt hại: ' + v.area + '</p>';
+            result += '<p>-Nguyên nhân: ' + v.cause + '</p>';
+            result += '<p>-Số lượng cây mất: ' + v.numberOfTreeLost + '</p>';
+            if (v.forest != null) {
+                result += '<p>-Khu rừng thiệt hại:' + v.forest.name;
+            }
+            result += '<a href="/departmentEntity/edit/' + v.id + '" class="btn btn-success" style="margin-left: 5px;"><i class="fa fa-edit" style="font-size: 15px;"></i></a>';
+            result += '<button type="button" class="btn btn-danger" data-toggle="modal" style="margin-left: 5px;"\n' +
+                '     data-target="#exampleModalCenter" data-confirm="' + v.id + '" id="delete-entity"><i class="fa fa-trash"\n' +
+                '     style="font-size: 15px;"></i>';
+            result += '</button><figcaption>';
+            result += "</figure>";
+        });
+        $(".result").html(result);
+    }
+</script>
 </body>
 
 </html>

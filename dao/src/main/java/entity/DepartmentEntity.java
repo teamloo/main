@@ -18,8 +18,8 @@ public class DepartmentEntity {
     private String salary;
     private String phoneNumber;
 
-    @ManyToOne
-    @JoinColumn(name = "unit_id")
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = UnitEntity.class)
+    @JoinColumn(name = "unit_id", insertable = false, updatable = false)
     private UnitEntity unit;
 
     public DepartmentEntity() {

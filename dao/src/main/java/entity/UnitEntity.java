@@ -5,7 +5,7 @@ import java.util.List;
 
 // đơn vị - ví dụ hộ gia đình, ban quản lý rừng .....
 @Entity
-@Table(name = "department")
+@Table(name = "unit")
 //@NamedQuery(name = "Unit.findAll", query = "SELECT e FROM Unit e")
 public class UnitEntity {
     @Id

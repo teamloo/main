@@ -82,22 +82,6 @@ public class ForestEntityController {
         return modelAndView;
     }
 
-//    @GetMapping("/forestEntity/delete/{id}")
-//    public ModelAndView showDeleteForm(@PathVariable Long id) {
-//
-//        Optional<ForestEntity> forestEntity = forestEntityManager.findById(id);
-//        ModelAndView modelAndView = new ModelAndView("");
-//        modelAndView.addObject("forestEntity", forestEntity);
-//        return modelAndView;
-//    }
-//
-//    @PostMapping("/forestEntity/delete")
-//    public ModelAndView delete(@ModelAttribute("forestEntity") ForestEntity forestEntity) {
-//        ModelAndView modelAndView = new ModelAndView("");
-//        forestEntityManager.removeForest(forestEntity.getId());
-//        modelAndView.addObject("message", "success");
-//        return modelAndView;
-//    }
 
     @ResponseBody
     @RequestMapping(value = "/forestEntity/delete")

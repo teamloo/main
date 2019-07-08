@@ -1,6 +1,7 @@
 package controller;
 
 import entity.DepartmentEntity;
+import entity.ForestEntity;
 import entity.UnitEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -11,6 +12,8 @@ import org.springframework.web.servlet.ModelAndView;
 import service.DepartmentEntityManager;
 import service.UnitEntityManager;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.Optional;
 
 @Controller
@@ -51,6 +54,14 @@ public class DepartmentEntityController {
         return modelAndView;
     }
 
+    @ResponseBody
+    @RequestMapping(value = "/departmentEntity/delete")
+    public Page<DepartmentEntity> ajaxDelete(HttpServletRequest req, HttpServletResponse res, Pageable pageable) {
+        departmentEntityManager.removeDepartment(Long.parseLong(req.getParameter("id")));
+        Page<DepartmentEntity> departments = departmentEntityManager.getAllDepartment(pageable);
+        return departments;
+    }
+
     @GetMapping("/departmentEntity/edit/{id}")
     public ModelAndView showEditForm(@PathVariable Long id) {
         Optional<DepartmentEntity> departmentEntity = departmentEntityManager.findById(id);
@@ -69,7 +80,6 @@ public class DepartmentEntityController {
         modelAndView.addObject("message", "Success");
         return modelAndView;
     }
-
 
 }
 
