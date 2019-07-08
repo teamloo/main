@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ef45d4a-faa8-4c99-9ea2-abbf34a037a1" name="Default Changelist" comment="">
+    <list default="true" id="1ef45d4a-faa8-4c99-9ea2-abbf34a037a1" name="Default Changelist" comment="update entity treePlanted htlml lần 2">
       <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/treePlanted/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/treePlanted/index2.html" beforeDir="false" />
@@ -30,10 +30,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/TreePlantedEntityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="153">
               <caret line="40" column="72" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
             </state>
           </provider>
@@ -108,13 +108,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/treePlanted/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1368">
-              <caret line="237" column="7" selection-start-line="237" selection-start-column="7" selection-end-line="237" selection-end-column="7" />
+            <state relative-caret-position="348">
+              <caret line="236" column="17" selection-start-line="236" selection-start-column="17" selection-end-line="236" selection-end-column="17" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/treePlanted/delete.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -210,8 +215,8 @@
         <option value="$PROJECT_DIR$/web/src/main/java/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/entity/TreePlantedEntity.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/treePlanted/index2.html" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/treePlanted/index.html" />
         <option value="$PROJECT_DIR$/web/src/main/java/controller/TreePlantedEntityController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/treePlanted/index.html" />
       </list>
     </option>
   </component>
@@ -586,7 +591,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562553847971" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562554026805" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -782,7 +787,7 @@
       <workItem from="1562329258096" duration="3609000" />
       <workItem from="1562546880360" duration="747000" />
       <workItem from="1562549080943" duration="10052000" />
-      <workItem from="1562551161020" duration="2481000" />
+      <workItem from="1562551161020" duration="2758000" />
     </task>
     <task id="LOCAL-00001" summary="luan up">
       <created>1562156287488</created>
@@ -812,11 +817,25 @@
       <option name="project" value="LOCAL" />
       <updated>1562553381146</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update entity treePlanted htlml lần 2">
+      <created>1562553682433</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1562553682433</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update entity treePlanted htlml lần 2">
+      <created>1562553875431</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1562553875431</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43158000" />
+    <option name="totallyTimeSpent" value="43435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -832,7 +851,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848023" visible="true" weight="0.12929623" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848023" visible="true" weight="0.15711948" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.54959786" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1256,11 +1275,6 @@
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/delete.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/treePlanted/delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/exploition/create.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1344,13 +1358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/treePlanted/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="237" column="7" selection-start-line="237" selection-start-column="7" selection-end-line="237" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/TreePlantedEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1364,8 +1371,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/TreePlantedEntityController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="153">
           <caret line="40" column="72" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/treePlanted/delete.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/treePlanted/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="236" column="17" selection-start-line="236" selection-start-column="17" selection-end-line="236" selection-end-column="17" />
         </state>
       </provider>
     </entry>
