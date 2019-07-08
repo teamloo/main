@@ -15,7 +15,7 @@ public class TreePlantedEntity implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id ;
     @ManyToOne
-    @JoinColumn(name = "unit_ID")
+    @JoinColumn(name = "forest_ID")
     private ForestEntity forest;
     
     private Date datee;
@@ -23,6 +23,7 @@ public class TreePlantedEntity implements Serializable {
     private double area;
 
     @ManyToOne
+    @JoinColumn(name = "unit_ID")
     private UnitEntity unit;
 
     public Long getId() {
