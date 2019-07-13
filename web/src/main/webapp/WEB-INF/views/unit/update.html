@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Offence</title>
+    <title>teamlo</title>
     <link rel="stylesheet" href="/resources/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="/resources/assets/fonts/font-awesome.min.css">
@@ -37,10 +37,10 @@
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
                                                          aria-expanded="false" href="#">Department&nbsp;</a>
-                            <div class="dropdown-menu" role="menu">
-                                <a class="dropdown-item" role="presentation"
-                                   href="services.html">Price Packages</a><a
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
+                                                                      href="services.html">Price Packages</a><a
                                     class="dropdown-item" role="presentation" href="#">Custom Request</a><a
+                                    class="dropdown-item" role="presentation" href="#">Custom Request</a></div>
                         </li>
                         <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
                                                          aria-expanded="false" href="#">Unit&nbsp;</a>
@@ -141,58 +141,86 @@
         <h1 class="cd-headline clip">
             <span class="blc"></span>
             <span class="cd-words-wrapper">
-			              <b class="is-visible">Danh sách cây đã trồng</b>
+			              <b class="is-visible">Sửa đơn vị</b>
 
 			            </span>
             <span class="blc"> | </span>
         </h1>
     </div>
     <div class="container">
-        <a th:href="@{/create-treePlanted}">
+        <a th:href="@{/unit}">
             <button class="btn btn-primary" type="button" style="background-color: rgb(32,238,90);margin-left: 20vh;"><i
-                    class="fa fa-plus-circle"></i>Thêm
+                    class="fa fa-plus-circle"></i>Quay lại
             </button>
         </a>
-        <input class="border rounded-circle border-primary shadow-lg d-flex float-right search form-control"
-               type="text" placeholder="Tìm kiếm ở đây"
-               style="background-color: rgba(227,213,213,0.8);width: 300px;margin-right: 20vh;"></div>
-    <div class="container result">
-        <block th:each="lists:${list}">
-            <figure class="snip1563">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample110.jpg" alt="sample110"/>
-                <figcaption>
-                    <h3 th:text="'ID: '+${lists.id}"></h3>
-                    <p th:text="'Số cây đã trồng: '+${lists.treeIncrease}"></p>
-                    <p th:text="'Diện tích trồng: '+${lists.area}"></p>
-                    <th:block th:if="${lists.forest}">
-                        <p th:text="${lists.forest.name}"></p>
-                    </th:block>
-                    <th:block th:unless="${lists.forest}">
-                        <p>Have not set yet</p>
-                    </th:block>
-                    <th:block th:if="${lists.unit}">
-                        <p th:text="${lists.unit.name}"></p>
-                    </th:block>
-                    <th:block th:unless="${lists.unit}">
-                        <p>Have not set yet</p>
-                    </th:block>
-                    <p th:text="'Ngày trồng: '+${lists.datee}"></p>
+        <div>
+            <form method="post" th:object="${unitEntity}" th:action="@{/edit-unit}">
+                <div class="form-group">
+                    <div id="formdiv">
+                        <td><input type="hidden" th:field="*{id}"></td>
 
-                    <a class="btn btn-primay" th:href="@{/edit-treePlanted/__${lists.id}__}">
-                        <button class="btn btn-success" type="button" style="margin-left: 5px;"><i class="fa fa-edit"
-                                                                                                   style="font-size: 15px;"></i>
-                        </button>
-                    </a>
+                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
+                                    <strong>Tên </strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><input th:field="*{name}" class="form-control"
+                                                                      type="text" name="name"
+                                                                      placeholder="nhập tên ở đây" maxlength="30" minlength="2"
+                                                                      style="margin-left:0px;font-family:Roboto, sans-serif;">
+                            </div>
+                        </div>
+                        <!--                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">-->
+                        <!--                            <div class="col-md-8 offset-md-1">-->
+                        <!--                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">-->
+                        <!--                                    <strong>Forest</strong></p>-->
+                        <!--                            </div>-->
+                        <!--                            <div class="col-md-10 offset-md-1"><input th:field="*{forest}" class="form-control"-->
+                        <!--                                                                      type="number"-->
+                        <!--                                                                      placeholder="Number" min="0"-->
+                        <!--                                                                      style="font-family:Roboto, sans-serif;"></div>-->
+                        <!--                        </div>-->
 
-                    <a class="btn btn-primay" th:href="@{/delete-treePlanted/__${lists.id}__}">
-                        <button class="btn btn-danger" type="button" style="margin-left: 5px;"><i class="fa fa-trash"
-                                                                                                  style="font-size: 15px;"></i>
-                        </button>
-                    </a>
-                </figcaption>
-                <a href="#"></a>
-            </figure>
-        </block>
+
+
+
+                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
+                                    <strong>Hợp đồng</strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><input th:field="*{organizationForm}" class="form-control"
+                                                                      type="text" name="name"
+                                                                      placeholder="hình thức" maxlength="30" minlength="2"
+                                                                      style="margin-left:0px;font-family:Roboto, sans-serif;">
+                            </div>
+                        </div>
+                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
+                                    <strong>Hợp đồng</strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><input th:field="*{contract}" class="form-control"
+                                                                      type="text" name="name"
+                                                                      placeholder="hình thức" maxlength="30" minlength="2"
+                                                                      style="margin-left:0px;font-family:Roboto, sans-serif;">
+                            </div>
+                        </div>
+
+
+                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-12 col-md-4 offset-md-4">
+                                <button class="btn btn-light btn-lg" type="reset"
+                                        style="font-family:Roboto, sans-serif;">Làm mới
+                                </button>
+                                <button class="btn btn-light btn-lg" type="submit" style="margin-left:16px;">Thêm
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </section>
 <footer>
@@ -233,66 +261,6 @@
 <script src="/resources/assets/js/Card-hover-affect-2.js"></script>
 <script src="/resources/assets/js/js-image-slider.js"></script>
 <script src="/resources/assets/js/Table-With-Search-1.js"></script>
-
-
-<script type="text/javascript">
-    var dataConfirmTxt;
-    var confirm;
-    $(document).ready(function () {
-        $('#delete-entity[data-confirm]').click(function (ev) {
-            $checkboxClicked = $(this);
-            dataConfirmTxt = $checkboxClicked.attr('data-confirm');
-            confirm = false;
-            $('#exampleModalCenter').find('.modal-body').html("bạn có muốn xóa không?" + dataConfirmTxt);
-            $('#exampleModalCenter').modal('show')
-            $('#dataConfirmOK').click(function () {
-                confirm = true;
-                $('#exampleModalCenter').modal('hide');
-            });
-            return false;
-        });
-    });
-
-    $('#exampleModalCenter').on('hidden.bs.modal', function (e) {
-        if (confirm == true) {
-            $('#exampleModalCenter').modal('hide');
-            $.ajax({
-                type: "post",
-                url: "/forestFireEntity/delete",
-                data: {
-                    id: dataConfirmTxt,
-                },
-                success: function (data) {
-                    setData(data);
-                },
-                error: function () {
-                    alert("Lỗi khi gửi yêu cầu!");
-                }
-            });
-        }
-    })
-    function setData(data) {
-        var result = "";
-        $.each(data.content, function (k, v) {
-            result += "<figure class=\"snip1563\" style=\"min-height: 350px; text-align: left; \">";
-            result += '<img src="https://i.pinimg.com/originals/24/4a/70/244a70a7916bf9b411deb294af95076c.jpg" style="" alt="sample110"/>   <figcaption>';
-            result += '<h5>Ngày xảy ra : ' + v.datee + '</h5>';
-            result += '<p>-Diện tích thiệt hại: ' + v.area + '</p>';
-            result += '<p>-Nguyên nhân: ' + v.cause + '</p>';
-            result += '<p>-Số lượng cây mất: ' + v.numberOfTreeLost + '</p>';
-            if (v.forest != null) {
-                result += '<p>-Khu rừng thiệt hại:' + v.forest.name;
-            }
-            result += '<a href="/departmentEntity/edit/' + v.id + '" class="btn btn-success" style="margin-left: 5px;"><i class="fa fa-edit" style="font-size: 15px;"></i></a>';
-            result += '<button type="button" class="btn btn-danger" data-toggle="modal" style="margin-left: 5px;"\n' +
-                '     data-target="#exampleModalCenter" data-confirm="' + v.id + '" id="delete-entity"><i class="fa fa-trash"\n' +
-                '     style="font-size: 15px;"></i>';
-            result += '</button><figcaption>';
-            result += "</figure>";
-        });
-        $(".result").html(result);
-    }
-</script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Offence</title>
+    <title>teamlo</title>
     <link rel="stylesheet" href="/resources/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="/resources/assets/fonts/font-awesome.min.css">
@@ -37,10 +37,10 @@
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
                                                          aria-expanded="false" href="#">Department&nbsp;</a>
-                            <div class="dropdown-menu" role="menu">
-                                <a class="dropdown-item" role="presentation"
-                                   href="services.html">Price Packages</a><a
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
+                                                                      href="services.html">Price Packages</a><a
                                     class="dropdown-item" role="presentation" href="#">Custom Request</a><a
+                                    class="dropdown-item" role="presentation" href="#">Custom Request</a></div>
                         </li>
                         <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
                                                          aria-expanded="false" href="#">Unit&nbsp;</a>
@@ -141,55 +141,86 @@
         <h1 class="cd-headline clip">
             <span class="blc"></span>
             <span class="cd-words-wrapper">
-			              <b class="is-visible">Danh sách người vi phạm</b>
+			              <b class="is-visible">Thêm đơn vị mới</b>
 
 			            </span>
             <span class="blc"> | </span>
         </h1>
     </div>
     <div class="container">
-        <a th:href="@{/offenceEntity/create}">
+        <a th:href="@{/unit}">
             <button class="btn btn-primary" type="button" style="background-color: rgb(32,238,90);margin-left: 20vh;"><i
-                    class="fa fa-plus-circle"></i>Thêm
+                    class="fa fa-plus-circle"></i>Quay lại
             </button>
         </a>
-        <input class="border rounded-circle border-primary shadow-lg d-flex float-right search form-control"
-               type="text" placeholder="Tìm kiếm ở đây"
-               style="background-color: rgba(227,213,213,0.8);width: 300px;margin-right: 20vh;"></div>
-    <div class="container result">
-        <block th:each="lists:${list}">
-            <figure class="snip1563">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample110.jpg" alt="sample110"/>
-                <figcaption>
-                    <h3 th:text="'ID: '+${lists.id}"></h3>
-                    <p th:text="'Tên: '+${lists.offender}"></p>
-                    <p th:text="'Hình thức xử phạt: '+${lists.sanctionForm}"></p>
-                    <th:block th:if="${lists.forest}">
-                        <p th:text="${lists.forest.name}"></p>
-                    </th:block>
-                    <th:block th:unless="${lists.forest}">
-                        <p>Have not set yet</p>
-                    </th:block>
-                    <p th:text="'Ngày phạt: '+${lists.datee}"></p>
-                    <p th:text="'Số cây mất: '+${lists.numberOfTreeLost}"></p>
-                    <p th:text="'Diện tích thiệt hại: '+${lists.areaOfDamage}"></p>
-                    <p th:text="'Số tiền phạt: '+${lists.compensationMoney}"></p>
 
-                    <a class="btn btn-primay" th:href="@{/offenceEntity/edit/__${lists.id}__}">
-                        <button class="btn btn-success" type="button" style="margin-left: 5px;"><i class="fa fa-edit"
-                                                                                                   style="font-size: 15px;"></i>
-                        </button>
-                    </a>
+        <div>
+            <form method="post" th:object="${unitEntity}" th:action="@{/create-unit}">
+                <div class="form-group">
+                    <div id="formdiv">
+                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
+                                    <strong>Tên đơn vị </strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><input th:field="*{name}" class="form-control"
+                                                                      type="text" name="name"
+                                                                      placeholder="nhập tên ở đây" maxlength="30" minlength="2"
+                                                                      style="margin-left:0px;font-family:Roboto, sans-serif;">
+                            </div>
+                        </div>
+                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
+                                    <strong>Hình thức tổ chức </strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><input th:field="*{organizationForm}" class="form-control"
+                                                                      type="text" name="name"
+                                                                      placeholder="hình thức tổ chức" maxlength="30" minlength="2"
+                                                                      style="margin-left:0px;font-family:Roboto, sans-serif;">
+                            </div>
+                        </div>
+<!--                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">-->
+<!--                            <div class="col-md-8 offset-md-1">-->
+<!--                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">-->
+<!--                                    <strong>Forest</strong></p>-->
+<!--                            </div>-->
+<!--                            <div class="col-md-10 offset-md-1"><input th:field="*{forest}" class="form-control"-->
+<!--                                                                      type="number"-->
+<!--                                                                      placeholder="Number" min="0"-->
+<!--                                                                      style="font-family:Roboto, sans-serif;"></div>-->
+<!--                        </div>-->
 
-                    <a class="btn btn-primay" th:href="@{/offenceEntity/delete/__${lists.id}__}">
-                        <button class="btn btn-danger" type="button" style="margin-left: 5px;"><i class="fa fa-trash"
-                                                                                                  style="font-size: 15px;"></i>
-                        </button>
-                    </a>
-                </figcaption>
-                <a href="#"></a>
-            </figure>
-        </block>
+
+
+
+
+                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
+                                    <strong>Hợp đồng</strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><input th:field="*{contract}" class="form-control"
+                                                                      type="text" name="name"
+                                                                      placeholder="hình thức"
+                                                                      style="margin-left:0px;font-family:Roboto, sans-serif;">
+                            </div>
+                        </div>
+
+
+                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-12 col-md-4 offset-md-4">
+                                <button class="btn btn-light btn-lg" type="reset"
+                                        style="font-family:Roboto, sans-serif;">Làm mới
+                                </button>
+                                <button class="btn btn-light btn-lg" type="submit" style="margin-left:16px;">Thêm
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </section>
 <footer>

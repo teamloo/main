@@ -8,7 +8,7 @@ import java.util.UUID;
 @Entity
 @Table(name = "treeplanted")
 //@NamedQuery(name = "TreePlanted.findAll", query = "SELECT t FROM TreePlanted t")
-public class TreePlantedEntity implements Serializable {
+public class TreePlantedEntity  {
 
     @Id
     @JoinColumn(name = "treePlanted_id")

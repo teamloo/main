@@ -1,113 +1,309 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>teamlo</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="/resources/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/resources/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/resources/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/resources/assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/resources/assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
-    <link rel="stylesheet" href="assets/css/-Fixed-Navbar-start-with-transparency-background-BS4-.css">
-    <link rel="stylesheet" href="assets/css/Animated-Type-Heading.css">
-    <link rel="stylesheet" href="assets/css/Card-hover-affect-2.css">
-    <link rel="stylesheet" href="assets/css/js-image-slider.css">
-    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/Table-With-Search.css">
+    <link rel="stylesheet" href="/resources/assets/css/-Fixed-Navbar-start-with-transparency-background-BS4-.css">
+    <link rel="stylesheet" href="/resources/assets/css/Animated-Type-Heading.css">
+    <link rel="stylesheet" href="/resources/assets/css/Card-hover-affect-2.css">
+    <link rel="stylesheet" href="/resources/assets/css/js-image-slider.css">
+    <link rel="stylesheet" href="/resources/assets/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="/resources/assets/css/styles.css">
+    <link rel="stylesheet" href="/resources/assets/css/Table-With-Search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-<div class="vertical-nav">
-    <h4 class="text-center"> <img class="img-fluid" src="assets/img/tree-icon.png"></h4>
-    <h4>Quản lý rừng</h4>
-    <ul class="vertical-nav-list">
-        <li class="vnav-li"><a href="#" class="vnav-link"><i class="fas fa-user"></i>&nbsp;Cán Bộ</a></li>
-        <li class="vnav-li"><a href="#" class="vnav-link"><i class="fas fa-users"></i>Đơn vị</a></li>
-        <li class="vnav-li"><a href="#" class="vnav-link"><i class="fa fa-tree"></i>&nbsp;Rừng</a></li>
-        <li class="vnav-li"><a href="#" class="vnav-link"><i class="icon ion-plus"></i>Trổng rừng</a></li>
-        <li class="vnav-li"><a href="#" class="vnav-link"><i class="material-icons">import_export</i>&nbsp;Khai thác</a></li>
-        <li class="vnav-li"><a href="#" class="vnav-link"><i class="fab fa-gripfire"></i>&nbsp;Cháy rừng</a></li>
-        <li class="vnav-li"><a href="#" class="active-link vnav-link"><i class="fa fa-remove"></i>&nbsp;Vi phạm</a><span class="active-link traingle-left"> </span></li>
-        <li class="vnav-li"><a href="#" class="vnav-link"><i class="fa fa-eject"></i> Logout</a></li>
-    </ul>
-</div>
 <div>
-    <div class="header-dark" style="background-position: center;background-size: cover;background-repeat: no-repeat;background-color: rgb(40,35,35);background-image: url(&quot;assets/img/hinh-anh-nen-rung-tuyet-dep-3.jpg&quot;);">
-        <div class="bg-shadow" style="background-color: rgba(91,81,81,0.52);">
-            <div class="container hero">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <h1 class="text-center">Quản lý vi phạm</h1><button class="btn btn-primary" type="button" style="background-color: rgb(32,238,90);"><i class="fa fa-external-link"></i>&nbsp;Quay lại</button>
-                        <div class="form-group pull-right col-lg-4"></div>
-                    </div>
+    <header>
+        <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white transparency border-bottom border-light"
+             id="transmenu">
+            <div class="container"><a class="navbar-brand text-success" href="#header"><i class="fa fa-leaf fa-2x"></i>&nbsp;FOREST</a>
+                <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navcol-1">
+                    <span></span><span></span><span></span></button>
+                <div
+                        class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
+                                                         aria-expanded="false" href="#">Department&nbsp;</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
+                                                                      href="services.html">Price Packages</a><a
+                                    class="dropdown-item" role="presentation" href="#">Custom Request</a><a
+                                    class="dropdown-item" role="presentation" href="#">Custom Request</a></div>
+                        </li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
+                                                         aria-expanded="false" href="#">Unit&nbsp;</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
+                                                                      href="services.html">Price Packages</a><a
+                                    class="dropdown-item" role="presentation" href="#">Order Services</a><a
+                                    class="dropdown-item" role="presentation" href="#">Custom Request</a></div>
+                        </li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
+                                                         aria-expanded="false" href="#">Forest&nbsp;</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
+                                                                      href="services.html">Price Packages</a><a
+                                    class="dropdown-item" role="presentation" href="#">Order Services</a><a
+                                    class="dropdown-item" role="presentation" href="#">Custom Request</a></div>
+                        </li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
+                                                         aria-expanded="false" href="#">Exploition</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
+                                                                      href="services.html">Price Packages</a><a
+                                    class="dropdown-item" role="presentation" href="#">Order Services</a><a
+                                    class="dropdown-item" role="presentation" href="#">Custom Request</a></div>
+                        </li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
+                                                         aria-expanded="false" href="#">Tree planted</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
+                                                                      href="services.html">Price Packages</a><a
+                                    class="dropdown-item" role="presentation" href="#">Order Services</a><a
+                                    class="dropdown-item" role="presentation" href="#">Custom Request</a></div>
+                        </li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
+                                                         aria-expanded="false" href="#">Offence&nbsp;</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
+                                                                      href="services.html">Price Packages</a><a
+                                    class="dropdown-item" role="presentation" href="#">Order Services</a><a
+                                    class="dropdown-item" role="presentation" href="#">Custom Request</a></div>
+                        </li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
+                                                         aria-expanded="false" href="#">Fired</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
+                                                                      href="services.html">Price Packages</a><a
+                                    class="dropdown-item" role="presentation" href="#">Order Services</a><a
+                                    class="dropdown-item" role="presentation" href="#">Custom Request</a></div>
+                        </li>
+                    </ul>
+                    <button class="btn btn-info btn-sign-in" type="button">Sign In</button>
                 </div>
             </div>
-            <div class="container">
-                <div>
-                    <form th:action="@{/create-treePlantedEntity}" th:object="${treePlantedEntity}" method="post">
-                        <div class="form-group">
-                            <div id="formdiv">
+        </nav>
+    </header>
+</div>
+<div id="sliderFrame">
+    <div id="slider">
+        <a>
+            <img class="" src="/resources/assets/img/Lakeside%20Infinity-25.jpg" width="500" height="600"
+                 alt="#htmlcaption"/>
+        </a>
+        <a>
+            <img class="" width="500" height="600" src="/resources/assets/img/Lakeside%20Infinity-26.jpg"
+                 alt="#htmlcaption2"/>
+        </a>
+        <a>
+            <img class="" width="500" height="600" src="/resources/assets/img/Lakeside%20Infinity-36.jpg"
+                 alt="#htmlcaption3"/>
+        </a>
+        <a>
+            <img class="img-fluid float-left" src="/resources/assets/img/Lakeside%20Infinity-37.jpg"
+                 alt="#htmlcaptio4"/>
+        </a>
+        <a>
+            <img class="img-fluid img-responsive  float-left" src="/resources/assets/img/Lakeside%20Infinity-38.jpg"
+                 alt="#htmlcaption5"/>
+        </a>
+    </div>
+    <div id="htmlcaption" style="display: none;">
+        <h1 class="hero-title">vị trí</h1>
+        <p class="hero-subtitle">Tóm tắt về vị trí</p>
+    </div>
+    <div id="htmlcaption2" style="display: none;">
+        <h1 class="hero-title">vị trí</h1>
+        <p class="hero-subtitle">Tóm tắt về vị tríyyy</p>
+    </div>
+    <div id="htmlcaption3" style="display: none;">
+        <h1 class="hero-title">vị trí</h1>
+        <p class="hero-subtitle">Tóm tắt về vị trí</p>
+    </div>
+    <div id="htmlcaption4" style="display: none;">
+        <h1 class="hero-title">vị trí</h1>
+        <p class="hero-subtitle">Tóm tắt về vị tríyyy</p>
+    </div>
 
-                                <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
-                                    <div class="col-md-8 offset-md-1">
-                                        <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Id </strong></p>
-                                    </div>
-                                    <div class="col-md-10 offset-md-1"><input class="form-control" th:type="text" name="id" th:field="*{id}"  placeholder="Nhập id" style="margin-left:0px;font-family:Roboto, sans-serif;"></div>
-                                </div>
-
-                                <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;margin-top:-16px;">
-                                    <div class="col-md-8 offset-md-1">
-                                        <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Forest </strong></p>
-                                    </div>
-                                    <div class="col-md-10 offset-md-1"><input class="form-control" th:type="text" name="forest" th:field="*{forest}" placeholder="Nhập tên rừng" style="margin-left:0px;font-family:Roboto, sans-serif;"></div>
-                                </div>
-
-                                <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
-                                    <div class="col-md-8 offset-md-1">
-                                        <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Date</strong></p>
-                                    </div>
-                                    <div class="col-md-10 offset-md-1"><input class="form-control" th:type="date" name="date" th:field="*{datee}"   style="font-family:Roboto, sans-serif;"></div>
-                                </div>
-                                <!--<div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">-->
-                                    <!--<div class="col-md-8 offset-md-1">-->
-                                        <!--<p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Area</strong></p>-->
-                                    <!--</div>-->
-                                    <!--<div class="col-md-10 offset-md-1"><input class="form-control" th:type="text" name="area" th:field="*{}"   placeholder="area" style="margin-left:0px;font-family:Roboto, sans-serif;"></div>-->
-                                <!--</div>-->
-                                <!--<div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">-->
-                                    <!--<div class="col-md-8 offset-md-1">-->
-                                        <!--<p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Unit</strong></p>-->
-                                    <!--</div>-->
-                                    <!--<div class="col-md-10 offset-md-1" style="font-family:Roboto, sans-serif;"><input class="form-control" th:type="text" name="unit" th:field="*{u}"  placeholder="unit" style="margin-left:0px;"></div>-->
-                                <!--</div>-->
-                                <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
-                                    <div class="col-12 col-md-4 offset-md-4">
-                                        <button class="btn btn-light btn-lg" type="reset" style="font-family:Roboto, sans-serif;">Clear </button>
-                                        <button class="btn btn-light btn-lg" type="submit" style="margin-left:16px;">Submit </button></div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+    <div id="htmlcaption5" style="display: none;">
+        <h1 class="hero-title">vị trí</h1>
+        <p class="hero-subtitle">Tóm tắt về vị tríyyy</p>
     </div>
 </div>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/js/-Fixed-Navbar-start-with-transparency-background-BS4-.js"></script>
-<script src="assets/js/Animated-Type-Heading.js"></script>
-<script src="assets/js/Card-hover-affect-2.js"></script>
-<script src="assets/js/js-image-slider.js"></script>
-<script src="assets/js/Table-With-Search-1.js"></script>
+<section>
+    <div class="caption v-middle text-center">
+        <h1 class="cd-headline clip">
+            <span class="blc"></span>
+            <span class="cd-words-wrapper">
+			              <b class="is-visible">Thêm người vi phạm</b>
+
+			            </span>
+            <span class="blc"> | </span>
+        </h1>
+    </div>
+    <div class="container">
+        <a th:href="@{/offenceEntity}">
+            <button class="btn btn-primary" type="button" style="background-color: rgb(32,238,90);margin-left: 20vh;"><i
+                    class="fa fa-plus-circle"></i>Quay lại
+            </button>
+        </a>
+
+        <div>
+            <form method="post" th:object="${treePlantedEntity}" th:action="@{/create-treePlanted}">
+                <div class="form-group">
+                    <div id="formdiv">
+                        <!--<div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">-->
+                            <!--<div class="col-md-8 offset-md-1">-->
+                                <!--<p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">-->
+                                    <!--<strong>Tên </strong></p>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-10 offset-md-1"><input th:field="*{treeIncrease}" class="form-control"-->
+                                                                      <!--type="text" name="name"-->
+                                                                      <!--placeholder="nhập tên ở đây" maxlength="30" minlength="2"-->
+                                                                      <!--style="margin-left:0px;font-family:Roboto, sans-serif;">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">-->
+                        <!--                            <div class="col-md-8 offset-md-1">-->
+                        <!--                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">-->
+                        <!--                                    <strong>Forest</strong></p>-->
+                        <!--                            </div>-->
+                        <!--                            <div class="col-md-10 offset-md-1"><input th:field="*{forest}" class="form-control"-->
+                        <!--                                                                      type="number"-->
+                        <!--                                                                      placeholder="Number" min="0"-->
+                        <!--                                                                      style="font-family:Roboto, sans-serif;"></div>-->
+                        <!--                        </div>-->
+
+
+                        <div class="form-row"
+                             style="margin-right:0px;margin-left:0px;padding-top:24px;margin-top:-16px;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Loại rừng </strong>
+                                </p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><select class="form-control" name="gender"
+                                                                       style="font-family:Roboto, sans-serif;" th:field="*{forest}">
+                                <option th:each="a : ${forestList}" th:value="${a.id}" th:text="${a.name}" id="companyId"></option>
+                            </select>
+                            </div>
+                        </div>
+                        <!--<div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">-->
+                            <!--<div class="col-md-8 offset-md-1">-->
+                                <!--<p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Số cây khai thác</strong></p>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-10 offset-md-1"><input th:field="*{treeIncrease}" pattern="\d*"-->
+                                                                      <!--class="form-control" type="number"-->
+                                                                      <!--placeholder="nhập số cây" min="0"-->
+                                                                      <!--style="font-family:Roboto, sans-serif;"></div>-->
+                        <!--</div>-->
+
+                        <!--<div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">-->
+                            <!--<div class="col-md-8 offset-md-1">-->
+                                <!--<p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Số cây mất</strong></p>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-10 offset-md-1"><input th:field="*{numberOfTreeLost}" pattern="\d*"-->
+                                                                      <!--class="form-control" type="number"-->
+                                                                      <!--placeholder="nhập số cây" min="0"-->
+                                                                      <!--style="font-family:Roboto, sans-serif;"></div>-->
+                        <!--</div>-->
+                        <!--<div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">-->
+                            <!--<div class="col-md-8 offset-md-1">-->
+                                <!--<p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">-->
+                                    <!--<strong>Hình thức xử phạt</strong></p>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-10 offset-md-1"><input th:field="*{sanctionForm}" class="form-control"-->
+                                                                      <!--type="text" name="name"-->
+                                                                      <!--placeholder="hình thức" maxlength="30" minlength="2"-->
+                                                                      <!--style="margin-left:0px;font-family:Roboto, sans-serif;">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">-->
+                            <!--<div class="col-md-8 offset-md-1">-->
+                                <!--<p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Số tiền phạt</strong></p>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-10 offset-md-1"><input th:field="*{compensationMoney}" step="0.1"-->
+                                                                      <!--class="form-control" type="number"-->
+                                                                      <!--placeholder="nhập ở đây" min="0"-->
+                                                                      <!--style="font-family:Roboto, sans-serif;"></div>-->
+                        <!--</div>-->
+                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
+                                    <strong>Ngày vi phạm</strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><input th:field="*{datee}" class="form-control"
+                                                                      type="date"
+                                                                      style="font-family:Roboto, sans-serif;"></div>
+                        </div>
+                        <!--<div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">-->
+                            <!--<div class="col-md-8 offset-md-1">-->
+                                <!--<p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Diện tích thiệt hại</strong></p>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-10 offset-md-1"><input th:field="*{areaOfDamage}" class="form-control" step="0.1"-->
+                                                                      <!--type="number"-->
+                                                                      <!--placeholder="Nhập ở đây" min="0"-->
+                                                                      <!--style="font-family:Roboto, sans-serif;"></div>-->
+                        <!--</div>-->
+
+                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-12 col-md-4 offset-md-4">
+                                <button class="btn btn-light btn-lg" type="reset"
+                                        style="font-family:Roboto, sans-serif;">Làm mới
+                                </button>
+                                <button class="btn btn-light btn-lg" type="submit" style="margin-left:16px;">Thêm
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 footer-navigation">
+            <h3><a href="#">Company<span>logo </span></a></h3>
+            <p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a
+                    href="#">Pricing</a><strong> · </strong><a href="#">About</a><strong> · </strong><a href="#">Faq</a><strong>
+                · </strong><a href="#">Contact</a></p>
+            <p class="company-name">Company Name © 2015 </p>
+        </div>
+        <div class="col-sm-6 col-md-4 footer-contacts">
+            <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                <p><span class="new-line-span">21 Revolution Street</span> Paris, France</p>
+            </div>
+            <div><i class="fa fa-phone footer-contacts-icon"></i>
+                <p class="footer-center-info email text-left"> +1 555 123456</p>
+            </div>
+            <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                <p><a href="#" target="_blank">support@company.com</a></p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-4 footer-about">
+            <h4>About the company</h4>
+            <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+                vehicula sit amet. </p>
+            <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i
+                    class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i
+                    class="fa fa-github"></i></a></div>
+        </div>
+    </div>
+</footer>
+<script src="/resources/assets/js/jquery.min.js"></script>
+<script src="/resources/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/resources/assets/js/-Fixed-Navbar-start-with-transparency-background-BS4-.js"></script>
+<script src="/resources/assets/js/Animated-Type-Heading.js"></script>
+<script src="/resources/assets/js/Card-hover-affect-2.js"></script>
+<script src="/resources/assets/js/js-image-slider.js"></script>
+<script src="/resources/assets/js/Table-With-Search-1.js"></script>
 </body>
 
 </html>
