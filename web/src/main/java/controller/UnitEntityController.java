@@ -1,5 +1,6 @@
 package controller;
 
+import entity.ForestEntity;
 import entity.UnitEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -8,6 +9,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import service.ForestEntityManager;
+import service.ForestFireEntityManager;
 import service.UnitEntityManager;
 
 import java.util.Optional;
@@ -15,6 +18,16 @@ import java.util.Optional;
 public class UnitEntityController {
     @Autowired
     UnitEntityManager unitEntityManager;
+
+    @Autowired
+    ForestEntityManager forestEntityManager;
+
+    @ModelAttribute("forestList")
+    Iterable<ForestEntity> forestList(Pageable pageable) {
+        return forestEntityManager.getAllForest(pageable);
+    }
+
+
 
     @GetMapping("/create-unit")
     public ModelAndView showCreateForm() {

@@ -166,32 +166,40 @@
                             </div>
                             <div class="col-md-10 offset-md-1"><input th:field="*{name}" class="form-control"
                                                                       type="text" name="name"
-                                                                      placeholder="nhập tên ở đây" maxlength="30" minlength="2"
+                                                                      placeholder="nhập tên ở đây" maxlength="30"
+                                                                      minlength="2"
                                                                       style="margin-left:0px;font-family:Roboto, sans-serif;">
                             </div>
                         </div>
-                        <!--                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">-->
-                        <!--                            <div class="col-md-8 offset-md-1">-->
-                        <!--                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">-->
-                        <!--                                    <strong>Forest</strong></p>-->
-                        <!--                            </div>-->
-                        <!--                            <div class="col-md-10 offset-md-1"><input th:field="*{forest}" class="form-control"-->
-                        <!--                                                                      type="number"-->
-                        <!--                                                                      placeholder="Number" min="0"-->
-                        <!--                                                                      style="font-family:Roboto, sans-serif;"></div>-->
-                        <!--                        </div>-->
 
 
+                        <div class="form-row"
+                             style="margin-right:0px;margin-left:0px;padding-top:24px;margin-top:-16px;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Loại rừng
+                                     </strong>
+                                </p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><select class="form-control" name="gender"
+                                                                       style="font-family:Roboto, sans-serif;"
+                                                                       th:field="*{forest}">
+                                <option th:each="a : ${forestList}" th:value="${a.id}" th:text="${a.name}"
+                                        id="companyId"></option>
+                            </select>
+                            </div>
+                        </div>
 
 
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 offset-md-1">
                                 <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
-                                    <strong>Hợp đồng</strong></p>
+                                    <strong>Hình thức tổ chức</strong></p>
                             </div>
-                            <div class="col-md-10 offset-md-1"><input th:field="*{organizationForm}" class="form-control"
+                            <div class="col-md-10 offset-md-1"><input th:field="*{organizationForm}"
+                                                                      class="form-control"
                                                                       type="text" name="name"
-                                                                      placeholder="hình thức" maxlength="30" minlength="2"
+                                                                      placeholder="hình thức" maxlength="30"
+                                                                      minlength="2"
                                                                       style="margin-left:0px;font-family:Roboto, sans-serif;">
                             </div>
                         </div>
@@ -202,7 +210,8 @@
                             </div>
                             <div class="col-md-10 offset-md-1"><input th:field="*{contract}" class="form-control"
                                                                       type="text" name="name"
-                                                                      placeholder="hình thức" maxlength="30" minlength="2"
+                                                                      placeholder="hình thức" maxlength="30"
+                                                                      minlength="2"
                                                                       style="margin-left:0px;font-family:Roboto, sans-serif;">
                             </div>
                         </div>

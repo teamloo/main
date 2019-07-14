@@ -163,9 +163,9 @@
                 <figcaption>
                     <h3 th:text="'ID: '+${lists.id}"></h3>
                     <p th:text="'Tên đơn vị: '+${lists.name}"></p>
-                    <p th:text="'Hình thức tổ chức: '+${lists.contract}"></p>
+                    <p th:text="'Hình thức tổ chức: '+${lists.organizationForm}"></p>
                     <th:block th:if="${lists.forest}">
-                        <p th:text="${lists.forest.name}"></p>
+                        <p th:text="'Loại rừng: '+${lists.forest.name}"></p>
                     </th:block>
                     <th:block th:unless="${lists.forest}">
                         <p>Have not set yet</p>
