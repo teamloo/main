@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import service.UnitEntityManager;
@@ -69,11 +70,12 @@ public class UnitEntityController {
     }
 
     @PostMapping("/delete-unit")
-    public ModelAndView delete(@ModelAttribute("unitEntity") UnitEntity unitEntity) {
-        ModelAndView modelAndView = new ModelAndView("/unit/delete");
+    public String delete(@ModelAttribute("unitEntity") UnitEntity unitEntity, Model model) {
+
         unitEntityManager.deleteUnit(unitEntity.getId());
-        modelAndView.addObject("message", "success");
-        return modelAndView;
+
+        return "redirect:/unit";
+
     }
 
     @GetMapping("/unitEntity/view/{id}")
