@@ -190,12 +190,11 @@
                             </div>
                             <div class="col-md-10 offset-md-1">
                                 <select class="form-control" name="gender"
-                                        style="font-family:Roboto, sans-serif;" >
+                                        style="font-family:Roboto, sans-serif;" th:field="*{forest}" >
 
                                 <option th:each="a : ${forestList}"
                                         th:value="${a.id}"
                                         th:text="${a.name}"
-                                        <!--th:selected="(${a.id} == *{forestList.id})"-->
                                         id="companyId">
 
                                 </option>
