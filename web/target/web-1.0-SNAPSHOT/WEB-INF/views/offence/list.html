@@ -161,19 +161,19 @@
             <figure class="snip1563">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample110.jpg" alt="sample110"/>
                 <figcaption>
-                    <h3 th:text="'ID: '+${lists.id}"></h3>
-                    <p th:text="'Tên: '+${lists.offender}"></p>
-                    <p th:text="'Hình thức xử phạt: '+${lists.sanctionForm}"></p>
+                    <h3 th:text="'-ID: '+${lists.id}"></h3>
+                    <p th:text="'-Tên: '+${lists.offender}"></p>
+                    <p th:text="'-Hình thức xử phạt: '+${lists.sanctionForm}"></p>
                     <th:block th:if="${lists.forest}">
-                        <p th:text="${lists.forest.name}"></p>
+                        <p th:text="'-Tên rừng: '${lists.forest.name}"></p>
                     </th:block>
                     <th:block th:unless="${lists.forest}">
                         <p>Have not set yet</p>
                     </th:block>
-                    <p th:text="'Ngày phạt: '+${lists.datee}"></p>
-                    <p th:text="'Số cây mất: '+${lists.numberOfTreeLost}"></p>
-                    <p th:text="'Diện tích thiệt hại: '+${lists.areaOfDamage}"></p>
-                    <p th:text="'Số tiền phạt: '+${lists.compensationMoney}"></p>
+                    <p th:text="'-Ngày phạt: '+${lists.datee}"></p>
+                    <p th:text="'-Số cây mất: '+${lists.numberOfTreeLost}"></p>
+                    <p th:text="'-Diện tích thiệt hại: '+${lists.areaOfDamage}"></p>
+                    <p th:text="'-Số tiền phạt: '+${lists.compensationMoney}"></p>
 
                     <a class="btn btn-primay" th:href="@{/offenceEntity/edit/__${lists.id}__}">
                     <button class="btn btn-success" type="button" style="margin-left: 5px;"><i class="fa fa-edit"

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>teamlo</title>
+    <title>delete</title>
     <link rel="stylesheet" href="/resources/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="/resources/assets/fonts/font-awesome.min.css">
@@ -160,7 +160,8 @@
 
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 offset-md-1">
-                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>ID</strong></p>
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
+                                    <strong>ID</strong></p>
                             </div>
                             <div class="col-md-10 offset-md-1"><input th:field="*{id}" pattern="\d*"
                                                                       class="form-control" type="number"
@@ -175,7 +176,8 @@
                             </div>
                             <div class="col-md-10 offset-md-1"><input th:field="*{name}" class="form-control"
                                                                       type="text" name="name"
-                                                                      placeholder="nhập tên ở đây" maxlength="30" minlength="2"
+                                                                      placeholder="nhập tên ở đây" maxlength="30"
+                                                                      minlength="2"
                                                                       style="margin-left:0px;font-family:Roboto, sans-serif;">
                             </div>
                         </div>
@@ -192,24 +194,24 @@
 
 
                         <!--<div class="form-row"-->
-                             <!--style="margin-right:0px;margin-left:0px;padding-top:24px;margin-top:-16px;">-->
-                            <!--<div class="col-md-8 offset-md-1">-->
-                                <!--<p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Loại rừng </strong>-->
-                                <!--</p>-->
-                            <!--</div>-->
-                            <!--<div class="col-md-10 offset-md-1">-->
-                                <!--<select class="form-control" name="gender"-->
-                                        <!--style="font-family:Roboto, sans-serif;" >-->
+                        <!--style="margin-right:0px;margin-left:0px;padding-top:24px;margin-top:-16px;">-->
+                        <!--<div class="col-md-8 offset-md-1">-->
+                        <!--<p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Loại rừng </strong>-->
+                        <!--</p>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-10 offset-md-1">-->
+                        <!--<select class="form-control" name="gender"-->
+                        <!--style="font-family:Roboto, sans-serif;" >-->
 
-                                    <!--<option th:each="a : ${forestList}"-->
-                                            <!--th:value="${a.id}"-->
-                                            <!--th:text="${a.name}"-->
-                                            <!--th:selected="(${a.id} == *{forestList.id})"-->
-                                            <!--id="companyId">-->
+                        <!--<option th:each="a : ${forestList}"-->
+                        <!--th:value="${a.id}"-->
+                        <!--th:text="${a.name}"-->
+                        <!--th:selected="(${a.id} == *{forestList.id})"-->
+                        <!--id="companyId">-->
 
-                                    <!--</option>-->
-                                <!--</select>-->
-                            <!--</div>-->
+                        <!--</option>-->
+                        <!--</select>-->
+                        <!--</div>-->
                         <!--</div>-->
 
 
@@ -218,9 +220,11 @@
                                 <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
                                     <strong>Hình thức tổ chức</strong></p>
                             </div>
-                            <div class="col-md-10 offset-md-1"><input th:field="*{organizationForm}" class="form-control"
+                            <div class="col-md-10 offset-md-1"><input th:field="*{organizationForm}"
+                                                                      class="form-control"
                                                                       type="text" name="name"
-                                                                      placeholder="hình thức" maxlength="30" minlength="2"
+                                                                      placeholder="hình thức" maxlength="30"
+                                                                      minlength="2"
                                                                       style="margin-left:0px;font-family:Roboto, sans-serif;">
                             </div>
                         </div>
@@ -231,7 +235,8 @@
                             </div>
                             <div class="col-md-10 offset-md-1"><input th:field="*{contract}" class="form-control"
                                                                       type="text" name="name"
-                                                                      placeholder="hợp đồng" maxlength="30" minlength="2"
+                                                                      placeholder="hợp đồng" maxlength="30"
+                                                                      minlength="2"
                                                                       style="margin-left:0px;font-family:Roboto, sans-serif;">
                             </div>
                         </div>
@@ -241,8 +246,11 @@
                             <div class="col-12 col-md-4 offset-md-4">
                                 <button class="btn btn-light btn-lg" type="reset"
                                         style="font-family:Roboto, sans-serif;">Làm mới
-                                </button >
-                                <button class="btn btn-light btn-lg" type="submit" style="margin-left:16px;">Xóa </button>
+                                </button>
+                                <button class="btn btn-light btn-lg" type="submit" style="margin-left:16px;"
+                                        >
+                                    Xóa
+                                </button>
                             </div>
                         </div>
                     </div>

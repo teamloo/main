@@ -155,7 +155,7 @@
             </button>
         </a>
         <div>
-            <form method="post" th:object="${forestFireEntity}" th:action="@{/forestEntity/edit}">
+            <form method="post" th:object="${forestFireEntity}" th:action="@{/forestFireEntity/edit}">
                 <div class="form-group">
                     <div id="formdiv">
                         <input th:type="hidden" name="id" th:field="*{id}"/>
@@ -214,7 +214,7 @@
                                 <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
                                     <strong>Ngày xảy ra</strong></p>
                             </div>
-                            <div class="col-md-10 offset-md-1"><input th:field="*{date}" class="form-control"
+                            <div class="col-md-10 offset-md-1"><input th:field="*{datee}" class="form-control"
                                                                       type="date" name="name"
                                                                       placeholder="Ngày xảy ra" maxlength="30" minlength="2"
                                                                       style="margin-left:0px;font-family:Roboto, sans-serif;" required>
@@ -225,7 +225,7 @@
                                 <button class="btn btn-light btn-lg" type="reset"
                                         style="font-family:Roboto, sans-serif;">Clear
                                 </button>
-                                <button class="btn btn-light btn-lg" type="submit" style="margin-left:16px;">Thêm
+                                <button class="btn btn-light btn-lg" type="submit" style="margin-left:16px;">Sửa
                                 </button>
                             </div>
                         </div>

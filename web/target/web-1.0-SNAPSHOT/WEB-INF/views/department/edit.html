@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Forest</title>
+    <title>Edit</title>
     <link rel="stylesheet" href="/resources/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="/resources/assets/fonts/font-awesome.min.css">
@@ -159,6 +159,7 @@
                 <div class="form-group">
                     <div id="formdiv">
                         <input th:type="hidden" name="id" th:field="*{id}"/>
+
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 offset-md-1">
                                 <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
@@ -170,6 +171,7 @@
                                                                       style="margin-left:0px;font-family:Roboto, sans-serif;">
                             </div>
                         </div>
+
 
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 offset-md-1">
@@ -201,7 +203,8 @@
                             </div>
                             <div class="col-md-10 offset-md-1"><input th:field="*{phoneNumber}" class="form-control"
                                                                       type="text" name="name"
-                                                                      placeholder="Số điện thoại" maxlength="30" minlength="2"
+                                                                      placeholder="Số điện thoại" maxlength="30"
+                                                                      minlength="2"
                                                                       style="margin-left:0px;font-family:Roboto, sans-serif;">
                             </div>
                         </div>
@@ -220,8 +223,16 @@
                             </select>
                             </div>
                         </div>
+                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-12 col-md-4 offset-md-4">
+                                <button class="btn btn-light btn-lg" type="reset"
+                                        style="font-family:Roboto, sans-serif;">Làm mới
+                                </button>
+                                <button class="btn btn-light btn-lg" type="submit" style="margin-left:16px;">Sửa
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                </div>
             </form>
         </div>
     </div>

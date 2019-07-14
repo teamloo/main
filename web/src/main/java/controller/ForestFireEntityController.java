@@ -57,24 +57,33 @@ public class ForestFireEntityController {
     @GetMapping("/forestFireEntity/edit/{id}")
     public ModelAndView showEditForm(@PathVariable Long id) {
         Optional<ForestFireEntity> forestFireEntity = forestFireEntityManager.findById(id);
-        ModelAndView modelAndView = new ModelAndView("/forestFire/create");
+        ModelAndView modelAndView = new ModelAndView("/forestFire/edit");
 
         modelAndView.addObject("forestFireEntity", forestFireEntity);
         return modelAndView;
     }
 
-    @ResponseBody
-    @RequestMapping(value = "/forestFireEntity/delete")
-    public Page<ForestFireEntity> ajaxDelete(HttpServletRequest req, HttpServletResponse res, Pageable pageable) {
-        forestFireEntityManager.removeForestFire(Long.parseLong(req.getParameter("id")));
-        Page<ForestFireEntity> forests = forestFireEntityManager.getAllForestFire(pageable);
-        return forests;
-    }
-
     @PostMapping("/forestFireEntity/edit")
     public ModelAndView edit(@ModelAttribute("forestFireEntity") ForestFireEntity forestFireEntity) {
         forestFireEntityManager.saveForestFire(forestFireEntity);
-        ModelAndView modelAndView = new ModelAndView("/forestFire/create");
+        ModelAndView modelAndView = new ModelAndView("redirect:/forestFireEntity");
+        modelAndView.addObject("forestFire", forestFireEntity);
+        modelAndView.addObject("message", "Success");
+        return modelAndView;
+    }
+    @GetMapping("/forestFireEntity/delete/{id}")
+    public ModelAndView deleteForm(@PathVariable Long id) {
+        Optional<ForestFireEntity> forestFireEntity = forestFireEntityManager.findById(id);
+        ModelAndView modelAndView = new ModelAndView("/forestFire/delete");
+
+        modelAndView.addObject("forestFireEntity", forestFireEntity);
+        return modelAndView;
+    }
+
+    @PostMapping("/forestFireEntity/delete")
+    public ModelAndView delete(@ModelAttribute("forestFireEntity") ForestFireEntity forestFireEntity) {
+        forestFireEntityManager.removeForestFire(forestFireEntity.getId());
+        ModelAndView modelAndView = new ModelAndView("redirect:/forestFireEntity");
         modelAndView.addObject("forestFire", forestFireEntity);
         modelAndView.addObject("message", "Success");
         return modelAndView;

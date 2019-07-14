@@ -179,15 +179,17 @@
                     <th:block th:unless="${lists.forest}">
                         <!--                        <p>Have not set unit yet</p>-->
                     </th:block>
-                    <a th:href="@{/forestFireEntity/edit/__${lists.id}__}" class="btn btn-success"
-                       style="margin-left: 5px;">
-                        <i class="fa fa-edit" style="font-size: 15px;"></i></a>
-                    <button type="button" class="btn btn-danger" data-toggle="modal"
-                            style="margin-left: 5px;z-index: 3;"
-                            data-target="#exampleModalCenter" th:attr="data-confirm=${lists.id}" id="delete-entity">
-                        <i class="fa fa-trash"
-                           style="font-size: 15px;"></i>
-                    </button>
+                    <a class="btn btn-primay" th:href="@{/forestFireEntity/edit/__${lists.id}__}">
+                        <button class="btn btn-success" type="button" style="margin-left: 5px;"><i class="fa fa-edit"
+                                                                                                   style="font-size: 15px;"></i>
+                        </button>
+                    </a>
+
+                    <a class="btn btn-primay" th:href="@{/forestFireEntity/delete/__${lists.id}__}">
+                        <button class="btn btn-danger" type="button" style="margin-left: 5px;"><i class="fa fa-trash"
+                                                                                                  style="font-size: 15px;"></i>
+                        </button>
+                    </a>
                 </figcaption>
                 <a href="#"></a>
             </figure>
