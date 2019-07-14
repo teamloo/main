@@ -25,10 +25,8 @@ public class UnitEntity {
     @OneToMany(mappedBy = "unit")
     private List<TreePlantedEntity> treePlanted;
 
-//    @OneToMany(mappedBy = "unit")
-    @OneToMany(mappedBy = "unit",
-            cascade= {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH}, fetch = FetchType.EAGER)
-    @Fetch(value = FetchMode.SUBSELECT)
+    //    @OneToMany(mappedBy = "unit")
+    @OneToMany(mappedBy = "unit")
     private List<ExploitionEntity> exploition;
 
     @ManyToOne
@@ -141,7 +139,8 @@ public class UnitEntity {
         exploitionEntity.setUnit(this);
         return exploitionEntity;
     }
-    public ExploitionEntity remove(ExploitionEntity exploitionEntity){
+
+    public ExploitionEntity remove(ExploitionEntity exploitionEntity) {
         getExploition().remove(exploitionEntity);
         exploitionEntity.setUnit(null);
         return exploitionEntity;

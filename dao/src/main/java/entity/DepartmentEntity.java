@@ -7,19 +7,21 @@ import javax.persistence.*;
 // cán bộ
 @Entity
 @Table(name = "department")
+
 //@NamedQuery(name = "Department.findAll", query = "SELECT e FROM Department e")
 public class DepartmentEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     private String name;
     private String position;
     private String salary;
     private String phoneNumber;
 
-    @ManyToOne(fetch = FetchType.LAZY, targetEntity = UnitEntity.class)
-    @JoinColumn(name = "unit_id", insertable = false, updatable = false)
+    @ManyToOne
+    @JoinColumn(name = "unit_id")
     private UnitEntity unit;
 
     public DepartmentEntity() {
