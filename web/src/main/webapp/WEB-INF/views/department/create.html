@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Department</title>
+    <title>create</title>
     <link rel="stylesheet" href="/resources/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="/resources/assets/fonts/font-awesome.min.css">
@@ -139,11 +139,10 @@
 <section>
     <div class="caption v-middle text-center">
         <h1 class="cd-headline clip">
-            <span class="blc">Quản lý </span>
+            <span class="blc"> </span>
             <span class="cd-words-wrapper">
-			              <b class="is-visible">Rừng</b>
-			              <b>Cây</b>
-			              <b>Gỗ</b>
+			              <b class="is-visible">Nhập thông tin cán bộ</b>
+
 			            </span>
             <span class="blc"> | </span>
         </h1>
@@ -158,6 +157,7 @@
             <form method="post" th:object="${departmentEntity}" th:action="@{/departmentEntity/create}">
                 <div class="form-group">
                     <div id="formdiv">
+
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 offset-md-1">
                                 <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
@@ -186,14 +186,16 @@
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 offset-md-1">
                                 <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
-                                    <strong>Lương</strong></p>
+                                    <strong>Chức vụ </strong></p>
                             </div>
-                            <div class="col-md-10 offset-md-1"> <input th:field="*{salary}" step="0.1"
-                                                                      class="form-control" type="number"
-                                                                      placeholder="lương" min="0"
-                                                                      style="font-family:Roboto, sans-serif;" required>
+                            <div class="col-md-10 offset-md-1"><input th:field="*{salary}" class="form-control"
+                                                                      type="text" name="name"
+                                                                      placeholder="Lương" maxlength="30" minlength="2"
+                                                                      style="margin-left:0px;font-family:Roboto, sans-serif;">
                             </div>
                         </div>
+
+
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 offset-md-1">
                                 <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;">
@@ -201,10 +203,13 @@
                             </div>
                             <div class="col-md-10 offset-md-1"><input th:field="*{phoneNumber}" class="form-control"
                                                                       type="text" name="name"
-                                                                      placeholder="Số điện thoại" maxlength="30" minlength="2"
+                                                                      placeholder="Số điện thoại" maxlength="30"
+                                                                      minlength="2"
                                                                       style="margin-left:0px;font-family:Roboto, sans-serif;">
                             </div>
                         </div>
+
+
                         <div class="form-row"
                              style="margin-right:0px;margin-left:0px;padding-top:24px;margin-top:-16px;">
                             <div class="col-md-8 offset-md-1">
@@ -215,11 +220,30 @@
                             <div class="col-md-10 offset-md-1"><select class="form-control" name="gender"
                                                                        style="font-family:Roboto, sans-serif;"
                                                                        th:field="*{unit}">
-                                <option th:each="a : ${unitList}" th:value="${a}" th:text="${a.name}"
+                                <option th:each="a : ${unitList}" th:value="${a.id}" th:text="${a.name}"
                                         id="companyId"></option>
                             </select>
                             </div>
                         </div>
+
+
+                        <!--<div class="form-row"-->
+                        <!--style="margin-right:0px;margin-left:0px;padding-top:24px;margin-top:-16px;">-->
+                        <!--<div class="col-md-8 offset-md-1">-->
+                        <!--<p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Loại-->
+                        <!--rừng </strong>-->
+                        <!--</p>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-10 offset-md-1"><select class="form-control" name="gender"-->
+                        <!--style="font-family:Roboto, sans-serif;"-->
+                        <!--th:field="*{forest}">-->
+                        <!--<option th:each="a : ${forestList}" th:value="${a.id}" th:text="${a.name}"-->
+                        <!--id="companyId"></option>-->
+                        <!--</select>-->
+                        <!--</div>-->
+                        <!--</div>-->
+
+
                         <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-12 col-md-4 offset-md-4">
                                 <button class="btn btn-light btn-lg" type="reset"
